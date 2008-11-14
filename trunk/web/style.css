@@ -51,7 +51,7 @@ cite {
 
 h2 {
 	border-bottom: 1px dotted #ccc;
-	font: 95% "Times New Roman", Times, serif;
+	font: 110% "Times New Roman", Times, serif;
 	letter-spacing: 0.2em;
 	margin: 15px 0 2px 0;
 	padding-bottom: 2px;
@@ -59,7 +59,7 @@ h2 {
 
 h3 {
 	border-bottom: dotted 1px #eee;
-	font-family: "Times New Roman", Times, serif;
+	font: 100% "Times New Roman", Times, serif;
 	margin-top: 0;
 }
 
