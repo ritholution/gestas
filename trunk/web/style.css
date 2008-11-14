@@ -1,0 +1,232 @@
+a {
+	color: #675;
+}
+
+a img {
+	border: none;
+}
+
+a:visited {
+	color: #342;
+}
+
+a:hover {
+	color: #9a8;
+}
+
+acronym, abbr {
+	border-bottom: 1px dashed #333;
+}
+
+acronym, abbr, span.caps {
+	font-size: 90%;
+	letter-spacing: .07em;
+}
+
+acronym, abbr {
+	cursor: help;
+}
+
+blockquote {
+	border-left: 5px solid #ccc;
+	margin-left: 1.5em;
+	padding-left: 5px;
+}
+
+body {
+	margin: 3em 7em 3em 7em;
+	background: #fff;
+	border: solid 2px #565;
+	border-bottom: solid 1px #565;
+	border-top: solid 3px #565;
+	color: #000;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	padding: 0;
+}
+
+cite {
+	font-size: 90%;
+	font-style: normal;
+}
+
+h2 {
+	border-bottom: 1px dotted #ccc;
+	font: 95% "Times New Roman", Times, serif;
+	letter-spacing: 0.2em;
+	margin: 15px 0 2px 0;
+	padding-bottom: 2px;
+}
+
+h3 {
+	border-bottom: dotted 1px #eee;
+	font-family: "Times New Roman", Times, serif;
+	margin-top: 0;
+}
+
+p, li, .feedback {
+	font: 90%/175% 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	letter-spacing: -1px;
+}
+
+/* classes used by the_meta() */
+ul.post-meta {
+	list-style: none;
+}
+
+ul.post-meta span.post-meta-key {
+	font-weight: bold;
+}
+
+.feedback {
+	color: #ccc;
+	text-align: right;
+	clear: both;
+}
+
+.meta {
+	font-size: .75em;
+}
+
+.meta li, ul.post-meta li {
+	display: inline;
+}
+
+.meta ul {
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.meta, .meta a {
+	color: #808080;
+	font-weight: normal;
+	letter-spacing: 0;
+}
+
+#content {
+	padding-right: 1%;
+        padding-left: 5%;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	text-align: justify;
+	float: left;
+	width: 68%;
+}
+
+#description {
+	background: #90a090;
+	font: italic normal 80% 'Times New Roman', Times, serif;
+	border-bottom: double 3px #aba;
+	letter-spacing: 0.2em;
+	margin: 0;
+	padding: 0px 10px 15px 60px;
+	clear: both;
+	color: #fff;
+}
+
+#header {
+	background: #90a090;
+	border-left: solid 1px #9a9;
+	border-right: solid 1px #565;
+	border-top: solid 1px #9a9;
+	font: italic normal 230% 'Times New Roman', Times, serif;
+	letter-spacing: 0.2em;
+	margin: 0;
+	padding: 15px 10px 0px 60px;
+	clear: both;
+}
+
+#header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#header a:hover {
+	text-decoration: underline;
+}
+
+#menu {
+	background: #fff;
+	border-left: 1px dotted #ccc;
+	border-top: solid 3px #e0e6e0;
+	border-bottom: solid 3px #e0e6e0;
+	padding: 2% 1% 5% 1%;
+	float: right;
+	width: 20%;
+}
+
+#menu form {
+	margin: 0 0 0 13px;
+}
+
+#menu input#s {
+	width: 80%;
+	background: #eee;
+	border: 1px solid #999;
+	color: #000;
+}
+
+#menu ul {
+	color: #ccc;
+	font-weight: bold;
+	list-style-type: none;
+	margin: 0;
+	padding-left: 3px;
+	text-transform: lowercase;
+}
+
+#menu ul li {
+	font: italic normal 110% 'Times New Roman', Times, serif;
+	letter-spacing: 0.1em;
+	margin-top: 10px;
+	padding-bottom: 2px; /*border-bottom: dotted 1px #ccc;*/
+}
+
+#menu ul ul {
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+#menu ul ul li {
+	border: 0;
+	font: normal normal 12px/115% 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	letter-spacing: 0;
+	margin-top: 0;
+	padding: 0;
+	padding-left: 12px;
+}
+
+#menu ul ul li a {
+	color: #000;
+	text-decoration: none;
+}
+
+#menu ul ul li a:hover {
+	border-bottom: 1px solid #809080;
+}
+
+#menu ul ul ul.children {
+	font-size: 142%;
+	padding-left: 4px;
+}
+
+#footer {
+	background: #90a090;
+	border-top: double 3px #aba;
+	color: #fff;
+	font-size: 11px;
+	margin: 10px 0 0 0;
+	padding: 3px;
+	text-align: center;
+	clear: both;
+}
+
+#footer a:link, .credit a:hover {
+	color: #fff;
+}
