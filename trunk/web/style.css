@@ -114,6 +114,17 @@ ul.post-meta span.post-meta-key {
 	width: 68%;
 }
 
+#new {
+	padding-right: 2%;
+        padding-left: 2%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-align: justify;
+	float: left;
+	width: 95%;
+	background-color: #EFE;
+}
+
 #description {
 	background: #90a090;
 	font: italic normal 80% 'Times New Roman', Times, serif;
@@ -183,35 +194,15 @@ ul.post-meta span.post-meta-key {
 	padding-bottom: 2px; /*border-bottom: dotted 1px #ccc;*/
 }
 
-#menu ul ul {
-	font-variant: normal;
-	font-weight: normal;
-	line-height: 100%;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	text-align: left;
-}
-
-#menu ul ul li {
-	border: 0;
-	font: normal normal 12px/115% 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-	letter-spacing: 0;
-	margin-top: 0;
-	padding: 0;
-	padding-left: 12px;
-}
-
-#menu ul ul li a {
-	color: #000;
+#menu ul li a {
 	text-decoration: none;
 }
 
-#menu ul ul li a:hover {
+#menu ul li a:hover {
 	border-bottom: 1px solid #809080;
 }
 
-#menu ul ul ul.children {
+#menu ul ul.children {
 	font-size: 142%;
 	padding-left: 4px;
 }
