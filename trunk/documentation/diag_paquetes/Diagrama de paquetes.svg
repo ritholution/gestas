@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by diasvg.py -->
+<svg width="73.560cm" height="68.069cm" viewBox="0.535 0.237 74.095 68.307"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="46.462,35.000 35.440,35.000 35.440,27.399 30.086,27.399 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="30.474,27.149 29.974,27.399 30.474,27.649 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="47.950,37.700 47.950,38.700 33.090,38.700 33.090,31.488 29.256,31.488 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="29.644,31.238 29.144,31.488 29.644,31.738 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="49.200,37.700 55.325,37.700 55.325,37.109 61.226,37.109 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="60.838,37.359 61.338,37.109 60.838,36.859 "/>
+<rect x="12.135" y="12.250" width="19.292" height="7.788" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="12.135" y="12.250" width="19.292" height="7.788" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="12.135" y="11.250" width="8.250" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="12.135" y="11.250" width="8.250" height="1.000" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="12.235" y="11.750"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+Gestion de asociaciones</text>
+<rect x="16.400" y="25.163" width="14.615" height="8.150" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="16.400" y="25.163" width="14.615" height="8.150" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="16.400" y="24.163" width="6.150" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="16.400" y="24.163" width="6.150" height="1.000" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="16.500" y="24.663"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+Gestion de socios</text>
+<rect x="19.900" y="53.663" width="16.050" height="7.950" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="19.900" y="53.663" width="16.050" height="7.950" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="19.900" y="52.663" width="7.200" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="19.900" y="52.663" width="7.200" height="1.000" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="20.000" y="53.163"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+Gestion de contactos</text>
+<rect x="53.750" y="33.574" width="14.758" height="7.650" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="53.750" y="33.574" width="14.758" height="7.650" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="53.750" y="32.574" width="7.200" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="53.750" y="32.574" width="7.200" height="1.000" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="53.850" y="33.074"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+Gestion de directiva</text>
+<rect x="45.250" y="18.912" width="8.700" height="9.812" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="45.250" y="18.912" width="8.700" height="9.812" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="45.250" y="17.912" width="7.550" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="45.250" y="17.912" width="7.550" height="1.000" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="45.350" y="18.412"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+Gestion de decisiones</text>
+<rect x="55.185" y="24.400" width="17.150" height="6.374" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="55.185" y="24.400" width="17.150" height="6.374" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="55.185" y="23.400" width="7.200" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="55.185" y="23.400" width="7.200" height="1.000" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="55.285" y="23.900"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+Gestion de proyectos</text>
+<rect x="19.550" y="44.700" width="18.150" height="7.349" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="19.550" y="44.700" width="18.150" height="7.349" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="19.550" y="43.700" width="8.950" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="19.550" y="43.700" width="8.950" height="1.000" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="19.650" y="44.200"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+Calendario de actividades</text>
+<ellipse cx="11.250" cy="46.150" rx="0.300" ry="0.300" fill="#FFFFFF" stroke="none"  /><ellipse cx="11.250" cy="46.150" rx="0.300" ry="0.300" fill="none" stroke="#000000"  stroke-width="0.100" /><line x1="10.050" y1="46.750" x2="12.450" y2="46.750" stroke="#000000" stroke-width="0.100" />
+<line x1="11.250" y1="46.450" x2="11.250" y2="47.950" stroke="#000000" stroke-width="0.100" />
+<line x1="11.250" y1="47.950" x2="10.050" y2="49.250" stroke="#000000" stroke-width="0.100" />
+<line x1="11.250" y1="47.950" x2="12.450" y2="49.250" stroke="#000000" stroke-width="0.100" />
+<text x="10.466" y="50.392"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Socio</text>
+<ellipse cx="47.950" cy="33.200" rx="0.300" ry="0.300" fill="#FFFFFF" stroke="none"  /><ellipse cx="47.950" cy="33.200" rx="0.300" ry="0.300" fill="none" stroke="#000000"  stroke-width="0.100" /><line x1="46.750" y1="33.800" x2="49.150" y2="33.800" stroke="#000000" stroke-width="0.100" />
+<line x1="47.950" y1="33.500" x2="47.950" y2="35.000" stroke="#000000" stroke-width="0.100" />
+<line x1="47.950" y1="35.000" x2="46.750" y2="36.300" stroke="#000000" stroke-width="0.100" />
+<line x1="47.950" y1="35.000" x2="49.150" y2="36.300" stroke="#000000" stroke-width="0.100" />
+<text x="46.461" y="37.442"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Secretario</text>
+<ellipse cx="26.700" cy="4.000" rx="0.300" ry="0.300" fill="#FFFFFF" stroke="none"  /><ellipse cx="26.700" cy="4.000" rx="0.300" ry="0.300" fill="none" stroke="#000000"  stroke-width="0.100" /><line x1="25.500" y1="4.600" x2="27.900" y2="4.600" stroke="#000000" stroke-width="0.100" />
+<line x1="26.700" y1="4.300" x2="26.700" y2="5.800" stroke="#000000" stroke-width="0.100" />
+<line x1="26.700" y1="5.800" x2="25.500" y2="7.100" stroke="#000000" stroke-width="0.100" />
+<line x1="26.700" y1="5.800" x2="27.900" y2="7.100" stroke="#000000" stroke-width="0.100" />
+<text x="22.207" y="8.242"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Administrador de la asociación</text>
+<ellipse cx="3.100" cy="25.250" rx="0.300" ry="0.300" fill="#FFFFFF" stroke="none"  /><ellipse cx="3.100" cy="25.250" rx="0.300" ry="0.300" fill="none" stroke="#000000"  stroke-width="0.100" /><line x1="1.900" y1="25.850" x2="4.300" y2="25.850" stroke="#000000" stroke-width="0.100" />
+<line x1="3.100" y1="25.550" x2="3.100" y2="27.050" stroke="#000000" stroke-width="0.100" />
+<line x1="3.100" y1="27.050" x2="1.900" y2="28.350" stroke="#000000" stroke-width="0.100" />
+<line x1="3.100" y1="27.050" x2="4.300" y2="28.350" stroke="#000000" stroke-width="0.100" />
+<text x="0.535" y="29.492"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Usuario anónimo </text>
+<ellipse cx="39.400" cy="4.500" rx="0.300" ry="0.300" fill="#FFFFFF" stroke="none"  /><ellipse cx="39.400" cy="4.500" rx="0.300" ry="0.300" fill="none" stroke="#000000"  stroke-width="0.100" /><line x1="38.200" y1="5.100" x2="40.600" y2="5.100" stroke="#000000" stroke-width="0.100" />
+<line x1="39.400" y1="4.800" x2="39.400" y2="6.300" stroke="#000000" stroke-width="0.100" />
+<line x1="39.400" y1="6.300" x2="38.200" y2="7.600" stroke="#000000" stroke-width="0.100" />
+<line x1="39.400" y1="6.300" x2="40.600" y2="7.600" stroke="#000000" stroke-width="0.100" />
+<text x="34.609" y="8.742"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Administrador de la Herramienta</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="4.350,27.050 9.175,27.050 9.175,13.836 13.776,13.836 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="13.388,14.086 13.888,13.836 13.388,13.586 "/>
+<ellipse cx="27.181" cy="27.399" rx="2.681" ry="1.000" fill="#FFFFFF" stroke="none"  /><ellipse cx="27.181" cy="27.399" rx="2.681" ry="1.000" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="25.700" y="27.542"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Baja socio</text>
+<ellipse cx="25.166" cy="31.488" rx="3.866" ry="1.289" fill="#FFFFFF" stroke="none"  /><ellipse cx="25.166" cy="31.488" rx="3.866" ry="1.289" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="22.500" y="31.630"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Modificacion socio</text>
+<ellipse cx="19.915" cy="26.599" rx="2.615" ry="1.000" fill="#FFFFFF" stroke="none"  /><ellipse cx="19.915" cy="26.599" rx="2.615" ry="1.000" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="18.500" y="26.742"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Alta socio</text>
+<rect x="40.700" y="42.749" width="19.300" height="16.738" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="40.700" y="42.749" width="19.300" height="16.738" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="40.700" y="41.749" width="6.150" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="40.700" y="41.749" width="6.150" height="1.000" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="40.800" y="42.249"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+Gestion economica</text>
+<ellipse cx="70.550" cy="43.600" rx="0.300" ry="0.300" fill="#FFFFFF" stroke="none"  /><ellipse cx="70.550" cy="43.600" rx="0.300" ry="0.300" fill="none" stroke="#000000"  stroke-width="0.100" /><line x1="69.350" y1="44.200" x2="71.750" y2="44.200" stroke="#000000" stroke-width="0.100" />
+<line x1="70.550" y1="43.900" x2="70.550" y2="45.400" stroke="#000000" stroke-width="0.100" />
+<line x1="70.550" y1="45.400" x2="69.350" y2="46.700" stroke="#000000" stroke-width="0.100" />
+<line x1="70.550" y1="45.400" x2="71.750" y2="46.700" stroke="#000000" stroke-width="0.100" />
+<text x="69.236" y="47.842"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Tesorero </text>
+<ellipse cx="45.582" cy="44.910" rx="3.933" ry="1.311" fill="#FFFFFF" stroke="none"  /><ellipse cx="45.582" cy="44.910" rx="3.933" ry="1.311" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="42.850" y="45.052"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Modificación cuota</text>
+<ellipse cx="45.439" cy="48.149" rx="2.939" ry="1.000" fill="#FFFFFF" stroke="none"  /><ellipse cx="45.439" cy="48.149" rx="2.939" ry="1.000" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="43.700" y="48.292"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Alta ingreso</text>
+<ellipse cx="54.465" cy="45.999" rx="2.765" ry="1.000" fill="#FFFFFF" stroke="none"  /><ellipse cx="54.465" cy="45.999" rx="2.765" ry="1.000" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="52.900" y="46.142"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Alta gasto </text>
+<ellipse cx="45.940" cy="51.896" rx="4.190" ry="1.397" fill="#FFFFFF" stroke="none"  /><ellipse cx="45.940" cy="51.896" rx="4.190" ry="1.397" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="42.950" y="52.038"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Modificación ingreso</text>
+<ellipse cx="54.966" cy="50.288" rx="4.016" ry="1.339" fill="#FFFFFF" stroke="none"  /><ellipse cx="54.966" cy="50.288" rx="4.016" ry="1.339" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="52.150" y="50.430"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Modificacion gasto </text>
+<ellipse cx="45.889" cy="55.829" rx="4.139" ry="1.380" fill="#FFFFFF" stroke="none"  /><ellipse cx="45.889" cy="55.829" rx="4.139" ry="1.380" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="42.950" y="55.971"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Eliminación ingreso </text>
+<ellipse cx="55.080" cy="53.759" rx="3.780" ry="1.260" fill="#FFFFFF" stroke="none"  /><ellipse cx="55.080" cy="53.759" rx="3.780" ry="1.260" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="52.500" y="53.902"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Eliminación gasto</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="69.300,42.700 62.350,42.700 62.350,43.983 48.587,43.983 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="48.975,43.733 48.475,43.983 48.975,44.233 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="69.300,45.400 63.265,45.400 63.265,45.999 57.454,45.999 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="57.842,45.749 57.342,45.999 57.842,46.249 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="69.300,48.100 58.839,48.100 58.839,48.149 48.601,48.149 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="48.989,47.899 48.489,48.149 48.989,48.399 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="70.550,48.100 70.550,50.288 59.207,50.288 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="59.595,50.038 59.095,50.288 59.595,50.538 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="71.800,48.100 71.800,51.896 50.354,51.896 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="50.742,51.646 50.242,51.896 50.742,52.146 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="71.800,48.100 71.800,53.759 59.084,53.759 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="59.472,53.509 58.972,53.759 59.472,54.009 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="71.800,45.400 72.645,45.400 72.645,55.829 50.251,55.829 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="50.639,55.579 50.139,55.829 50.639,56.079 "/>
+<ellipse cx="23.977" cy="46.692" rx="3.578" ry="1.192" fill="#FFFFFF" stroke="none"  /><ellipse cx="23.977" cy="46.692" rx="3.578" ry="1.192" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="21.600" y="46.834"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Añadir actividad</text>
+<ellipse cx="33.182" cy="46.472" rx="3.968" ry="1.323" fill="#FFFFFF" stroke="none"  /><ellipse cx="33.182" cy="46.472" rx="3.968" ry="1.323" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="30.415" y="46.614"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Modificar actividad</text>
+<ellipse cx="25.124" cy="49.825" rx="3.824" ry="1.275" fill="#FFFFFF" stroke="none"  /><ellipse cx="25.124" cy="49.825" rx="3.824" ry="1.275" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="22.500" y="49.967"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Eliminar actividad</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="4.350,29.750 10.825,29.750 10.825,26.599 17.076,26.599 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="16.688,26.849 17.188,26.599 16.688,26.349 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="12.500,47.950 13.515,47.950 13.515,46.692 20.176,46.692 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="19.788,46.942 20.288,46.692 19.788,46.442 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="12.500,50.650 16.900,50.650 16.900,49.825 21.076,49.825 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="20.688,50.075 21.188,49.825 20.688,49.575 "/>
+<ellipse cx="24.010" cy="55.794" rx="3.510" ry="1.170" fill="#FFFFFF" stroke="none"  /><ellipse cx="24.010" cy="55.794" rx="3.510" ry="1.170" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="21.700" y="55.937"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Añadir contacto</text>
+<ellipse cx="31.900" cy="55.674" rx="3.900" ry="1.300" fill="#FFFFFF" stroke="none"  /><ellipse cx="31.900" cy="55.674" rx="3.900" ry="1.300" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="29.200" y="55.817"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Modificar contacto</text>
+<ellipse cx="24.206" cy="59.726" rx="3.756" ry="1.252" fill="#FFFFFF" stroke="none"  /><ellipse cx="24.206" cy="59.726" rx="3.756" ry="1.252" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="21.650" y="59.869"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Eliminar contacto</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="12.500,50.650 12.500,53.963 24.010,53.963 24.010,54.401 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="23.760,54.012 24.010,54.512 24.260,54.012 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="10.000,50.650 10.000,59.726 20.226,59.726 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="19.838,59.976 20.338,59.726 19.838,59.476 "/>
+<ellipse cx="58.151" cy="35.484" rx="3.639" ry="1.213" fill="#FFFFFF" stroke="none"  /><ellipse cx="58.151" cy="35.484" rx="3.639" ry="1.213" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="55.712" y="35.626"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Añadir miembro </text>
+<ellipse cx="58.386" cy="39.086" rx="3.936" ry="1.312" fill="#FFFFFF" stroke="none"  /><ellipse cx="58.386" cy="39.086" rx="3.936" ry="1.312" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="55.650" y="39.229"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Modificar miembro</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="49.200,35.000 51.856,35.000 51.856,35.484 54.289,35.484 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="53.901,35.734 54.401,35.484 53.901,35.234 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="49.200,37.700 51.825,37.700 51.825,39.086 54.226,39.086 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="53.838,39.336 54.338,39.086 53.838,38.836 "/>
+<ellipse cx="59.300" cy="26.229" rx="3.615" ry="1.205" fill="#FFFFFF" stroke="none"  /><ellipse cx="59.300" cy="26.229" rx="3.615" ry="1.205" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="56.885" y="26.372"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Añadir proyecto </text>
+<ellipse cx="67.747" cy="26.278" rx="3.913" ry="1.304" fill="#FFFFFF" stroke="none"  /><ellipse cx="67.747" cy="26.278" rx="3.913" ry="1.304" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="65.035" y="26.421"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Modificar proyecto</text>
+<ellipse cx="63.424" cy="29.211" rx="3.861" ry="1.287" fill="#FFFFFF" stroke="none"  /><ellipse cx="63.424" cy="29.211" rx="3.861" ry="1.287" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="60.762" y="29.354"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Eliminar proyecto </text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="46.700,32.300 46.700,29.691 56.744,29.691 56.744,27.305 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="56.994,27.693 56.744,27.193 56.494,27.693 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="47.950,32.300 47.950,31.399 63.424,31.399 63.424,30.722 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="63.674,31.110 63.424,30.610 63.174,31.110 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="49.200,32.300 49.200,31.824 67.747,31.824 67.747,27.806 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="67.997,28.194 67.747,27.694 67.497,28.194 "/>
+<ellipse cx="49.577" cy="24.122" rx="3.443" ry="1.147" fill="#FFFFFF" stroke="none"  /><ellipse cx="49.577" cy="24.122" rx="3.443" ry="1.147" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="47.335" y="24.264"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Añadir decision</text>
+<ellipse cx="49.517" cy="27.102" rx="3.833" ry="1.277" fill="#FFFFFF" stroke="none"  /><ellipse cx="49.517" cy="27.102" rx="3.833" ry="1.277" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="46.885" y="27.244"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Modificar decision</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="46.461,35.000 44.510,35.000 44.510,27.102 45.461,27.102 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="45.073,27.352 45.573,27.102 45.073,26.852 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="46.461,35.000 43.610,35.000 43.610,24.122 45.911,24.122 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="45.523,24.372 46.023,24.122 45.523,23.872 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="46.461,35.000 36.090,35.000 36.090,25.892 21.988,25.892 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="22.376,25.642 21.876,25.892 22.376,26.142 "/>
+<ellipse cx="64.686" cy="37.109" rx="3.236" ry="1.079" fill="#FFFFFF" stroke="none"  /><ellipse cx="64.686" cy="37.109" rx="3.236" ry="1.079" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="62.650" y="37.251"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Baja miembro</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="11.250,45.250 11.250,38.213 25.166,38.213 25.166,33.000 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="25.416,33.388 25.166,32.888 24.916,33.388 "/>
+<ellipse cx="49.381" cy="20.923" rx="3.631" ry="1.210" fill="#FFFFFF" stroke="none"  /><ellipse cx="49.381" cy="20.923" rx="3.631" ry="1.210" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="46.950" y="21.065"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Listar decisiones</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="10.000,45.250 10.000,20.923 45.526,20.923 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="45.138,21.173 45.638,20.923 45.138,20.673 "/>
+<ellipse cx="25.415" cy="14.055" rx="3.465" ry="1.155" fill="#FFFFFF" stroke="none"  /><ellipse cx="25.415" cy="14.055" rx="3.465" ry="1.155" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="23.150" y="14.197"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Baja asociación</text>
+<ellipse cx="17.491" cy="13.836" rx="3.491" ry="1.164" fill="#FFFFFF" stroke="none"  /><ellipse cx="17.491" cy="13.836" rx="3.491" ry="1.164" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="15.200" y="13.979"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Alta asociación </text>
+<ellipse cx="17.750" cy="17.400" rx="4.650" ry="1.550" fill="#FFFFFF" stroke="none"  /><ellipse cx="17.750" cy="17.400" rx="4.650" ry="1.550" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="14.300" y="17.542"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Modificación asociación</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="25.450,5.800 21.777,5.800 21.777,15.850 17.974,15.850 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="18.362,15.600 17.862,15.850 18.362,16.100 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="25.450,8.500 25.450,10.700 25.415,10.700 25.415,12.676 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="25.165,12.288 25.415,12.788 25.665,12.288 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="39.077,3.537 39.077,0.637 20.982,0.637 20.982,13.613 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="20.732,13.224 20.982,13.724 21.232,13.224 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="38.150,6.300 33.515,6.300 33.515,14.055 29.104,14.055 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="29.492,13.805 28.992,14.055 29.492,14.305 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="38.150,9.000 34.677,9.000 34.677,16.304 21.262,16.304 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="21.650,16.054 21.150,16.304 21.650,16.554 "/>
+<ellipse cx="26.941" cy="18.109" rx="3.964" ry="1.321" fill="#FFFFFF" stroke="none"  /><ellipse cx="26.941" cy="18.109" rx="3.964" ry="1.321" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="24.177" y="18.251"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Listar asociaciones</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="39.400,9.000 39.400,18.109 31.128,18.109 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="31.516,17.859 31.016,18.109 31.516,18.359 "/>
+<ellipse cx="19.903" cy="29.488" rx="3.001" ry="1.000" fill="#FFFFFF" stroke="none"  /><ellipse cx="19.903" cy="29.488" rx="3.001" ry="1.000" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="18.102" y="29.630"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Listar socios</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="12.500,45.250 12.500,40.113 29.863,40.113 29.863,27.623 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="30.113,28.011 29.863,27.511 29.613,28.011 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="46.700,35.000 34.802,35.000 34.802,29.488 23.128,29.488 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="23.516,29.238 23.016,29.488 23.516,29.738 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="12.500,47.950 13.500,47.950 13.500,48.213 33.182,48.213 33.182,48.018 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="33.432,48.406 33.182,47.906 32.932,48.406 "/>
+<ellipse cx="55.368" cy="57.597" rx="3.929" ry="1.310" fill="#FFFFFF" stroke="none"  /><ellipse cx="55.368" cy="57.597" rx="3.929" ry="1.310" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="52.640" y="57.740"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Listado economico</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="71.800,42.700 73.245,42.700 73.245,57.597 59.521,57.597 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="59.909,57.347 59.409,57.597 59.909,57.847 "/>
+<ellipse cx="31.922" cy="59.620" rx="3.613" ry="1.204" fill="#FFFFFF" stroke="none"  /><ellipse cx="31.922" cy="59.620" rx="3.613" ry="1.204" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="29.510" y="59.762"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Listar contactos </text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="11.250,50.840 11.250,57.812 31.900,57.812 31.900,57.198 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="32.150,57.586 31.900,57.086 31.650,57.586 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="10.000,50.650 10.000,58.062 29.368,58.062 29.368,58.545 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="29.118,58.157 29.368,58.657 29.618,58.157 "/>
+</svg>

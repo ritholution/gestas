@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by diasvg.py -->
+<svg width="16.433cm" height="5.674cm" viewBox="1.785 1.285 18.218 6.959"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<ellipse cx="13.451" cy="3.924" rx="4.766" ry="1.589" fill="#FFFFFF" stroke="none"  /><ellipse cx="13.451" cy="3.924" rx="4.766" ry="1.589" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="9.885" y="4.066"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Modificacion datos socio</text>
+<ellipse cx="3.085" cy="2.235" rx="0.300" ry="0.300" fill="#FFFFFF" stroke="none"  /><ellipse cx="3.085" cy="2.235" rx="0.300" ry="0.300" fill="none" stroke="#000000"  stroke-width="0.100" /><line x1="1.885" y1="2.835" x2="4.285" y2="2.835" stroke="#000000" stroke-width="0.100" />
+<line x1="3.085" y1="2.535" x2="3.085" y2="4.035" stroke="#000000" stroke-width="0.100" />
+<line x1="3.085" y1="4.035" x2="1.885" y2="5.335" stroke="#000000" stroke-width="0.100" />
+<line x1="3.085" y1="4.035" x2="4.285" y2="5.335" stroke="#000000" stroke-width="0.100" />
+<text x="2.301" y="6.478"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Socio</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="4.450,3.900 6.567,3.900 6.567,3.924 8.461,3.924 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="8.073,4.174 8.573,3.924 8.073,3.674 "/>
+</svg>
