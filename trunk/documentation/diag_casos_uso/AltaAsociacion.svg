@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by diasvg.py -->
+<svg width="27.600cm" height="5.674cm" viewBox="4.485 1.435 32.085 7.109"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<ellipse cx="16.776" cy="4.199" rx="3.491" ry="1.164" fill="#FFFFFF" stroke="none"  /><ellipse cx="16.776" cy="4.199" rx="3.491" ry="1.164" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="14.485" y="4.341"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Alta asociación </text>
+<ellipse cx="7.000" cy="2.385" rx="0.300" ry="0.300" fill="#FFFFFF" stroke="none"  /><ellipse cx="7.000" cy="2.385" rx="0.300" ry="0.300" fill="none" stroke="#000000"  stroke-width="0.100" /><line x1="5.800" y1="2.985" x2="8.200" y2="2.985" stroke="#000000" stroke-width="0.100" />
+<line x1="7.000" y1="2.685" x2="7.000" y2="4.185" stroke="#000000" stroke-width="0.100" />
+<line x1="7.000" y1="4.185" x2="5.800" y2="5.485" stroke="#000000" stroke-width="0.100" />
+<line x1="7.000" y1="4.185" x2="8.200" y2="5.485" stroke="#000000" stroke-width="0.100" />
+<text x="4.435" y="6.627"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Usuario anónimo </text>
+<ellipse cx="27.276" cy="2.385" rx="0.300" ry="0.300" fill="#FFFFFF" stroke="none"  /><ellipse cx="27.276" cy="2.385" rx="0.300" ry="0.300" fill="none" stroke="#000000"  stroke-width="0.100" /><line x1="26.076" y1="2.985" x2="28.476" y2="2.985" stroke="#000000" stroke-width="0.100" />
+<line x1="27.276" y1="2.685" x2="27.276" y2="4.185" stroke="#000000" stroke-width="0.100" />
+<line x1="27.276" y1="4.185" x2="26.076" y2="5.485" stroke="#000000" stroke-width="0.100" />
+<line x1="27.276" y1="4.185" x2="28.476" y2="5.485" stroke="#000000" stroke-width="0.100" />
+<text x="22.485" y="6.627"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Administrador de la Herramienta</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="8.250,4.185 10.768,4.185 10.768,4.199 13.061,4.199 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="12.673,4.449 13.173,4.199 12.673,3.949 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="26.026,4.185 23.147,4.185 23.147,4.199 20.491,4.199 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="20.879,3.949 20.379,4.199 20.879,4.449 "/>
+</svg>

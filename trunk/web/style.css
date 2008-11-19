@@ -126,7 +126,7 @@ ul.post-meta span.post-meta-key {
 }
 
 #description {
-	background: #90a090;
+	background: #909090;
 	font: italic normal 80% 'Times New Roman', Times, serif;
 	border-bottom: double 3px #aba;
 	letter-spacing: 0.2em;
@@ -137,7 +137,7 @@ ul.post-meta span.post-meta-key {
 }
 
 #header {
-	background: #90a090;
+	background: #909090;
 	border-left: solid 1px #9a9;
 	border-right: solid 1px #565;
 	border-top: solid 1px #9a9;
@@ -208,7 +208,7 @@ ul.post-meta span.post-meta-key {
 }
 
 #footer {
-	background: #90a090;
+	background: #909090;
 	border-top: double 3px #aba;
 	color: #fff;
 	font-size: 11px;

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by diasvg.py -->
+<svg width="20.628cm" height="5.674cm" viewBox="1.285 0.735 21.913 6.409"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<ellipse cx="17.949" cy="3.506" rx="3.964" ry="1.321" fill="#FFFFFF" stroke="none"  /><ellipse cx="17.949" cy="3.506" rx="3.964" ry="1.321" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="15.185" y="3.649"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Listar asociaciones</text>
+<ellipse cx="6.126" cy="1.685" rx="0.300" ry="0.300" fill="#FFFFFF" stroke="none"  /><ellipse cx="6.126" cy="1.685" rx="0.300" ry="0.300" fill="none" stroke="#000000"  stroke-width="0.100" /><line x1="4.926" y1="2.285" x2="7.326" y2="2.285" stroke="#000000" stroke-width="0.100" />
+<line x1="6.126" y1="1.985" x2="6.126" y2="3.485" stroke="#000000" stroke-width="0.100" />
+<line x1="6.126" y1="3.485" x2="4.926" y2="4.785" stroke="#000000" stroke-width="0.100" />
+<line x1="6.126" y1="3.485" x2="7.326" y2="4.785" stroke="#000000" stroke-width="0.100" />
+<text x="1.335" y="5.927"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Administrador de la Herramienta</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="7.376,3.485 10.680,3.485 10.680,3.506 13.761,3.506 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="13.373,3.756 13.873,3.506 13.373,3.256 "/>
+</svg>
