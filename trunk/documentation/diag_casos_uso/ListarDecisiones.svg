@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="16cm" height="50cm" viewBox="2 1 16 50">
+  <ellipse style="fill: #ffffff" cx="3.885" cy="2.435" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="3.885" cy="2.435" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="2.685" y1="3.035" x2="5.085" y2="3.035"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="3.885" y1="2.735" x2="3.885" y2="4.235"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="3.885" y1="4.235" x2="2.685" y2="5.535"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="3.885" y1="4.235" x2="5.085" y2="5.535"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.5675 cm; font-family: sans; font-style: normal; font-weight: normal" x="3.10125" y="6.6775">Socio</text>
+  <ellipse style="fill: #ffffff" cx="14.4163" cy="4.24542" rx="3.63125" ry="1.21042"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="14.4163" cy="4.24542" rx="3.63125" ry="1.21042"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.8625 cm; font-family: sans; font-style: normal; font-weight: normal" x="11.985" y="4.38792">Listar decisiones</text>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="5.135,4.235 7.95978,4.235 7.95978,4.24542 10.5609,4.24542 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="10.1728,4.49542 10.6728,4.24542 10.1728,3.99542 "/>
+</svg>

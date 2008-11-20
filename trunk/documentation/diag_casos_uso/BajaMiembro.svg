@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="14cm" height="6cm" viewBox="2 1 14 6">
+  <ellipse style="fill: #ffffff" cx="4.07375" cy="2.435" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="4.07375" cy="2.435" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="2.87375" y1="3.035" x2="5.27375" y2="3.035"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.07375" y1="2.735" x2="4.07375" y2="4.235"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.07375" y1="4.235" x2="2.87375" y2="5.535"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.07375" y1="4.235" x2="5.27375" y2="5.535"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.9775 cm; font-family: sans; font-style: normal; font-weight: normal" x="2.585" y="6.6775">Secretario</text>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="5.32375,4.235 7.65418,4.235 7.65418,4.26375 9.761,4.26375 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="9.3728,4.51375 9.8728,4.26375 9.3728,4.01375 "/>
+  <ellipse style="fill: #ffffff" cx="13.2213" cy="4.26375" rx="3.23625" ry="1.07875"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="13.2213" cy="4.26375" rx="3.23625" ry="1.07875"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.0725 cm; font-family: sans; font-style: normal; font-weight: normal" x="11.185" y="4.40625">Baja miembro</text>
+</svg>
