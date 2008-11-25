@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="17cm" height="6cm" viewBox="1 1 17 6">
+  <ellipse style="fill: #ffffff" cx="2.91375" cy="2.93" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="2.91375" cy="2.93" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="1.71375" y1="3.53" x2="4.11375" y2="3.53"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="2.91375" y1="3.23" x2="2.91375" y2="4.73"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="2.91375" y1="4.73" x2="1.71375" y2="6.03"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="2.91375" y1="4.73" x2="4.11375" y2="6.03"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.6275 cm; font-family: sans; font-style: normal; font-weight: normal" x="1.6" y="7.1725">Tesorero </text>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="4.16375,4.73 7.04788,4.73 7.04788,4.71583 9.70841,4.71583 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="9.32022,4.96583 9.82022,4.71583 9.32022,4.46583 "/>
+  <ellipse style="fill: #ffffff" cx="13.865" cy="4.71583" rx="3.9325" ry="1.31083"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="13.865" cy="4.71583" rx="3.9325" ry="1.31083"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.465 cm; font-family: sans; font-style: normal; font-weight: normal" x="11.1325" y="4.85833">Modificación cuota</text>
+</svg>

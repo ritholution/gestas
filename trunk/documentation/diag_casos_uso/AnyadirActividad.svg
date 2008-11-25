@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="15cm" height="6cm" viewBox="3 1 15 6">
+  <ellipse style="fill: #ffffff" cx="4.6" cy="2.63" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="4.6" cy="2.63" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="3.4" y1="3.23" x2="5.8" y2="3.23"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.6" y1="2.93" x2="4.6" y2="4.43"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.6" y1="4.43" x2="3.4" y2="5.73"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.6" y1="4.43" x2="5.8" y2="5.73"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.5675 cm; font-family: sans; font-style: normal; font-weight: normal" x="3.81625" y="6.8725">Socio</text>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="5.85,4.43 8.29978,4.43 8.29978,4.4725 10.526,4.4725 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="10.1378,4.7225 10.6378,4.4725 10.1378,4.2225 "/>
+  <ellipse style="fill: #ffffff" cx="14.3275" cy="4.4725" rx="3.5775" ry="1.1925"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="14.3275" cy="4.4725" rx="3.5775" ry="1.1925"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.755 cm; font-family: sans; font-style: normal; font-weight: normal" x="11.95" y="4.615">Añadir actividad</text>
+</svg>
