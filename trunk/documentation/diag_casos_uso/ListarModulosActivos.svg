@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="21cm" height="6cm" viewBox="0 1 21 6">
+  <ellipse style="fill: #ffffff" cx="5.2" cy="2.63" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="5.2" cy="2.63" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4" y1="3.23" x2="6.4" y2="3.23"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.2" y1="2.93" x2="5.2" y2="4.43"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.2" y1="4.43" x2="4" y2="5.73"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.2" y1="4.43" x2="6.4" y2="5.73"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.985 cm; font-family: sans; font-style: normal; font-weight: normal" x="0.7075" y="6.8725">Administrador de la asociación</text>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="6.45,4.43 9.12486,4.43 9.12486,4.47083 11.5761,4.47083 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="11.1879,4.72083 11.6879,4.47083 11.1879,4.22083 "/>
+  <ellipse style="fill: #ffffff" cx="16.2725" cy="4.47083" rx="4.4725" ry="1.49083"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="16.2725" cy="4.47083" rx="4.4725" ry="1.49083"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 6.545 cm; font-family: sans; font-style: normal; font-weight: normal" x="13" y="4.61333">Listar módulos activos</text>
+</svg>

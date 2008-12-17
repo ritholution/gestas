@@ -49,7 +49,7 @@
   <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="27.2825" y1="30.4675" x2="27.2825" y2="31.9675"/>
   <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="27.2825" y1="31.9675" x2="26.0825" y2="33.2675"/>
   <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="27.2825" y1="31.9675" x2="28.4825" y2="33.2675"/>
-  <text style="fill: #000000; font-size: 0.8 cm; length: 2.9775 cm; font-family: sans; font-style: normal; font-weight: normal" x="25.7938" y="34.41">Secretario</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.9775 cm; font-family: sans; font-style: normal; font-weight: normal" x="25.7937" y="34.41">Secretario</text>
   <ellipse style="fill: #ffffff" cx="19.7325" cy="26.7175" rx="0.3" ry="0.3"/>
   <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="19.7325" cy="26.7175" rx="0.3" ry="0.3"/>
   <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="18.5325" y1="27.3175" x2="20.9325" y2="27.3175"/>
@@ -70,7 +70,7 @@
   <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="19.8325" y1="20.2675" x2="19.8325" y2="21.7675"/>
   <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="19.8325" y1="21.7675" x2="18.6325" y2="23.0675"/>
   <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="19.8325" y1="21.7675" x2="21.0325" y2="23.0675"/>
-  <text style="fill: #000000; font-size: 0.8 cm; length: 9.5825 cm; font-family: sans; font-style: normal; font-weight: normal" x="15.0413" y="24.21">Administrador de la Herramienta</text>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 9.5825 cm; font-family: sans; font-style: normal; font-weight: normal" x="15.0412" y="24.21">Administrador de la Herramienta</text>
   <rect style="fill: #ffffff" x="35.9325" y="39.5166" width="6.8" height="5.3334"/>
   <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="35.9325" y="39.5166" width="6.8" height="5.3334"/>
   <rect style="fill: #ffffff" x="35.9325" y="38.5166" width="6.15" height="1"/>
@@ -92,7 +92,7 @@
   <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="26.0325,31.9675 17.5577,31.9675 17.5577,31.94 9.30657,31.94 "/>
   <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="9.69476,31.69 9.19476,31.94 9.69476,32.19 "/>
   <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="4.0825,47.05 2.09,47.05 2.09,47.055 0.756327,47.055 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="1.14452,46.805 0.644524,47.055 1.14452,47.305 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="1.14452,46.805 0.644523,47.055 1.14452,47.305 "/>
   <rect style="fill: #ffffff" x="-5.8175" y="45.055" width="6.3" height="4"/>
   <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="-5.8175" y="45.055" width="6.3" height="4"/>
   <rect style="fill: #ffffff" x="-5.8175" y="44.055" width="5.1" height="1"/>
@@ -105,7 +105,7 @@
   <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="32.5328,42.1675 34.2074,42.1675 34.2074,42.1833 35.6585,42.1833 "/>
   <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="35.2703,42.4333 35.7703,42.1833 35.2703,41.9333 "/>
   <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="-3.0675,28.9175 -3.0675,31.94 1.30843,31.94 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="0.920236,32.19 1.42024,31.94 0.920236,31.69 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="0.920237,32.19 1.42024,31.94 0.920237,31.69 "/>
   <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="-1.8175,26.2175 -0.05,26.2175 -0.05,26.2088 1.49389,26.2088 "/>
   <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="1.1057,26.4588 1.6057,26.2088 1.1057,25.9588 "/>
   <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="18.5825,21.7675 14.6825,21.7675 14.6825,26.2088 11.0061,26.2088 "/>
@@ -114,4 +114,11 @@
   <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="11.4446,25.9588 10.9446,26.2088 11.4446,26.4588 "/>
   <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="28.5325,31.9675 30.3824,31.9675 30.3824,31.9833 32.0086,31.9833 "/>
   <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="31.6204,32.2333 32.1204,31.9833 31.6204,31.7333 "/>
+  <rect style="fill: #ffffff" x="27.6" y="20.105" width="10.15" height="3.32"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="27.6" y="20.105" width="10.15" height="3.32"/>
+  <rect style="fill: #ffffff" x="27.6" y="19.105" width="8.95" height="1"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="27.6" y="19.105" width="8.95" height="1"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.75 cm; font-family: monospace; font-style: normal; font-weight: normal" x="27.7" y="19.605">Gestión de la herramienta</text>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="21.0825,21.7675 24.3412,21.7675 24.3412,21.765 27.3764,21.765 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="26.9882,22.015 27.4882,21.765 26.9882,21.515 "/>
 </svg>

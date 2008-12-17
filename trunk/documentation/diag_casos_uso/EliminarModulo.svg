@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="18cm" height="6cm" viewBox="0 1 18 6">
+  <ellipse style="fill: #ffffff" cx="5.2" cy="2.63" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="5.2" cy="2.63" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4" y1="3.23" x2="6.4" y2="3.23"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.2" y1="2.93" x2="5.2" y2="4.43"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.2" y1="4.43" x2="4" y2="5.73"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.2" y1="4.43" x2="6.4" y2="5.73"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 9.515 cm; font-family: sans; font-style: normal; font-weight: normal" x="0.4425" y="6.8725">Administrador de la herramienta</text>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="6.45,4.43 8.59978,4.43 8.59978,4.47333 10.526,4.47333 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="10.1378,4.72333 10.6378,4.47333 10.1378,4.22333 "/>
+  <ellipse style="fill: #ffffff" cx="14.33" cy="4.47333" rx="3.58" ry="1.19333"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="14.33" cy="4.47333" rx="3.58" ry="1.19333"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.76 cm; font-family: sans; font-style: normal; font-weight: normal" x="11.95" y="4.61583">Eliminar módulo</text>
+</svg>
