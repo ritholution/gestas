@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created by diasvg.py -->
-<svg width="31.200cm" height="5.624cm" viewBox="0.535 0.585 31.735 6.209"
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink">
-<ellipse cx="15.250" cy="3.340" rx="3.465" ry="1.155" fill="#FFFFFF" stroke="none"  /><ellipse cx="15.250" cy="3.340" rx="3.465" ry="1.155" fill="none" stroke="#000000"  stroke-width="0.100" /><text x="12.985" y="3.482"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
-Baja asociación</text>
-<ellipse cx="4.978" cy="1.535" rx="0.300" ry="0.300" fill="#FFFFFF" stroke="none"  /><ellipse cx="4.978" cy="1.535" rx="0.300" ry="0.300" fill="none" stroke="#000000"  stroke-width="0.100" /><line x1="3.777" y1="2.135" x2="6.178" y2="2.135" stroke="#000000" stroke-width="0.100" />
-<line x1="4.978" y1="1.835" x2="4.978" y2="3.335" stroke="#000000" stroke-width="0.100" />
-<line x1="4.978" y1="3.335" x2="3.777" y2="4.635" stroke="#000000" stroke-width="0.100" />
-<line x1="4.978" y1="3.335" x2="6.178" y2="4.635" stroke="#000000" stroke-width="0.100" />
-<text x="0.485" y="5.777"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
-Administrador de la asociación</text>
-<ellipse cx="27.026" cy="1.535" rx="0.300" ry="0.300" fill="#FFFFFF" stroke="none"  /><ellipse cx="27.026" cy="1.535" rx="0.300" ry="0.300" fill="none" stroke="#000000"  stroke-width="0.100" /><line x1="25.826" y1="2.135" x2="28.226" y2="2.135" stroke="#000000" stroke-width="0.100" />
-<line x1="27.026" y1="1.835" x2="27.026" y2="3.335" stroke="#000000" stroke-width="0.100" />
-<line x1="27.026" y1="3.335" x2="25.826" y2="4.635" stroke="#000000" stroke-width="0.100" />
-<line x1="27.026" y1="3.335" x2="28.226" y2="4.635" stroke="#000000" stroke-width="0.100" />
-<text x="22.235" y="5.777"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
-Administrador de la Herramienta</text>
-<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="6.228,3.335 9.006,3.335 9.006,3.340 11.561,3.340 "/>
-<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="11.173,3.590 11.673,3.340 11.173,3.090 "/>
-<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="25.776,3.335 22.246,3.335 22.246,3.340 18.939,3.340 "/>
-<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="19.327,3.090 18.827,3.340 19.327,3.590 "/>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="28cm" height="6cm" viewBox="0 0 28 6">
+  <ellipse style="fill: #ffffff" cx="13.4" cy="3.34" rx="3.465" ry="1.155"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="13.4" cy="3.34" rx="3.465" ry="1.155"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.53 cm; font-family: sans; font-style: normal; font-weight: normal" x="11.135" y="3.4825">Baja asociación</text>
+  <ellipse style="fill: #ffffff" cx="4.9775" cy="1.535" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="4.9775" cy="1.535" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="3.7775" y1="2.135" x2="6.1775" y2="2.135"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.9775" y1="1.835" x2="4.9775" y2="3.335"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.9775" y1="3.335" x2="3.7775" y2="4.635"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.9775" y1="3.335" x2="6.1775" y2="4.635"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.985 cm; font-family: sans; font-style: normal; font-weight: normal" x="0.485" y="5.7775">Administrador de la asociación</text>
+  <ellipse style="fill: #ffffff" cx="22.8263" cy="1.535" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="22.8263" cy="1.535" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="21.6263" y1="2.135" x2="24.0263" y2="2.135"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="22.8263" y1="1.835" x2="22.8263" y2="3.335"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="22.8263" y1="3.335" x2="21.6263" y2="4.635"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="22.8263" y1="3.335" x2="24.0263" y2="4.635"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 9.515 cm; font-family: sans; font-style: normal; font-weight: normal" x="18.0688" y="5.7775">Administrador de la herramienta</text>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="6.2275,3.335 8.08104,3.335 8.08104,3.34 9.71097,3.34 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="9.32277,3.59 9.82277,3.34 9.32277,3.09 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="21.5763,3.335 19.2209,3.335 19.2209,3.34 17.089,3.34 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="17.4772,3.09 16.9772,3.34 17.4772,3.59 "/>
 </svg>
