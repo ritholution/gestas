@@ -147,19 +147,20 @@ ul.post-meta span.post-meta-key {
 }
 
 .header .logo{
- 	margin-left: 90%;
- 	padding: 0;
+	padding: 0;
+	margin: 0;
 	text-align: right;
 }
 
-.header .logo p{
-    margin: 0;
-    padding: 5px 0px 0px 0px;
+.header .logo img{
+	padding: 0;
+	margin: 0;
 }
 
-.header .logo img{
-    margin: 0;
-    padding: 0;
+.header .logo p{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0;
 }
 
 .header h1 {
