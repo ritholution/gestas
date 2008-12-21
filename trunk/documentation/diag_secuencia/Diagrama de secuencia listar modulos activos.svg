@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="29cm" height="15cm" viewBox="0 0 29 15">
+  <rect style="fill: #ffffff" x="12.9" y="4.1" width="3.475" height="1.8"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="12.9" y="4.1" width="3.475" height="1.8"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.475 cm; font-family: sans; font-style: normal; font-weight: normal" x="13.4" y="5.1425">:sistema</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" x1="13.4" y1="5.2825" x2="15.875" y2="5.2825"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="5.0275" y1="5.87" x2="5.0275" y2="13.9"/>
+  <rect style="fill: #ffffff" x="4.6775" y="7.325" width="0.7" height="3.6"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="4.6775" y="7.325" width="0.7" height="3.6"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="5.8275" y1="14.7" x2="4.2275" y2="13.1"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="5.8275" y1="13.1" x2="4.2275" y2="14.7"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="14.6375" y1="5.9" x2="14.6375" y2="13.8"/>
+  <rect style="fill: #ffffff" x="14.2875" y="7.35" width="0.7" height="3.65"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="14.2875" y="7.35" width="0.7" height="3.65"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="15.4375" y1="14.6" x2="13.8375" y2="13"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="15.4375" y1="13" x2="13.8375" y2="14.6"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="13.4375" y1="7.34762" x2="5.3775" y2="7.325"/>
+  <polygon style="fill: #000000" points="13.4368,7.59761 14.2375,7.34986 13.4382,7.09762 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 7.0825 cm; font-family: sans; font-style: normal; font-weight: normal" x="6.2913" y="7.8375">ListadoModulosActivos()</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="14.9875" y1="7.35" x2="28.7" y2="7.35"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="28.7" y1="7.35" x2="28.7" y2="8.7"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="15.8375" y1="8.7" x2="28.7" y2="8.7"/>
+  <polygon style="fill: #000000" points="15.8375,8.45 15.0375,8.7 15.8375,8.95 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 12.965 cm; font-family: sans; font-style: normal; font-weight: normal" x="15.3613" y="8.525">listado:=generarListadoModulos(asociacion)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="14.9875" y1="9.175" x2="25.35" y2="9.175"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="25.35" y1="9.175" x2="25.35" y2="10.6"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="15.8375" y1="10.6" x2="25.35" y2="10.6"/>
+  <polygon style="fill: #000000" points="15.8375,10.35 15.0375,10.6 15.8375,10.85 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 9.5675 cm; font-family: sans; font-style: normal; font-weight: normal" x="15.3849" y="10.3875">Listado:=ordenarListado(listado)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke-dasharray: 0.4; stroke: #000000" x1="6.22747" y1="10.9322" x2="14.2875" y2="11"/>
+  <polygon style="fill: #000000" points="6.22957,10.6822 5.4275,10.9254 6.22537,11.1821 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.125 cm; font-family: sans; font-style: normal; font-weight: normal" x="8.77005" y="11.4625">listado </text>
+  <ellipse style="fill: #ffffff" cx="5.0275" cy="1.37" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="5.0275" cy="1.37" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="3.8275" y1="1.97" x2="6.2275" y2="1.97"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.0275" y1="1.67" x2="5.0275" y2="3.17"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.0275" y1="3.17" x2="3.8275" y2="4.47"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.0275" y1="3.17" x2="6.2275" y2="4.47"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.985 cm; font-family: sans; font-style: normal; font-weight: normal" x="0.535" y="5.6125">Administrador de la asociación</text>
+</svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="22cm" height="12cm" viewBox="12 -1 22 12">
+  <ellipse style="fill: #ffffff" cx="13.9388" cy="0.555" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="13.9388" cy="0.555" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="12.7388" y1="1.155" x2="15.1388" y2="1.155"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="13.9388" y1="0.855" x2="13.9388" y2="2.355"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="13.9388" y1="2.355" x2="12.7388" y2="3.655"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="13.9388" y1="2.355" x2="15.1388" y2="3.655"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.6275 cm; font-family: sans; font-style: normal; font-weight: normal" x="12.625" y="4.7975">Tesorero </text>
+  <rect style="fill: #ffffff" x="23.225" y="3.205" width="3.475" height="1.8"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="23.225" y="3.205" width="3.475" height="1.8"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.475 cm; font-family: sans; font-style: normal; font-weight: normal" x="23.725" y="4.2475">:sistema</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" x1="23.725" y1="4.3875" x2="26.2" y2="4.3875"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="13.9388" y1="5.055" x2="13.9388" y2="10"/>
+  <rect style="fill: #ffffff" x="13.5888" y="6.055" width="0.7" height="1.995"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="13.5888" y="6.055" width="0.7" height="1.995"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="14.7388" y1="10.8" x2="13.1388" y2="9.2"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="14.7388" y1="9.2" x2="13.1388" y2="10.8"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="24.9625" y1="5.005" x2="24.9625" y2="10"/>
+  <rect style="fill: #ffffff" x="24.6125" y="6.005" width="0.7" height="2.045"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="24.6125" y="6.005" width="0.7" height="2.045"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="25.7625" y1="10.8" x2="24.1625" y2="9.2"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="25.7625" y1="9.2" x2="24.1625" y2="10.8"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="23.7625" y1="6.00912" x2="14.2888" y2="6.055"/>
+  <polygon style="fill: #000000" points="23.7637,6.25911 24.5625,6.00524 23.7613,5.75912 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.3725 cm; font-family: sans; font-style: normal; font-weight: normal" x="15.2644" y="6.53">ModificarCuota(nuevaCuota)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="25.3125" y1="6.005" x2="34.3" y2="6.005"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="34.3" y1="6.005" x2="34.3" y2="7.05"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="26.1625" y1="7.05" x2="34.3" y2="7.05"/>
+  <polygon style="fill: #000000" points="26.1625,6.8 25.3625,7.05 26.1625,7.3 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.585 cm; font-family: sans; font-style: normal; font-weight: normal" x="25.5137" y="7.0275">ActualizarCuota(nuevaCuota)</text>
+</svg>

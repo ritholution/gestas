@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="28cm" height="12cm" viewBox="10 0 28 12">
+  <ellipse style="fill: #ffffff" cx="11.5" cy="1.15" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="11.5" cy="1.15" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="10.3" y1="1.75" x2="12.7" y2="1.75"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="11.5" y1="1.45" x2="11.5" y2="2.95"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="11.5" y1="2.95" x2="10.3" y2="4.25"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="11.5" y1="2.95" x2="12.7" y2="4.25"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.5675 cm; font-family: sans; font-style: normal; font-weight: normal" x="10.7163" y="5.3925">Socio</text>
+  <rect style="fill: #ffffff" x="25.85" y="3.2" width="3.475" height="1.8"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="25.85" y="3.2" width="3.475" height="1.8"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.475 cm; font-family: sans; font-style: normal; font-weight: normal" x="26.35" y="4.2425">:sistema</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" x1="26.35" y1="4.3825" x2="28.825" y2="4.3825"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="11.5" y1="5.65" x2="11.5" y2="10.85"/>
+  <rect style="fill: #ffffff" x="11.15" y="6.65" width="0.7" height="2.35"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="11.15" y="6.65" width="0.7" height="2.35"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="12.3" y1="11.65" x2="10.7" y2="10.05"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="12.3" y1="10.05" x2="10.7" y2="11.65"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="27.5875" y1="5" x2="27.5875" y2="10.9"/>
+  <rect style="fill: #ffffff" x="27.2375" y="6.6" width="0.7" height="2.35"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="27.2375" y="6.6" width="0.7" height="2.35"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="28.3875" y1="11.7" x2="26.7875" y2="10.1"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="28.3875" y1="10.1" x2="26.7875" y2="11.7"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="26.3875" y1="6.60276" x2="11.85" y2="6.65"/>
+  <polygon style="fill: #000000" points="26.3883,6.85276 27.1875,6.60016 26.3867,6.35276 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 13.2475 cm; font-family: sans; font-style: normal; font-weight: normal" x="12.92" y="7.125">ModificarDatosSocio(numSocio,nuevosDatos)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="27.9375" y1="6.6" x2="37.1" y2="6.6"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="37.1" y1="6.6" x2="37.1" y2="8.05"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="28.7875" y1="8.05" x2="37.1" y2="8.05"/>
+  <polygon style="fill: #000000" points="28.7875,7.8 27.9875,8.05 28.7875,8.3 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.8325 cm; font-family: sans; font-style: normal; font-weight: normal" x="28.1025" y="7.825">ActualizarDatos(nuevosDatos)</text>
+</svg>

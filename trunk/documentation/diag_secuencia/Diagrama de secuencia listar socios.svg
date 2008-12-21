@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="38cm" height="15cm" viewBox="3 0 38 15">
+  <rect style="fill: #ffffff" x="19.55" y="4.15" width="3.475" height="1.8"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="19.55" y="4.15" width="3.475" height="1.8"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.475 cm; font-family: sans; font-style: normal; font-weight: normal" x="20.05" y="5.1925">:sistema</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" x1="20.05" y1="5.3325" x2="22.525" y2="5.3325"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="5.0275" y1="5.87" x2="5.0275" y2="13.9"/>
+  <rect style="fill: #ffffff" x="4.6775" y="7.325" width="0.7" height="3.6"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="4.6775" y="7.325" width="0.7" height="3.6"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="5.8275" y1="14.7" x2="4.2275" y2="13.1"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="5.8275" y1="13.1" x2="4.2275" y2="14.7"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="21.2875" y1="5.95" x2="21.2875" y2="13.85"/>
+  <rect style="fill: #ffffff" x="20.9375" y="7.4" width="0.7" height="3.65"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="20.9375" y="7.4" width="0.7" height="3.65"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="22.0875" y1="14.65" x2="20.4875" y2="13.05"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="22.0875" y1="13.05" x2="20.4875" y2="14.65"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="20.0875" y1="7.3959" x2="5.3775" y2="7.325"/>
+  <polygon style="fill: #000000" points="20.0863,7.6459 20.8875,7.39976 20.0887,7.14591 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 13.8925 cm; font-family: sans; font-style: normal; font-weight: normal" x="6.2113" y="7.8625">ListarSocios(asociacion,columnas,restricciones)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="21.6375" y1="7.4" x2="41.35" y2="7.4"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="41.35" y1="7.4" x2="41.35" y2="8.8"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="22.4875" y1="8.8" x2="41.35" y2="8.8"/>
+  <polygon style="fill: #000000" points="22.4875,8.55 21.6875,8.8 22.4875,9.05 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 19.2975 cm; font-family: sans; font-style: normal; font-weight: normal" x="21.8451" y="8.6">listado:=generarListadoSocios(asociacion,columnas,restricciones)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="21.6375" y1="9.225" x2="35.85" y2="9.225"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="35.85" y1="9.225" x2="35.85" y2="10.55"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="22.4875" y1="10.55" x2="35.85" y2="10.55"/>
+  <polygon style="fill: #000000" points="22.4875,10.3 21.6875,10.55 22.4875,10.8 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 13.46 cm; font-family: sans; font-style: normal; font-weight: normal" x="22.0137" y="10.3875">Listado:=ordenarListado(listado,restricciones)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke-dasharray: 0.4; stroke: #000000" x1="6.22747" y1="10.9318" x2="20.9375" y2="11.05"/>
+  <polygon style="fill: #000000" points="6.22948,10.6818 5.4275,10.9254 6.22546,11.1818 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.125 cm; font-family: sans; font-style: normal; font-weight: normal" x="12.095" y="11.4875">listado </text>
+  <ellipse style="fill: #ffffff" cx="5.0275" cy="1.37" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="5.0275" cy="1.37" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="3.8275" y1="1.97" x2="6.2275" y2="1.97"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.0275" y1="1.67" x2="5.0275" y2="3.17"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.0275" y1="3.17" x2="3.8275" y2="4.47"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.0275" y1="3.17" x2="6.2275" y2="4.47"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.9775 cm; font-family: sans; font-style: normal; font-weight: normal" x="3.53875" y="5.6125">Secretario</text>
+</svg>

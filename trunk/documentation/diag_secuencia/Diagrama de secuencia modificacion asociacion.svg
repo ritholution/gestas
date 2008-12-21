@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="35cm" height="12cm" viewBox="7 -1 35 12">
+  <ellipse style="fill: #ffffff" cx="11.7775" cy="0.6" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="11.7775" cy="0.6" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="10.5775" y1="1.2" x2="12.9775" y2="1.2"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="11.7775" y1="0.9" x2="11.7775" y2="2.4"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="11.7775" y1="2.4" x2="10.5775" y2="3.7"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="11.7775" y1="2.4" x2="12.9775" y2="3.7"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.985 cm; font-family: sans; font-style: normal; font-weight: normal" x="7.285" y="4.8425">Administrador de la asociación</text>
+  <rect style="fill: #ffffff" x="25.75" y="2.85" width="3.475" height="1.8"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="25.75" y="2.85" width="3.475" height="1.8"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.475 cm; font-family: sans; font-style: normal; font-weight: normal" x="26.25" y="3.8925">:sistema</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" x1="26.25" y1="4.0325" x2="28.725" y2="4.0325"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="27.4875" y1="4.65" x2="27.4875" y2="10.1"/>
+  <rect style="fill: #ffffff" x="27.1375" y="6.05" width="0.7" height="2.3"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="27.1375" y="6.05" width="0.7" height="2.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="28.2875" y1="10.9" x2="26.6875" y2="9.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="28.2875" y1="9.3" x2="26.6875" y2="10.9"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="11.7775" y1="5.1" x2="11.7775" y2="10"/>
+  <rect style="fill: #ffffff" x="11.4275" y="6.1" width="0.7" height="1.85"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="11.4275" y="6.1" width="0.7" height="1.85"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="12.5775" y1="10.8" x2="10.9775" y2="9.2"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="12.5775" y1="9.2" x2="10.9775" y2="10.8"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="26.2875" y1="6.05283" x2="12.1275" y2="6.1"/>
+  <polygon style="fill: #000000" points="26.2883,6.30283 27.0875,6.05017 26.2867,5.80283 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 12.445 cm; font-family: sans; font-style: normal; font-weight: normal" x="13.41" y="6.575">ModificarDatos(idAsociacion,nuevosDatos)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="27.8375" y1="6.05" x2="41.8" y2="6.05"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="41.8" y1="6.05" x2="41.8" y2="7.5"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="28.6875" y1="7.5" x2="41.8" y2="7.5"/>
+  <polygon style="fill: #000000" points="28.6875,7.25 27.8875,7.5 28.6875,7.75 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 12.6575 cm; font-family: sans; font-style: normal; font-weight: normal" x="28.4901" y="7.275">ActualizarDatos(idAsociacion,nuevosDatos)</text>
+</svg>

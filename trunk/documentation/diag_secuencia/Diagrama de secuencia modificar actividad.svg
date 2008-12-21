@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="31cm" height="12cm" viewBox="13 -1 31 12">
+  <ellipse style="fill: #ffffff" cx="14.4" cy="0.6" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="14.4" cy="0.6" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="13.2" y1="1.2" x2="15.6" y2="1.2"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="14.4" y1="0.9" x2="14.4" y2="2.4"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="14.4" y1="2.4" x2="13.2" y2="3.7"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="14.4" y1="2.4" x2="15.6" y2="3.7"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.5675 cm; font-family: sans; font-style: normal; font-weight: normal" x="13.6163" y="4.8425">Socio</text>
+  <rect style="fill: #ffffff" x="28.15" y="3.3" width="3.475" height="1.8"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="28.15" y="3.3" width="3.475" height="1.8"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.475 cm; font-family: sans; font-style: normal; font-weight: normal" x="28.65" y="4.3425">:sistema</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" x1="28.65" y1="4.4825" x2="31.125" y2="4.4825"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="14.4" y1="5.1" x2="14.4" y2="10.1"/>
+  <rect style="fill: #ffffff" x="14.05" y="6.1" width="0.7" height="1.95"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="14.05" y="6.1" width="0.7" height="1.95"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="15.2" y1="10.9" x2="13.6" y2="9.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="15.2" y1="9.3" x2="13.6" y2="10.9"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="29.8875" y1="5.1" x2="29.8875" y2="10.05"/>
+  <rect style="fill: #ffffff" x="29.5375" y="6.1" width="0.7" height="1.85"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="29.5375" y="6.1" width="0.7" height="1.85"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="30.6875" y1="10.85" x2="29.0875" y2="9.25"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="30.6875" y1="9.25" x2="29.0875" y2="10.85"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="28.6875" y1="6.1" x2="14.75" y2="6.1"/>
+  <polygon style="fill: #000000" points="28.6875,6.35 29.4875,6.1 28.6875,5.85 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 13.115 cm; font-family: sans; font-style: normal; font-weight: normal" x="15.5863" y="6.6">modificarActividad(idActividad,nuevosDatos)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="30.2375" y1="6.1" x2="44" y2="6.1"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="44" y1="6.1" x2="44" y2="7.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="31.0875" y1="7.3" x2="44" y2="7.3"/>
+  <polygon style="fill: #000000" points="31.0875,7.05 30.2875,7.3 31.0875,7.55 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 13.2325 cm; font-family: sans; font-style: normal; font-weight: normal" x="30.5024" y="7.2">actualizarActividad(idActividad,nuevosDatos)</text>
+</svg>

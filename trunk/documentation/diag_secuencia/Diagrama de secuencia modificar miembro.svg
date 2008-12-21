@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="28cm" height="13cm" viewBox="8 -1 28 13">
+  <ellipse style="fill: #ffffff" cx="10.0787" cy="0.54" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="10.0787" cy="0.54" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="8.87875" y1="1.14" x2="11.2787" y2="1.14"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="10.0787" y1="0.84" x2="10.0787" y2="2.34"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="10.0787" y1="2.34" x2="8.87875" y2="3.64"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="10.0787" y1="2.34" x2="11.2787" y2="3.64"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.9775 cm; font-family: sans; font-style: normal; font-weight: normal" x="8.59" y="4.7825">Secretario</text>
+  <rect style="fill: #ffffff" x="21.45" y="3.2" width="3.475" height="1.8"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="21.45" y="3.2" width="3.475" height="1.8"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.475 cm; font-family: sans; font-style: normal; font-weight: normal" x="21.95" y="4.2425">:sistema</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" x1="21.95" y1="4.3825" x2="24.425" y2="4.3825"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="10.0787" y1="5.04" x2="10.0787" y2="11.1"/>
+  <rect style="fill: #ffffff" x="9.7287" y="6.04" width="0.7" height="1.96"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="9.7287" y="6.04" width="0.7" height="1.96"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="10.8787" y1="11.9" x2="9.2787" y2="10.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="10.8787" y1="10.3" x2="9.2787" y2="11.9"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="23.1875" y1="5" x2="23.1875" y2="11.1"/>
+  <rect style="fill: #ffffff" x="22.8375" y="6" width="0.7" height="2.3"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="22.8375" y="6" width="0.7" height="2.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="23.9875" y1="11.9" x2="22.3875" y2="10.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="23.9875" y1="10.3" x2="22.3875" y2="11.9"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="21.9875" y1="6.00274" x2="10.4287" y2="6.04"/>
+  <polygon style="fill: #000000" points="21.9883,6.25274 22.7875,6.00016 21.9867,5.75274 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 11.8225 cm; font-family: sans; font-style: normal; font-weight: normal" x="10.7218" y="6.52">modificarMiembro(idSocio,nuevosDatos)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="23.5375" y1="6" x2="36.25" y2="6"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="36.25" y1="6" x2="36.25" y2="7.6"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="24.3875" y1="7.6" x2="36.25" y2="7.6"/>
+  <polygon style="fill: #000000" points="24.3875,7.35 23.5875,7.6 24.3875,7.85 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 12.0025 cm; font-family: sans; font-style: normal; font-weight: normal" x="23.8925" y="7.3">actualizarDirectivo(idSocio,nuevosDatos)</text>
+</svg>

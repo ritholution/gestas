@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="22cm" height="13cm" viewBox="0 0 22 13">
+  <ellipse style="fill: #ffffff" cx="4.9762" cy="1.345" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="4.9762" cy="1.345" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="3.7762" y1="1.945" x2="6.1762" y2="1.945"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.9762" y1="1.645" x2="4.9762" y2="3.145"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.9762" y1="3.145" x2="3.7762" y2="4.445"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.9762" y1="3.145" x2="6.1762" y2="4.445"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 9.5825 cm; font-family: sans; font-style: normal; font-weight: normal" x="0.18495" y="5.5875">Administrador de la Herramienta</text>
+  <rect style="fill: #ffffff" x="12.8" y="4.35" width="3.475" height="1.8"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="12.8" y="4.35" width="3.475" height="1.8"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.475 cm; font-family: sans; font-style: normal; font-weight: normal" x="13.3" y="5.3925">:sistema</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" x1="13.3" y1="5.5325" x2="15.775" y2="5.5325"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="14.5375" y1="6.15" x2="14.5375" y2="12.45"/>
+  <rect style="fill: #ffffff" x="14.1875" y="7.9" width="0.7" height="2.45"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="14.1875" y="7.9" width="0.7" height="2.45"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="15.3375" y1="13.25" x2="13.7375" y2="11.65"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="15.3375" y1="11.65" x2="13.7375" y2="13.25"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="4.9762" y1="5.845" x2="4.9762" y2="12.25"/>
+  <rect style="fill: #ffffff" x="4.6262" y="7.9" width="0.7" height="2.5"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="4.6262" y="7.9" width="0.7" height="2.5"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="5.7762" y1="13.05" x2="4.1762" y2="11.45"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="5.7762" y1="11.45" x2="4.1762" y2="13.05"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="13.3375" y1="7.9" x2="5.3262" y2="7.9"/>
+  <polygon style="fill: #000000" points="13.3375,8.15 14.1375,7.9 13.3375,7.65 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 7.15 cm; font-family: sans; font-style: normal; font-weight: normal" x="6.18185" y="8.4">EliminarModulo(modulo)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="14.8875" y1="7.9" x2="22.05" y2="7.9"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="22.05" y1="7.9" x2="22.05" y2="9.2"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="15.7375" y1="9.2" x2="22.05" y2="9.2"/>
+  <polygon style="fill: #000000" points="15.7375,8.95 14.9375,9.2 15.7375,9.45 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 6.585 cm; font-family: sans; font-style: normal; font-weight: normal" x="15.1763" y="9.05">BorrarModulo(modulo)</text>
+</svg>

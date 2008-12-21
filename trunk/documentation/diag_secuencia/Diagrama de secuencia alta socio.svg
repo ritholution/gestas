@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="30cm" height="17cm" viewBox="7 -1 30 17">
+  <ellipse style="fill: #ffffff" cx="10.55" cy="0.65" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="10.55" cy="0.65" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="9.35" y1="1.25" x2="11.75" y2="1.25"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="10.55" y1="0.95" x2="10.55" y2="2.45"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="10.55" y1="2.45" x2="9.35" y2="3.75"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="10.55" y1="2.45" x2="11.75" y2="3.75"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.13 cm; font-family: sans; font-style: normal; font-weight: normal" x="7.985" y="4.8925">Usuario anonimo </text>
+  <ellipse style="fill: #ffffff" cx="36.1" cy="0.6" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="36.1" cy="0.6" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="34.9" y1="1.2" x2="37.3" y2="1.2"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="36.1" y1="0.9" x2="36.1" y2="2.4"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="36.1" y1="2.4" x2="34.9" y2="3.7"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="36.1" y1="2.4" x2="37.3" y2="3.7"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.9775 cm; font-family: sans; font-style: normal; font-weight: normal" x="34.6112" y="4.8425">Secretario</text>
+  <rect style="fill: #ffffff" x="20.85" y="3.15" width="3.475" height="1.8"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="20.85" y="3.15" width="3.475" height="1.8"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.475 cm; font-family: sans; font-style: normal; font-weight: normal" x="21.35" y="4.1925">:sistema</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" x1="21.35" y1="4.3325" x2="23.825" y2="4.3325"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="10.55" y1="5.15" x2="10.55" y2="14.85"/>
+  <rect style="fill: #ffffff" x="10.2" y="6.15" width="0.7" height="2.1"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="10.2" y="6.15" width="0.7" height="2.1"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="11.35" y1="15.65" x2="9.75" y2="14.05"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="11.35" y1="14.05" x2="9.75" y2="15.65"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="22.5875" y1="4.95" x2="22.5875" y2="14.85"/>
+  <rect style="fill: #ffffff" x="22.2375" y="5.95" width="0.7" height="6.3"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="22.2375" y="5.95" width="0.7" height="6.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="23.3875" y1="15.65" x2="21.7875" y2="14.05"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="23.3875" y1="14.05" x2="21.7875" y2="15.65"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="34.85" y1="5.1" x2="34.85" y2="14.8"/>
+  <rect style="fill: #ffffff" x="34.5" y="6.55" width="0.7" height="3.95"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="34.5" y="6.55" width="0.7" height="3.95"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="35.65" y1="15.6" x2="34.05" y2="14"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="35.65" y1="14" x2="34.05" y2="15.6"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="21.3" y1="7.24622" x2="10.9" y2="7.2"/>
+  <polygon style="fill: #000000" points="21.2989,7.49622 22.1,7.24978 21.3011,6.99622 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 10.2825 cm; font-family: sans; font-style: normal; font-weight: normal" x="11.3837" y="7.725">SolicitarAltaSocio(datosPersonales)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="33.65" y1="7.53658" x2="22.9375" y2="7.525"/>
+  <polygon style="fill: #000000" points="33.6497,7.78658 34.45,7.53745 33.6503,7.28658 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 9.235 cm; font-family: sans; font-style: normal; font-weight: normal" x="24.1013" y="8.03125">NotificarSolicitud(numSolicitud)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="23.85" y1="9.45462" x2="34.5" y2="9.5125"/>
+  <polygon style="fill: #000000" points="23.8513,9.20462 23.05,9.45027 23.8486,9.70462 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.9125 cm; font-family: sans; font-style: normal; font-weight: normal" x="24.2937" y="9.98125">ValidarSolicinud(numSolicitud)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="22.9375" y1="10.675" x2="27.15" y2="10.675"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="27.15" y1="10.675" x2="27.15" y2="12.05"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="23.7875" y1="12.05" x2="27.15" y2="12.05"/>
+  <polygon style="fill: #000000" points="23.7875,11.8 22.9875,12.05 23.7875,12.3 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 3.6125 cm; font-family: sans; font-style: normal; font-weight: normal" x="23.2376" y="11.8625">CrearSocio()</text>
+</svg>

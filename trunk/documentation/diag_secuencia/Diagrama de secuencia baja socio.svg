@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="24cm" height="19cm" viewBox="3 -1 24 19">
+  <ellipse style="fill: #ffffff" cx="4.95" cy="0.4" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="4.95" cy="0.4" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="3.75" y1="1" x2="6.15" y2="1"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.95" y1="0.7" x2="4.95" y2="2.2"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.95" y1="2.2" x2="3.75" y2="3.5"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.95" y1="2.2" x2="6.15" y2="3.5"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.5675 cm; font-family: sans; font-style: normal; font-weight: normal" x="4.16625" y="4.6425">Socio</text>
+  <ellipse style="fill: #ffffff" cx="26.1" cy="0.5" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="26.1" cy="0.5" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="24.9" y1="1.1" x2="27.3" y2="1.1"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="26.1" y1="0.8" x2="26.1" y2="2.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="26.1" y1="2.3" x2="24.9" y2="3.6"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="26.1" y1="2.3" x2="27.3" y2="3.6"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.9775 cm; font-family: sans; font-style: normal; font-weight: normal" x="24.6113" y="4.7425">Secretario</text>
+  <rect style="fill: #ffffff" x="13.55" y="2.75" width="3.475" height="1.8"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="13.55" y="2.75" width="3.475" height="1.8"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.475 cm; font-family: sans; font-style: normal; font-weight: normal" x="14.05" y="3.7925">:sistema</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" x1="14.05" y1="3.9325" x2="16.525" y2="3.9325"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="4.95" y1="4.9" x2="4.95" y2="16.7"/>
+  <rect style="fill: #ffffff" x="4.6" y="5.9" width="0.7" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="4.6" y="5.9" width="0.7" height="1.4"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="5.75" y1="17.5" x2="4.15" y2="15.9"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="5.75" y1="15.9" x2="4.15" y2="17.5"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="15.2875" y1="4.55" x2="15.2875" y2="16.8"/>
+  <rect style="fill: #ffffff" x="14.9375" y="6.25" width="0.7" height="6.1"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="14.9375" y="6.25" width="0.7" height="6.1"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="16.0875" y1="17.6" x2="14.4875" y2="16"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="16.0875" y1="16" x2="14.4875" y2="17.6"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="26.1" y1="5" x2="26.1" y2="16.55"/>
+  <rect style="fill: #ffffff" x="25.75" y="7.3" width="0.7" height="2"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="25.75" y="7.3" width="0.7" height="2"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="26.9" y1="17.35" x2="25.3" y2="15.75"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="26.9" y1="15.75" x2="25.3" y2="17.35"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="14.0875" y1="6.25" x2="5.3" y2="6.25"/>
+  <polygon style="fill: #000000" points="14.0875,6.5 14.8875,6.25 14.0875,6 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 7.91 cm; font-family: sans; font-style: normal; font-weight: normal" x="6.1638" y="6.75">SolicitarBaja(numeroSocio)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="24.9" y1="7.7979" x2="15.6375" y2="7.775"/>
+  <polygon style="fill: #000000" points="24.8994,8.0479 25.7,7.79988 24.9006,7.5479 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.7675 cm; font-family: sans; font-style: normal; font-weight: normal" x="17.81" y="8.2875">NotificarBaja(Socio)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="16.4875" y1="9.3" x2="25.75" y2="9.3"/>
+  <polygon style="fill: #000000" points="16.4875,9.05 15.6875,9.3 16.4875,9.55 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.63 cm; font-family: sans; font-style: normal; font-weight: normal" x="18.3787" y="9.8">ConfirmarBaja()</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="15.6375" y1="10.825" x2="23.35" y2="10.825"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="23.35" y1="10.825" x2="23.35" y2="12.2"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="16.4875" y1="12.2" x2="23.35" y2="12.2"/>
+  <polygon style="fill: #000000" points="16.4875,11.95 15.6875,12.2 16.4875,12.45 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 7.2875 cm; font-family: sans; font-style: normal; font-weight: normal" x="15.8499" y="12.0125">EliminarSocio(numSocio)</text>
+</svg>

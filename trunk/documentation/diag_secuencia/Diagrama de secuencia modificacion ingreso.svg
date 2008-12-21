@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="30cm" height="12cm" viewBox="12 -1 30 12">
+  <ellipse style="fill: #ffffff" cx="13.8937" cy="0.4" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="13.8937" cy="0.4" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="12.6937" y1="1" x2="15.0937" y2="1"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="13.8937" y1="0.7" x2="13.8937" y2="2.2"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="13.8937" y1="2.2" x2="12.6937" y2="3.5"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="13.8937" y1="2.2" x2="15.0937" y2="3.5"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.6275 cm; font-family: sans; font-style: normal; font-weight: normal" x="12.58" y="4.6425">Tesorero </text>
+  <rect style="fill: #ffffff" x="27.03" y="3.1" width="3.475" height="1.8"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="27.03" y="3.1" width="3.475" height="1.8"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.475 cm; font-family: sans; font-style: normal; font-weight: normal" x="27.53" y="4.1425">:sistema</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" x1="27.53" y1="4.2825" x2="30.005" y2="4.2825"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="13.8937" y1="4.9" x2="13.8937" y2="10"/>
+  <rect style="fill: #ffffff" x="13.5437" y="5.9" width="0.7" height="2.2"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="13.5437" y="5.9" width="0.7" height="2.2"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="14.6937" y1="10.8" x2="13.0937" y2="9.2"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="14.6937" y1="9.2" x2="13.0937" y2="10.8"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="28.7675" y1="4.9" x2="28.7675" y2="10.05"/>
+  <rect style="fill: #ffffff" x="28.4175" y="5.9" width="0.7" height="2.05"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="28.4175" y="5.9" width="0.7" height="2.05"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="29.5675" y1="10.85" x2="27.9675" y2="9.25"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="29.5675" y1="9.25" x2="27.9675" y2="10.85"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="27.5675" y1="5.9" x2="14.2437" y2="5.9"/>
+  <polygon style="fill: #000000" points="27.5675,6.15 28.3675,5.9 27.5675,5.65 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 12.5875 cm; font-family: sans; font-style: normal; font-weight: normal" x="15.0369" y="6.4">ModificarIngreso(idIngreso,nuevaCantidad)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="29.1175" y1="5.9" x2="42.3" y2="5.9"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="42.3" y1="5.9" x2="42.3" y2="7.2"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="29.9675" y1="7.2" x2="42.3" y2="7.2"/>
+  <polygon style="fill: #000000" points="29.9675,6.95 29.1675,7.2 29.9675,7.45 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 12.8 cm; font-family: sans; font-style: normal; font-weight: normal" x="29.3088" y="7.05">ActualizarIngreso(idIngreso,nuevaCantidad)</text>
+</svg>
