@@ -125,36 +125,55 @@ ul.post-meta span.post-meta-key {
 	background-color: #EFE;
 }
 
-#description {
-	background: #909090;
-	font: italic normal 80% 'Times New Roman', Times, serif;
-	border-bottom: double 3px #aba;
-	letter-spacing: 0.2em;
-	margin: 0;
-	padding: 0px 10px 15px 60px;
-	clear: both;
-	color: #fff;
-}
-
-#header {
+.header {
 	background: #909090;
 	border-left: solid 1px #9a9;
 	border-right: solid 1px #565;
 	border-top: solid 1px #9a9;
-	font: italic normal 230% 'Times New Roman', Times, serif;
+	border-bottom: double 3px #aba;
+	margin: 0;
+	padding: 0px 20px 10px 50px;
+	clear: both;
+	background-image: url(images/header.png);
+	background-repeat: no-repeat;
+	background-position: 50px 10px;
+	text-indent: 10%;
+	text-align: bottom;
+}
+
+.header a {
+ 	color: #fff;
+ 	text-decoration: none;
+}
+
+.header .logo{
+ 	margin-left: 90%;
+ 	padding: 0;
+	text-align: right;
+}
+
+.header .logo p{
+    margin: 0;
+    padding: 5px 0px 0px 0px;
+}
+
+.header .logo img{
+    margin: 0;
+    padding: 0;
+}
+
+.header h1 {
+	letter-spacing: 0.2em;
+	font: italic normal 230% 'Nimbus Roman', Times, serif;
+	padding-top: 10px;
+	margin: 0;
+}
+
+.header .description {
+	font: italic normal 80% 'Nimbus Roman', Times, serif;
 	letter-spacing: 0.2em;
 	margin: 0;
-	padding: 15px 10px 0px 60px;
-	clear: both;
-}
-
-#header a {
 	color: #fff;
-	text-decoration: none;
-}
-
-#header a:hover {
-	text-decoration: underline;
 }
 
 #menu {
