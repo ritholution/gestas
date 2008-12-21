@@ -136,8 +136,8 @@ ul.post-meta span.post-meta-key {
 	clear: both;
 	background-image: url(images/header.png);
 	background-repeat: no-repeat;
-	background-position: 50px 10px;
-	text-indent: 10%;
+	background-position: 40px 10px;
+	text-indent: 80px;
 	text-align: bottom;
 }
 
@@ -165,8 +165,8 @@ ul.post-meta span.post-meta-key {
 
 .header h1 {
 	letter-spacing: 0.2em;
-	font: italic normal 230% 'Nimbus Roman', Times, serif;
-	padding-top: 10px;
+	font: italic normal 40px 'Nimbus Roman', Times, serif;
+	padding-top: 0;
 	margin: 0;
 }
 
