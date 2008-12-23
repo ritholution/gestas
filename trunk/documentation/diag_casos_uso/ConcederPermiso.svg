@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="18cm" height="6cm" viewBox="1 1 18 6">
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="7.1075,4.12 9.23602,4.12 9.23602,4.09917 11.1409,4.09917 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="10.7527,4.34917 11.2527,4.09917 10.7527,3.84917 "/>
+  <ellipse style="fill: #ffffff" cx="15.2025" cy="4.09917" rx="3.8375" ry="1.27917"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="15.2025" cy="4.09917" rx="3.8375" ry="1.27917"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.275 cm; font-family: sans; font-style: normal; font-weight: normal" x="12.565" y="4.24167">Conceder Permiso</text>
+  <ellipse style="fill: #ffffff" cx="5.8575" cy="2.32" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="5.8575" cy="2.32" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.6575" y1="2.92" x2="7.0575" y2="2.92"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.8575" y1="2.62" x2="5.8575" y2="4.12"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.8575" y1="4.12" x2="4.6575" y2="5.42"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.8575" y1="4.12" x2="7.0575" y2="5.42"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.985 cm; font-family: sans; font-style: normal; font-weight: normal" x="1.365" y="6.5625">Administrador de la asociación</text>
+</svg>

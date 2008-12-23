@@ -1,124 +1,142 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="49cm" height="35cm" viewBox="-6 17 49 35">
-  <rect style="fill: #ffffff" x="1.7175" y="24.8175" width="9.065" height="2.7825"/>
-  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="1.7175" y="24.8175" width="9.065" height="2.7825"/>
-  <rect style="fill: #ffffff" x="1.7175" y="23.8175" width="8.25" height="1"/>
-  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="1.7175" y="23.8175" width="8.25" height="1"/>
-  <text style="fill: #000000; font-size: 0.8 cm; length: 8.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="1.8175" y="24.3175">Gestion de asociaciones</text>
-  <rect style="fill: #ffffff" x="1.5825" y="30.23" width="7.45" height="3.42"/>
-  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="1.5825" y="30.23" width="7.45" height="3.42"/>
-  <rect style="fill: #ffffff" x="1.5825" y="29.23" width="6.15" height="1"/>
-  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="1.5825" y="29.23" width="6.15" height="1"/>
-  <text style="fill: #000000; font-size: 0.8 cm; length: 5.95 cm; font-family: monospace; font-style: normal; font-weight: normal" x="1.6825" y="29.73">Gestion de socios</text>
-  <rect style="fill: #ffffff" x="15.0825" y="49.38" width="8.2" height="2.745"/>
-  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="15.0825" y="49.38" width="8.2" height="2.745"/>
-  <rect style="fill: #ffffff" x="15.0825" y="48.38" width="7.2" height="1"/>
-  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="15.0825" y="48.38" width="7.2" height="1"/>
-  <text style="fill: #000000; font-size: 0.8 cm; length: 7 cm; font-family: monospace; font-style: normal; font-weight: normal" x="15.1825" y="48.88">Gestion de contactos</text>
-  <rect style="fill: #ffffff" x="32.2825" y="30.5416" width="8.6" height="2.8834"/>
-  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="32.2825" y="30.5416" width="8.6" height="2.8834"/>
-  <rect style="fill: #ffffff" x="32.2825" y="29.5416" width="7.2" height="1"/>
-  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="32.2825" y="29.5416" width="7.2" height="1"/>
-  <text style="fill: #000000; font-size: 0.8 cm; length: 7 cm; font-family: monospace; font-style: normal; font-weight: normal" x="32.3825" y="30.0416">Gestion de directiva</text>
-  <rect style="fill: #ffffff" x="12.9825" y="33.63" width="8.7" height="4.82"/>
-  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="12.9825" y="33.63" width="8.7" height="4.82"/>
-  <rect style="fill: #ffffff" x="12.9825" y="32.63" width="7.55" height="1"/>
-  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="12.9825" y="32.63" width="7.55" height="1"/>
-  <text style="fill: #000000; font-size: 0.8 cm; length: 7.35 cm; font-family: monospace; font-style: normal; font-weight: normal" x="13.0825" y="33.13">Gestion de decisiones</text>
-  <rect style="fill: #ffffff" x="31.3175" y="25.9175" width="8.065" height="3.1075"/>
-  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="31.3175" y="25.9175" width="8.065" height="3.1075"/>
-  <rect style="fill: #ffffff" x="31.3175" y="24.9175" width="7.2" height="1"/>
-  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="31.3175" y="24.9175" width="7.2" height="1"/>
-  <text style="fill: #000000; font-size: 0.8 cm; length: 7 cm; font-family: monospace; font-style: normal; font-weight: normal" x="31.4175" y="25.4175">Gestion de proyectos</text>
-  <rect style="fill: #ffffff" x="15.2325" y="43.4175" width="10" height="3.0325"/>
-  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="15.2325" y="43.4175" width="10" height="3.0325"/>
-  <rect style="fill: #ffffff" x="15.2325" y="42.4175" width="8.95" height="1"/>
-  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="15.2325" y="42.4175" width="8.95" height="1"/>
-  <text style="fill: #000000; font-size: 0.8 cm; length: 8.75 cm; font-family: monospace; font-style: normal; font-weight: normal" x="15.3325" y="42.9175">Calendario de actividades</text>
-  <ellipse style="fill: #ffffff" cx="5.3325" cy="45.1946" rx="0.309783" ry="0.309783"/>
-  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="5.3325" cy="45.1946" rx="0.309783" ry="0.309783"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.09337" y1="45.8141" x2="6.57163" y2="45.8141"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.3325" y1="45.5043" x2="5.3325" y2="47.0533"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.3325" y1="47.0533" x2="4.09337" y2="48.4054"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.3325" y1="47.0533" x2="6.57163" y2="48.4054"/>
-  <text style="fill: #000000; font-size: 0.8 cm; length: 1.5675 cm; font-family: sans; font-style: normal; font-weight: normal" x="4.54875" y="49.5675">Socio</text>
-  <ellipse style="fill: #ffffff" cx="27.2825" cy="30.1675" rx="0.3" ry="0.3"/>
-  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="27.2825" cy="30.1675" rx="0.3" ry="0.3"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="26.0825" y1="30.7675" x2="28.4825" y2="30.7675"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="27.2825" y1="30.4675" x2="27.2825" y2="31.9675"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="27.2825" y1="31.9675" x2="26.0825" y2="33.2675"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="27.2825" y1="31.9675" x2="28.4825" y2="33.2675"/>
-  <text style="fill: #000000; font-size: 0.8 cm; length: 2.9775 cm; font-family: sans; font-style: normal; font-weight: normal" x="25.7937" y="34.41">Secretario</text>
-  <ellipse style="fill: #ffffff" cx="19.7325" cy="26.7175" rx="0.3" ry="0.3"/>
-  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="19.7325" cy="26.7175" rx="0.3" ry="0.3"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="18.5325" y1="27.3175" x2="20.9325" y2="27.3175"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="19.7325" y1="27.0175" x2="19.7325" y2="28.5175"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="19.7325" y1="28.5175" x2="18.5325" y2="29.8175"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="19.7325" y1="28.5175" x2="20.9325" y2="29.8175"/>
-  <text style="fill: #000000; font-size: 0.8 cm; length: 8.985 cm; font-family: sans; font-style: normal; font-weight: normal" x="15.24" y="30.96">Administrador de la asociación</text>
-  <ellipse style="fill: #ffffff" cx="-3.0675" cy="24.4175" rx="0.3" ry="0.3"/>
-  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="-3.0675" cy="24.4175" rx="0.3" ry="0.3"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="-4.2675" y1="25.0175" x2="-1.8675" y2="25.0175"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="-3.0675" y1="24.7175" x2="-3.0675" y2="26.2175"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="-3.0675" y1="26.2175" x2="-4.2675" y2="27.5175"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="-3.0675" y1="26.2175" x2="-1.8675" y2="27.5175"/>
-  <text style="fill: #000000; font-size: 0.8 cm; length: 5.13 cm; font-family: sans; font-style: normal; font-weight: normal" x="-5.6325" y="28.66">Usuario anónimo </text>
-  <ellipse style="fill: #ffffff" cx="19.8325" cy="19.9675" rx="0.3" ry="0.3"/>
-  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="19.8325" cy="19.9675" rx="0.3" ry="0.3"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="18.6325" y1="20.5675" x2="21.0325" y2="20.5675"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="19.8325" y1="20.2675" x2="19.8325" y2="21.7675"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="19.8325" y1="21.7675" x2="18.6325" y2="23.0675"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="19.8325" y1="21.7675" x2="21.0325" y2="23.0675"/>
-  <text style="fill: #000000; font-size: 0.8 cm; length: 9.5825 cm; font-family: sans; font-style: normal; font-weight: normal" x="15.0412" y="24.21">Administrador de la Herramienta</text>
-  <rect style="fill: #ffffff" x="35.9325" y="39.5166" width="6.8" height="5.3334"/>
-  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="35.9325" y="39.5166" width="6.8" height="5.3334"/>
-  <rect style="fill: #ffffff" x="35.9325" y="38.5166" width="6.15" height="1"/>
-  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="35.9325" y="38.5166" width="6.15" height="1"/>
-  <text style="fill: #000000; font-size: 0.8 cm; length: 5.95 cm; font-family: monospace; font-style: normal; font-weight: normal" x="36.0325" y="39.0166">Gestion economica</text>
-  <ellipse style="fill: #ffffff" cx="31.2325" cy="40.3675" rx="0.3" ry="0.3"/>
-  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="31.2325" cy="40.3675" rx="0.3" ry="0.3"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="30.0325" y1="40.9675" x2="32.4325" y2="40.9675"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="31.2325" y1="40.6675" x2="31.2325" y2="42.1675"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="31.2325" y1="42.1675" x2="30.0325" y2="43.4675"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="31.2325" y1="42.1675" x2="32.4325" y2="43.4675"/>
-  <text style="fill: #000000; font-size: 0.8 cm; length: 2.6275 cm; font-family: sans; font-style: normal; font-weight: normal" x="29.9188" y="44.61">Tesorero </text>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="6.63282,47.05 10.8325,47.05 10.8325,50.7525 14.8086,50.7525 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="14.4204,51.0025 14.9204,50.7525 14.4204,50.5025 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="27.2825,29.2675 27.2825,27.4713 31.0434,27.4713 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="30.6552,27.7213 31.1552,27.4713 30.6552,27.2213 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="5.3325,44.275 5.3325,38.7425 5.3075,38.7425 5.3075,33.9207 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="5.5575,34.3089 5.3075,33.8089 5.0575,34.3089 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="26.0325,31.9675 17.5577,31.9675 17.5577,31.94 9.30657,31.94 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="9.69476,31.69 9.19476,31.94 9.69476,32.19 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="4.0825,47.05 2.09,47.05 2.09,47.055 0.756327,47.055 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="1.14452,46.805 0.644523,47.055 1.14452,47.305 "/>
-  <rect style="fill: #ffffff" x="-5.8175" y="45.055" width="6.3" height="4"/>
-  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="-5.8175" y="45.055" width="6.3" height="4"/>
-  <rect style="fill: #ffffff" x="-5.8175" y="44.055" width="5.1" height="1"/>
-  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="-5.8175" y="44.055" width="5.1" height="1"/>
-  <text style="fill: #000000; font-size: 0.8 cm; length: 4.9 cm; font-family: monospace; font-style: normal; font-weight: normal" x="-5.7175" y="44.555">Identificacion</text>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="6.5825,47.05 10.8823,47.05 10.8823,44.9338 14.9586,44.9338 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="14.5704,45.1838 15.0704,44.9338 14.5704,44.6838 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="5.3325,44.2247 5.3325,41.3625 17.3325,41.3625 17.3325,38.7239 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="17.5825,39.1121 17.3325,38.6121 17.0825,39.1121 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="32.5328,42.1675 34.2074,42.1675 34.2074,42.1833 35.6585,42.1833 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="35.2703,42.4333 35.7703,42.1833 35.2703,41.9333 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="-3.0675,28.9175 -3.0675,31.94 1.30843,31.94 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="0.920237,32.19 1.42024,31.94 0.920237,31.69 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="-1.8175,26.2175 -0.05,26.2175 -0.05,26.2088 1.49389,26.2088 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="1.1057,26.4588 1.6057,26.2088 1.1057,25.9588 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="18.5825,21.7675 14.6825,21.7675 14.6825,26.2088 11.0061,26.2088 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="11.3943,25.9588 10.8943,26.2088 11.3943,26.4588 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="18.4825,28.5175 14.6576,28.5175 14.6576,26.2088 11.0564,26.2088 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="11.4446,25.9588 10.9446,26.2088 11.4446,26.4588 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="28.5325,31.9675 30.3824,31.9675 30.3824,31.9833 32.0086,31.9833 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="31.6204,32.2333 32.1204,31.9833 31.6204,31.7333 "/>
-  <rect style="fill: #ffffff" x="27.6" y="20.105" width="10.15" height="3.32"/>
-  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="27.6" y="20.105" width="10.15" height="3.32"/>
-  <rect style="fill: #ffffff" x="27.6" y="19.105" width="8.95" height="1"/>
-  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="27.6" y="19.105" width="8.95" height="1"/>
-  <text style="fill: #000000; font-size: 0.8 cm; length: 8.75 cm; font-family: monospace; font-style: normal; font-weight: normal" x="27.7" y="19.605">Gestión de la herramienta</text>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="21.0825,21.7675 24.3412,21.7675 24.3412,21.765 27.3764,21.765 "/>
-  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="26.9882,22.015 27.4882,21.765 26.9882,21.515 "/>
+<svg width="48cm" height="34cm" viewBox="-6 14 48 34">
+  <ellipse style="fill: #ffffff" cx="5.6325" cy="35.6446" rx="0.309783" ry="0.309783"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="5.6325" cy="35.6446" rx="0.309783" ry="0.309783"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.39337" y1="36.2641" x2="6.87163" y2="36.2641"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.6325" y1="35.9543" x2="5.6325" y2="37.5033"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.6325" y1="37.5033" x2="4.39337" y2="38.8554"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.6325" y1="37.5033" x2="6.87163" y2="38.8554"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.5675 cm; font-family: sans; font-style: normal; font-weight: normal" x="4.84875" y="40.0175">Socio</text>
+  <ellipse style="fill: #ffffff" cx="27.1825" cy="30.0175" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="27.1825" cy="30.0175" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="25.9825" y1="30.6175" x2="28.3825" y2="30.6175"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="27.1825" y1="30.3175" x2="27.1825" y2="31.8175"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="27.1825" y1="31.8175" x2="25.9825" y2="33.1175"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="27.1825" y1="31.8175" x2="28.3825" y2="33.1175"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.9775 cm; font-family: sans; font-style: normal; font-weight: normal" x="25.6938" y="34.26">Secretario</text>
+  <ellipse style="fill: #ffffff" cx="19.7825" cy="26.6175" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="19.7825" cy="26.6175" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="18.5825" y1="27.2175" x2="20.9825" y2="27.2175"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="19.7825" y1="26.9175" x2="19.7825" y2="28.4175"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="19.7825" y1="28.4175" x2="18.5825" y2="29.7175"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="19.7825" y1="28.4175" x2="20.9825" y2="29.7175"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.985 cm; font-family: sans; font-style: normal; font-weight: normal" x="15.29" y="30.86">Administrador de la asociación</text>
+  <ellipse style="fill: #ffffff" cx="-3.0675" cy="23.6675" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="-3.0675" cy="23.6675" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="-4.2675" y1="24.2675" x2="-1.8675" y2="24.2675"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="-3.0675" y1="23.9675" x2="-3.0675" y2="25.4675"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="-3.0675" y1="25.4675" x2="-4.2675" y2="26.7675"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="-3.0675" y1="25.4675" x2="-1.8675" y2="26.7675"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.13 cm; font-family: sans; font-style: normal; font-weight: normal" x="-5.6325" y="27.91">Usuario anónimo </text>
+  <ellipse style="fill: #ffffff" cx="19.7325" cy="19.8675" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="19.7325" cy="19.8675" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="18.5325" y1="20.4675" x2="20.9325" y2="20.4675"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="19.7325" y1="20.1675" x2="19.7325" y2="21.6675"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="19.7325" y1="21.6675" x2="18.5325" y2="22.9675"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="19.7325" y1="21.6675" x2="20.9325" y2="22.9675"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 9.5825 cm; font-family: sans; font-style: normal; font-weight: normal" x="14.9413" y="24.11">Administrador de la Herramienta</text>
+  <ellipse style="fill: #ffffff" cx="27.0825" cy="36.3175" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="27.0825" cy="36.3175" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="25.8825" y1="36.9175" x2="28.2825" y2="36.9175"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="27.0825" y1="36.6175" x2="27.0825" y2="38.1175"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="27.0825" y1="38.1175" x2="25.8825" y2="39.4175"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="27.0825" y1="38.1175" x2="28.2825" y2="39.4175"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.6275 cm; font-family: sans; font-style: normal; font-weight: normal" x="25.7688" y="40.56">Tesorero </text>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="5.6325,40.4995 5.6325,42.4997 5.65,42.4997 5.65,44.2764 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="5.4,43.8882 5.65,44.3882 5.9,43.8882 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="27.1825,29.1175 27.1825,28.05 32.3889,28.05 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="32.0007,28.3 32.5007,28.05 32.0007,27.8 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="5.6325,34.725 5.6325,34.35 5.6125,34.35 5.6125,32.7738 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="5.8625,33.162 5.6125,32.662 5.3625,33.162 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="25.9325,31.8175 17.4352,31.8175 17.4352,31.8 9.16152,31.8 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="9.54971,31.55 9.04971,31.8 9.54971,32.05 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="4.3825,37.5 2.09,37.5 2.09,37.5 0.711306,37.5 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="1.0995,37.25 0.599502,37.5 1.0995,37.75 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="6.8825,37.5 9.46611,37.5 9.46611,38.75 11.8261,38.75 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="11.4379,39 11.9379,38.75 11.4379,38.5 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="28.4136,38.1175 30.0631,38.1175 30.0631,38.1 31.4889,38.1 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="31.1007,38.35 31.6007,38.1 31.1007,37.85 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="-3.0675,28.1675 -3.0675,31.8 2.11389,31.8 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="1.7257,32.05 2.2257,31.8 1.7257,31.55 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="-1.8175,25.4675 0.0598665,25.4675 0.0598665,25.45 1.71362,25.45 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="1.32543,25.7 1.82543,25.45 1.32543,25.2 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="18.4825,21.6675 14.5851,21.6675 14.5851,25.45 10.9114,25.45 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="11.2996,25.2 10.7996,25.45 11.2996,25.7 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="18.5325,28.4175 14.585,28.4175 14.585,25.45 10.8611,25.45 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="11.2493,25.2 10.7493,25.45 11.2493,25.7 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="28.4325,31.8175 30.4473,31.8175 30.4473,31.8 32.2384,31.8 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="31.8502,32.05 32.3502,31.8 31.8502,31.55 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="20.9825,21.6675 25.0848,21.6675 25.0848,18.15 28.9635,18.15 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="28.5753,18.4 29.0753,18.15 28.5753,17.9 "/>
+  <rect style="fill: #ffffff" x="29.2375" y="17.45" width="6.9" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="29.2375" y="17.45" width="6.9" height="1.4"/>
+  <rect style="fill: #ffffff" x="29.2375" y="16.55" width="1.5" height="0.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="29.2375" y="16.55" width="1.5" height="0.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 6.3 cm; font-family: monospace; font-style: normal; font-weight: normal" x="29.5375" y="18.2925">Gestion de modulos</text>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="21.0325,28.4175 25.1098,28.4175 25.1098,18.15 28.9635,18.15 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="28.5753,18.4 29.0753,18.15 28.5753,17.9 "/>
+  <rect style="fill: #ffffff" x="1.9875" y="24.75" width="8.65" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="1.9875" y="24.75" width="8.65" height="1.4"/>
+  <rect style="fill: #ffffff" x="1.9875" y="23.85" width="1.5" height="0.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="1.9875" y="23.85" width="1.5" height="0.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.05 cm; font-family: monospace; font-style: normal; font-weight: normal" x="2.2875" y="25.5925">Gestion de Asociaciones</text>
+  <rect style="fill: #ffffff" x="2.3375" y="31.1" width="6.55" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="2.3375" y="31.1" width="6.55" height="1.4"/>
+  <rect style="fill: #ffffff" x="2.3375" y="30.2" width="1.5" height="0.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="2.3375" y="30.2" width="1.5" height="0.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.95 cm; font-family: monospace; font-style: normal; font-weight: normal" x="2.6375" y="31.9425">Gestion de Socios</text>
+  <rect style="fill: #ffffff" x="32.6125" y="27.35" width="7.6" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="32.6125" y="27.35" width="7.6" height="1.4"/>
+  <rect style="fill: #ffffff" x="32.6125" y="26.45" width="1.5" height="0.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="32.6125" y="26.45" width="1.5" height="0.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 7 cm; font-family: monospace; font-style: normal; font-weight: normal" x="32.9125" y="28.1925">Gestion de proyectos</text>
+  <rect style="fill: #ffffff" x="32.5125" y="31.1" width="7.6" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="32.5125" y="31.1" width="7.6" height="1.4"/>
+  <rect style="fill: #ffffff" x="32.5125" y="30.2" width="1.5" height="0.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="32.5125" y="30.2" width="1.5" height="0.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 7 cm; font-family: monospace; font-style: normal; font-weight: normal" x="32.8125" y="31.9425">Gestion de directiva</text>
+  <rect style="fill: #ffffff" x="31.7125" y="37.4" width="6.55" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="31.7125" y="37.4" width="6.55" height="1.4"/>
+  <rect style="fill: #ffffff" x="31.7125" y="36.5" width="1.5" height="0.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="31.7125" y="36.5" width="1.5" height="0.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.95 cm; font-family: monospace; font-style: normal; font-weight: normal" x="32.0125" y="38.2425">Gestion economica</text>
+  <rect style="fill: #ffffff" x="12.15" y="34.85" width="7.95" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="12.15" y="34.85" width="7.95" height="1.4"/>
+  <rect style="fill: #ffffff" x="12.15" y="33.95" width="1.5" height="0.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="12.15" y="33.95" width="1.5" height="0.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 7.35 cm; font-family: monospace; font-style: normal; font-weight: normal" x="12.45" y="35.6925">Gestion de decisiones</text>
+  <rect style="fill: #ffffff" x="12.1" y="38.05" width="9.35" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="12.1" y="38.05" width="9.35" height="1.4"/>
+  <rect style="fill: #ffffff" x="12.1" y="37.15" width="1.5" height="0.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="12.1" y="37.15" width="1.5" height="0.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.75 cm; font-family: monospace; font-style: normal; font-weight: normal" x="12.4" y="38.8925">Calendario de actividades</text>
+  <rect style="fill: #ffffff" x="1.85" y="44.5" width="7.6" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="1.85" y="44.5" width="7.6" height="1.4"/>
+  <rect style="fill: #ffffff" x="1.85" y="43.6" width="1.5" height="0.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="1.85" y="43.6" width="1.5" height="0.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 7 cm; font-family: monospace; font-style: normal; font-weight: normal" x="2.15" y="45.3425">Gestion de contactos</text>
+  <rect style="fill: #ffffff" x="-5.0625" y="36.8" width="5.5" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="-5.0625" y="36.8" width="5.5" height="1.4"/>
+  <rect style="fill: #ffffff" x="-5.0625" y="35.9" width="1.5" height="0.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="-5.0625" y="35.9" width="1.5" height="0.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.9 cm; font-family: monospace; font-style: normal; font-weight: normal" x="-4.7625" y="37.6425">Identificacion</text>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="6.8825,37.5 9.491,37.5 9.491,35.55 11.8759,35.55 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="11.4877,35.8 11.9877,35.55 11.4877,35.3 "/>
+  <rect style="fill: #ffffff" x="16.7875" y="15.3" width="5.85" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="16.7875" y="15.3" width="5.85" height="1.4"/>
+  <rect style="fill: #ffffff" x="16.7875" y="14.4" width="1.5" height="0.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="16.7875" y="14.4" width="1.5" height="0.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 5.25 cm; font-family: monospace; font-style: normal; font-weight: normal" x="17.0875" y="16.1425">Gestion de logs</text>
+  <rect style="fill: #ffffff" x="29.2375" y="20.95" width="7.25" height="1.4"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="29.2375" y="20.95" width="7.25" height="1.4"/>
+  <rect style="fill: #ffffff" x="29.2375" y="20.05" width="1.5" height="0.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="29.2375" y="20.05" width="1.5" height="0.9"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 6.65 cm; font-family: monospace; font-style: normal; font-weight: normal" x="29.5375" y="21.7925">Gestion de permisos</text>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="24.5411,21.6675 26.8893,21.6675 26.8893,21.65 29.0139,21.65 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="28.6257,21.9 29.1257,21.65 28.6257,21.4 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="21.0325,28.4175 25.1098,28.4175 25.1098,21.65 28.9635,21.65 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="28.5753,21.9 29.0753,21.65 28.5753,21.4 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="19.7325,18.9675 19.7325,17.8337 19.7125,17.8337 19.7125,16.9236 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="19.9625,17.3118 19.7125,16.8118 19.4625,17.3118 "/>
 </svg>

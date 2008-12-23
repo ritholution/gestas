@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="26cm" height="6cm" viewBox="4 1 26 6">
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="7.515,4.07 9.43978,4.07 9.43978,4.02917 11.141,4.02917 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="10.7528,4.27917 11.2528,4.02917 10.7528,3.77917 "/>
+  <ellipse style="fill: #ffffff" cx="14.9925" cy="4.02917" rx="3.6275" ry="1.20917"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="14.9925" cy="4.02917" rx="3.6275" ry="1.20917"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.855 cm; font-family: sans; font-style: normal; font-weight: normal" x="12.565" y="4.17167">Solicitar Permiso</text>
+  <ellipse style="fill: #ffffff" cx="26.4075" cy="2.27" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="26.4075" cy="2.27" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="25.2075" y1="2.87" x2="27.6075" y2="2.87"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="26.4075" y1="2.57" x2="26.4075" y2="4.07"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="26.4075" y1="4.07" x2="25.2075" y2="5.37"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="26.4075" y1="4.07" x2="27.6075" y2="5.37"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.985 cm; font-family: sans; font-style: normal; font-weight: normal" x="21.915" y="6.5125">Administrador de la asociación</text>
+  <ellipse style="fill: #ffffff" cx="6.265" cy="2.27" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="6.265" cy="2.27" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.065" y1="2.87" x2="7.465" y2="2.87"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="6.265" y1="2.57" x2="6.265" y2="4.07"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="6.265" y1="4.07" x2="5.065" y2="5.37"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="6.265" y1="4.07" x2="7.465" y2="5.37"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.5675 cm; font-family: sans; font-style: normal; font-weight: normal" x="5.48125" y="6.5125">Socio</text>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="25.1575,4.07 21.889,4.07 21.889,4.02917 18.844,4.02917 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="19.2322,3.77917 18.7322,4.02917 19.2322,4.27917 "/>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="21cm" height="6cm" viewBox="1 1 21 6">
+  <ellipse style="fill: #ffffff" cx="6.2725" cy="2.37" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="6.2725" cy="2.37" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.0725" y1="2.97" x2="7.4725" y2="2.97"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="6.2725" y1="2.67" x2="6.2725" y2="4.17"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="6.2725" y1="4.17" x2="5.0725" y2="5.47"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="6.2725" y1="4.17" x2="7.4725" y2="5.47"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 9.515 cm; font-family: sans; font-style: normal; font-weight: normal" x="1.515" y="6.6125">Administrador de la herramienta</text>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="7.5225,4.17 10.1188,4.17 10.1188,4.16125 12.4914,4.16125 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="12.1032,4.41125 12.6032,4.16125 12.1032,3.91125 "/>
+  <ellipse style="fill: #ffffff" cx="17.3388" cy="4.16125" rx="4.62375" ry="1.54125"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="17.3388" cy="4.16125" rx="4.62375" ry="1.54125"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 6.8475 cm; font-family: sans; font-style: normal; font-weight: normal" x="13.915" y="4.30375">Comprobar Archivo Log</text>
+</svg>

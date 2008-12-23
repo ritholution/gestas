@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="18cm" height="6cm" viewBox="1 1 18 6">
+  <ellipse style="fill: #ffffff" cx="6.2725" cy="2.37" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="6.2725" cy="2.37" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.0725" y1="2.97" x2="7.4725" y2="2.97"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="6.2725" y1="2.67" x2="6.2725" y2="4.17"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="6.2725" y1="4.17" x2="5.0725" y2="5.47"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="6.2725" y1="4.17" x2="7.4725" y2="5.47"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 9.515 cm; font-family: sans; font-style: normal; font-weight: normal" x="1.515" y="6.6125">Administrador de la herramienta</text>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="7.5225,4.17 9.51853,4.17 9.51853,4.13417 11.2909,4.13417 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" points="10.9028,4.38417 11.4028,4.13417 10.9028,3.88417 "/>
+  <ellipse style="fill: #ffffff" cx="15.1575" cy="4.13417" rx="3.6425" ry="1.21417"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="15.1575" cy="4.13417" rx="3.6425" ry="1.21417"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 4.885 cm; font-family: sans; font-style: normal; font-weight: normal" x="12.715" y="4.27667">Eliminar Permiso</text>
+</svg>
