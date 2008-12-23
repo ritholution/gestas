@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="30cm" height="12cm" viewBox="4 1 30 12">
+  <ellipse style="fill: #ffffff" cx="5.6225" cy="2.47" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="5.6225" cy="2.47" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.4225" y1="3.07" x2="6.8225" y2="3.07"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.6225" y1="2.77" x2="5.6225" y2="4.27"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.6225" y1="4.27" x2="4.4225" y2="5.57"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.6225" y1="4.27" x2="6.8225" y2="5.57"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.5675 cm; font-family: sans; font-style: normal; font-weight: normal" x="4.83875" y="6.7125">Socio</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="5.6225" y1="6.97" x2="5.6225" y2="12"/>
+  <rect style="fill: #ffffff" x="5.2725" y="8.5" width="0.7" height="1.85"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="5.2725" y="8.5" width="0.7" height="1.85"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="6.4225" y1="12.8" x2="4.8225" y2="11.2"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="6.4225" y1="11.2" x2="4.8225" y2="12.8"/>
+  <rect style="fill: #ffffff" x="15.415" y="4.97" width="3.7275" height="1.8"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="15.415" y="4.97" width="3.7275" height="1.8"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.7275 cm; font-family: sans; font-style: normal; font-weight: normal" x="15.915" y="6.0125">:Sistema </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" x1="15.915" y1="6.1525" x2="18.6425" y2="6.1525"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="17.2787" y1="6.77" x2="17.2787" y2="12"/>
+  <rect style="fill: #ffffff" x="16.9287" y="8.5" width="0.7" height="1.9"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="16.9287" y="8.5" width="0.7" height="1.9"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="18.0787" y1="12.8" x2="16.4787" y2="11.2"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="18.0787" y1="11.2" x2="16.4787" y2="12.8"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="16.0787" y1="8.5" x2="5.9725" y2="8.5"/>
+  <polygon style="fill: #000000" points="16.0787,8.75 16.8787,8.5 16.0787,8.25 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 7.405 cm; font-family: sans; font-style: normal; font-weight: normal" x="7.7481" y="9">solicitarPermiso(permiso)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="28.4575" y1="8.47218" x2="17.6288" y2="8.5"/>
+  <polygon style="fill: #000000" points="28.4581,8.72218 29.2575,8.47013 28.4569,8.22218 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 10.0525 cm; font-family: sans; font-style: normal; font-weight: normal" x="18.4419" y="8.985">notificarSolicitud(usuario,permiso)</text>
+  <ellipse style="fill: #ffffff" cx="29.6575" cy="2.97" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="29.6575" cy="2.97" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="28.4575" y1="3.57" x2="30.8575" y2="3.57"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="29.6575" y1="3.27" x2="29.6575" y2="4.77"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="29.6575" y1="4.77" x2="28.4575" y2="6.07"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="29.6575" y1="4.77" x2="30.8575" y2="6.07"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.985 cm; font-family: sans; font-style: normal; font-weight: normal" x="25.165" y="7.2125">Administrador de la asociacion</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="29.6575" y1="7.47" x2="29.6575" y2="11.9"/>
+  <rect style="fill: #ffffff" x="29.3075" y="8.47" width="0.7" height="1.88"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="29.3075" y="8.47" width="0.7" height="1.88"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="30.4575" y1="12.7" x2="28.8575" y2="11.1"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="30.4575" y1="11.1" x2="28.8575" y2="12.7"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="18.4787" y1="9.92172" x2="29.3075" y2="9.88"/>
+  <polygon style="fill: #000000" points="18.4777,9.67173 17.6787,9.92481 18.4797,10.1717 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 9.4525 cm; font-family: sans; font-style: normal; font-weight: normal" x="18.7418" y="10.4025">validarPermiso(usuario,permiso)</text>
+</svg>

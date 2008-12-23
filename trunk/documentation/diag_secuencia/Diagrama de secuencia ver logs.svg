@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="28cm" height="14cm" viewBox="0 1 28 14">
+  <ellipse style="fill: #ffffff" cx="5.6225" cy="2.47" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="5.6225" cy="2.47" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.4225" y1="3.07" x2="6.8225" y2="3.07"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.6225" y1="2.77" x2="5.6225" y2="4.27"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.6225" y1="4.27" x2="4.4225" y2="5.57"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.6225" y1="4.27" x2="6.8225" y2="5.57"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 9.515 cm; font-family: sans; font-style: normal; font-weight: normal" x="0.865" y="6.7125">Administrador de la herramienta</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="5.6225" y1="6.97" x2="5.6225" y2="14.05"/>
+  <rect style="fill: #ffffff" x="5.2725" y="8.5" width="0.7" height="3.55"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="5.2725" y="8.5" width="0.7" height="3.55"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="6.4225" y1="14.85" x2="4.8225" y2="13.25"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="6.4225" y1="13.25" x2="4.8225" y2="14.85"/>
+  <rect style="fill: #ffffff" x="13.965" y="4.92" width="3.7275" height="1.8"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="13.965" y="4.92" width="3.7275" height="1.8"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.7275 cm; font-family: sans; font-style: normal; font-weight: normal" x="14.465" y="5.9625">:Sistema </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" x1="14.465" y1="6.1025" x2="17.1925" y2="6.1025"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="15.8287" y1="6.72" x2="15.8287" y2="14.05"/>
+  <rect style="fill: #ffffff" x="15.4787" y="8.45" width="0.7" height="3.65"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="15.4787" y="8.45" width="0.7" height="3.65"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="16.6287" y1="14.85" x2="15.0287" y2="13.25"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="16.6287" y1="13.25" x2="15.0287" y2="14.85"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="14.6288" y1="8.45447" x2="5.9725" y2="8.5"/>
+  <polygon style="fill: #000000" points="14.6301,8.70447 15.4288,8.45026 14.6274,8.20447 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 7.9475 cm; font-family: sans; font-style: normal; font-weight: normal" x="6.75187" y="8.975">verLogs(horaInicio,horaFin)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="16.1787" y1="8.45" x2="27.85" y2="8.45"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="27.85" y1="8.45" x2="27.85" y2="9.85"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="17.0287" y1="9.85" x2="27.85" y2="9.85"/>
+  <polygon style="fill: #000000" points="17.0287,9.6 16.2287,9.85 17.0287,10.1 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 11.1625 cm; font-family: sans; font-style: normal; font-weight: normal" x="16.4331" y="9.65">logs:=obtenerLogs(horaInicio,horaFin)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="16.1787" y1="10.275" x2="23.95" y2="10.275"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="23.95" y1="10.275" x2="23.95" y2="11.35"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="17.0287" y1="11.35" x2="23.95" y2="11.35"/>
+  <polygon style="fill: #000000" points="17.0287,11.1 16.2287,11.35 17.0287,11.6 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 7.1525 cm; font-family: sans; font-style: normal; font-weight: normal" x="16.4881" y="11.3125">logs:=ordenarLogs(logs)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke-dasharray: 0.4; stroke: #000000" x1="14.6288" y1="12.0955" x2="5.9725" y2="12.05"/>
+  <polygon style="fill: #000000" points="14.6274,12.3455 15.4288,12.0997 14.6301,11.8455 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 1.1925 cm; font-family: sans; font-style: normal; font-weight: normal" x="10.1294" y="12.575">logs</text>
+</svg>

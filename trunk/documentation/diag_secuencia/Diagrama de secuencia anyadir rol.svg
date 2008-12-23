@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="32cm" height="14cm" viewBox="0 1 32 14">
+  <ellipse style="fill: #ffffff" cx="5.6225" cy="2.47" rx="0.3" ry="0.3"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" cx="5.6225" cy="2.47" rx="0.3" ry="0.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="4.4225" y1="3.07" x2="6.8225" y2="3.07"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.6225" y1="2.77" x2="5.6225" y2="4.27"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.6225" y1="4.27" x2="4.4225" y2="5.57"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="5.6225" y1="4.27" x2="6.8225" y2="5.57"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 9.515 cm; font-family: sans; font-style: normal; font-weight: normal" x="0.865" y="6.7125">Administrador de la herramienta</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="5.6225" y1="6.97" x2="5.6225" y2="13.9"/>
+  <rect style="fill: #ffffff" x="5.2725" y="8.5" width="0.7" height="3.3"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="5.2725" y="8.5" width="0.7" height="3.3"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="6.4225" y1="14.7" x2="4.8225" y2="13.1"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="6.4225" y1="13.1" x2="4.8225" y2="14.7"/>
+  <rect style="fill: #ffffff" x="17.815" y="4.92" width="3.7275" height="1.8"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="17.815" y="4.92" width="3.7275" height="1.8"/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 2.7275 cm; font-family: sans; font-style: normal; font-weight: normal" x="18.315" y="5.9625">:Sistema </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" x1="18.315" y1="6.1025" x2="21.0425" y2="6.1025"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke-dasharray: 0.4; stroke: #000000" x1="19.6787" y1="6.72" x2="19.6787" y2="14.05"/>
+  <rect style="fill: #ffffff" x="19.3287" y="8.45" width="0.7" height="3.65"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x="19.3287" y="8.45" width="0.7" height="3.65"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="20.4787" y1="14.85" x2="18.8787" y2="13.25"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.12; stroke: #000000" x1="20.4787" y1="13.25" x2="18.8787" y2="14.85"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="18.4788" y1="8.45318" x2="5.9725" y2="8.5"/>
+  <polygon style="fill: #000000" points="18.4797,8.70318 19.2788,8.45019 18.4778,8.20318 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 11.895 cm; font-family: sans; font-style: normal; font-weight: normal" x="6.70312" y="8.975">anyadirRol(nombre,asociacion,permisos)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="20.0287" y1="8.45" x2="32.1" y2="8.45"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="32.1" y1="8.45" x2="32.1" y2="9.75"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="20.8788" y1="9.75" x2="32.1" y2="9.75"/>
+  <polygon style="fill: #000000" points="20.8788,9.5 20.0787,9.75 20.8788,10 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 10.3325 cm; font-family: sans; font-style: normal; font-weight: normal" x="20.8981" y="9.6">id:=insertarRol(nombre,asociacion)</text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="20.0287" y1="10.275" x2="30.45" y2="10.275"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="30.45" y1="10.275" x2="30.45" y2="11.45"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 0.1; stroke: #000000" x1="20.8788" y1="11.45" x2="30.45" y2="11.45"/>
+  <polygon style="fill: #000000" points="20.8788,11.2 20.0787,11.45 20.8788,11.7 "/>
+  <text style="fill: #000000; font-size: 0.8 cm; length: 8.595 cm; font-family: sans; font-style: normal; font-weight: normal" x="20.9419" y="11.3625">asignarPermisos(id,permisos)</text>
+</svg>
