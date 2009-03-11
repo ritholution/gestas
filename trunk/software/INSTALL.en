@@ -1,0 +1,80 @@
+Installation of GESTAS
+=======================
+Actually you can install GESTAS only from source code (there is'nt a
+package in any distribution), so you have to follow the next steps to
+install GESTAS:
+
+1.- Download the source code: You can find the source code of GESTAS
+in a subversion repository located at http://opentia.net/GESTAS, so,
+for download it, you have to have installed subversion and execute the
+next command:
+
+	 $ svn co svn://opentia.net/GESTAS/trunk/software gestas
+
+Subversion (http://subversion.tigris.org) is a control version system
+very popular which is offer as binary package in almost every
+GNU/Linux system, so it's installation is very easy with any package
+manager.
+
+2.- Install the dependencies: GESTAS depends on the next Debian
+packages: mysql-server-5.0, mysql-client-5.0, apache2,
+libapache2-mod-php5, php5, php5-mysql y php-gettext. 
+This packages are very common in all the GNU/Linux distributions, so,
+although it can have other names, you can find them easily.
+
+3.- Create the database: GESTAS work with a mysql database, so we have
+to create one and grant privileges to an user to access and modify
+it. We can use the next command to create a database in MySQL:
+
+	  $ mysqladmin -u admin create gestas
+
+    where admin is the MySQL server administrator (usually 'root'
+user) and gestas is the name of the database. To grant privileges to a
+user we have to run the next commands:
+
+     	  $ mysql -u admin
+	  sql> GRANT ALL PRIVILEGES ON gestas.* TO gestas_user IDENTIFIED BY
+	  'gestas_password';
+          sql> FLUSH PRIVILEGES;
+	  sql> exit
+
+    where admin, as before, is the mysql server administrator,
+gestas_user is the user who is going to administrate the application
+database and gestas_password, which is optional, is the password of
+the administrator.
+
+4.- Parameter configuration: Befor we load the database schema we have
+to adjust some parameters stored in the database. For that, we have to
+create a new file, mysql-configs.sql, in the sql directory with all
+the parameters configured correctly. We have an example of this file
+in mysql-configs.sql.default in the same directory, so we only have to
+copy this file into mysql-configs.sql and set the parameters,
+specially dir_base, which is the base directory where is the software
+installed.
+
+5.- Load the database schema: Once we have configured the parameters
+we have to load the schema into the database by running the follow
+commands:
+
+     	  $ mysql -u admin
+	  sql> source mysql.sql
+	  sql> exit	 
+
+6.- Configure the database conection: Now we have the database schema
+loaded we-re going to configure the database conection by creating a
+new file, const.php, in the project's root directory with all the
+connection data (port, host, user, password and database name). We
+have an example of the file const.php in const.php.default, so we can
+copy and change it with our connection configurations.
+
+7.- Open the access to the application: Now that the application is
+installed and configured, we are going to give access to it by
+configurin Apache conveniently. We can configure it puting the
+application in a directory or subdirectory where any virtual host
+point or creating a new virtual host. In the second option we have to
+edit a new file at /etc/apache2/sites-available with the new virtual
+host data and link it to the /etc/apache2/sites-enabled directory,
+restarting then the Apache server.
+
+With this steps we have installed GESTAS, so have fun and happy
+hacking!.

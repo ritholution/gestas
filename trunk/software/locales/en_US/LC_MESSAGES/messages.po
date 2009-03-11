@@ -1,0 +1,50 @@
+# English translations for i package.
+# Copyright (C) 2008 THE i'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the i package.
+# Pablo Alvarez de Sotomayor Posadillo <palvarez@opentia.net>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: i 02sopop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-10-13 06:23+0200\n"
+"PO-Revision-Date: 2008-10-13 06:27+0200\n"
+"Last-Translator: Pablo Alvarez de Sotomayor Posadillo <palvarez@opentia."
+"net>\n"
+"Language-Team: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: /home/i02sopop/desarrollo/trabajo_opentia/GESTAS/trunk/software/clases/gexception.php:16
+msgid "No puede acceder a la variable."
+msgstr "No puede acceder a la variable."
+
+#: /home/i02sopop/desarrollo/trabajo_opentia/GESTAS/trunk/software/clases/gexception.php:19
+msgid "Variable desconocida."
+msgstr "Variable desconocida."
+
+#: /home/i02sopop/desarrollo/trabajo_opentia/GESTAS/trunk/software/clases/gexception.php:22
+msgid "Parametro incorrecto."
+msgstr "Parametro incorrecto."
+
+#: /home/i02sopop/desarrollo/trabajo_opentia/GESTAS/trunk/software/clases/gexception.php:25
+msgid "Algoritmo de encriptacion no disponible."
+msgstr "Algoritmo de encriptacion no disponible."
+
+#: /home/i02sopop/desarrollo/trabajo_opentia/GESTAS/trunk/software/clases/gexception.php:29
+msgid "Error de conexion a la base de datos."
+msgstr "Error de conexion a la base de datos."
+
+#: /home/i02sopop/desarrollo/trabajo_opentia/GESTAS/trunk/software/clases/gexception.php:33
+msgid "Error desconocido."
+msgstr "Error desconocido."
+
+#: /home/i02sopop/desarrollo/trabajo_opentia/GESTAS/trunk/software/funciones/system.php:63
+msgid "menu"
+msgstr "menu"
+
+#: /home/i02sopop/desarrollo/trabajo_opentia/GESTAS/trunk/software/funciones/system.php:70
+msgid "GESTAS - Pagina en construccion"
+msgstr "GESTAS - Page under construction"
