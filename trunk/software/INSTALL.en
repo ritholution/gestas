@@ -9,7 +9,7 @@ in a subversion repository located at http://opentia.net/GESTAS, so,
 for download it, you have to have installed subversion and execute the
 next command:
 
-	 $ svn co svn://opentia.net/GESTAS/trunk/software gestas
+	 $ svn co https://forja.rediris.es/svn/cusl3-gestas/trunk/software gestas
 
 Subversion (http://subversion.tigris.org) is a control version system
 very popular which is offer as binary package in almost every

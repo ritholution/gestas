@@ -9,7 +9,7 @@ disponible en un repositorio alojado en http://opentia.net/GESTAS, por
 lo que para descargarlo tendrás que tener instalado subversion y
 ejecutar el siguiente comando:
 
-	 $ svn co svn://opentia.net/GESTAS/trunk/software gestas
+	 $ svn co https://forja.rediris.es/svn/cusl3-gestas/trunk/software gestas
 
     Subversion (http://subversion.tigris.org) es un sistema de gestión de
 versiones que esta disponible en la mayoría de las distribuciones
@@ -74,7 +74,7 @@ anteriormente.
 el esquema de la base de datos vamos a crear un pequeño archivo,
 const.php, en el que indicaremos los datos de conexión a la base de
 datos. Para ello vamos al directorio raíz donde está el código fuente,
-copiamos el fichero const.php..default a const.php y editamos dicho
+copiamos el fichero const.php.default a const.php y editamos dicho
 fichero, indicando todos los datos de conexión a la base de datos
 (usuario, contraseña, host, nombre de la base de datos y puerto). Como
 base se puede copiar el fichero const.php.default que existe en dicho
@@ -96,6 +96,6 @@ Con estos sencillos pasos tendrás ya instalada una versión de GESTAS,
 así que diviértete y ¡a hackear!
 
 NOTA IMPORTANTE: actualmente existe una limitación por la cual GESTAS
-no funciona con la versión estable de Debian (etch). En testing (lenny)
-sí funciona perfectamente. Parece ser un problema con el php5 de
-dicha versión.
+no funciona con la versión oldestable de Debian (etch). En Debian
+stable (lenny) sí funciona perfectamente. Parece ser un problema con
+el php5 de dicha versión.

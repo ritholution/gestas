@@ -1,0 +1,7 @@
+2009-03-11  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* Changelog: First alpha version of GESTAS with a kernel with the
+	main functionalities, a member manager with some basic operations
+	(membership request, un/registration of members, change own
+	membership data, change password) and an association manager with
+	the association request operation.

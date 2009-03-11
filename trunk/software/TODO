@@ -1,17 +1,10 @@
 This file contains the things to do in the project. The idea is to
 have a general list of things to implement in the future.
 
-- Insertar los telefonos, los correos y las webs de los usuarios en el
-   alta de socios.
-- Comprobar que la misma persona no pueda ni hacer dos peticions de
-   alta a la misma asociacion ni darse de alta en la misma asociacion
-   dos veces (es decir, comprobarlo tanto cuando se realiza la
-   peticion como cuando se da de alta como socio).
 - Premitir ver cada peticion detalladamente en el alta de nuevos
    socios y en el listado de peticiones.
 - Generar un filtro para la salida html de enlaces (urls) e
    implementar un metodo en la clase web que genere este enlace.
-- Implementar la cancelacion de socios.
 - Implementar la peticion de baja de socio.
 - Implementar el gestor de telefonos y de webs (Telephone y Web
    representan una entrada en la base de datos).
