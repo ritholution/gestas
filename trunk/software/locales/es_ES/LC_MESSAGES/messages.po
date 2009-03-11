@@ -1,7 +1,7 @@
-# Spanish translations for i package.
-# Copyright (C) 2008 THE i'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the i package.
-# Pablo Alvarez de Sotomayor Posadillo <palvarez@opentia.net>, 2008.
+# Spanish translations for GESTAS package.
+# Copyright (C) 2008 OPENTIA s.l. (http://www.opentia.com)
+# This file is distributed under the same license as the GESTAS package.
+# Pablo Alvarez de Sotomayor Posadillo <palvarez@opentia.org>, 2008-2009.
 #
 msgid ""
 msgstr ""
