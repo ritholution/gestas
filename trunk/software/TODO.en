@@ -1,0 +1,32 @@
+This file contains a list with things to do in the project.
+
+- Implement a detail view of each member in the member list.
+- Implement a detail view of each petition in the membership request list.
+- Create a filter to generate the html output of an url link and
+  implement a method in the Web class that, using this filter, returns
+  the html link of the actual url.
+- Implement the 'cancel of membership' petition.
+- Implement the telephone manager.
+- Implement the web manager.
+- Make a list with the variables stored in $_SESSION and their use.
+- Make all paths relative to the configuration parameter dir_base.
+- Translate all the documentation files to english.
+- Check if work the translation of the content stored in the database.
+- Implement the rest of managers detected during the analiysis of the
+  project.
+- Implement an independent interface by association using a different
+  directory for each association.
+- Implement a setup program.
+- Implement a hot update program.
+- Implement a config panel.
+- Optimize the database and the consults made against it..
+- Optimize he program.
+- Implement a generic method to make a database consult. This method
+  will have a string parameter to indicate the table name, an array
+  parameter indicating the columns to obtain and another array with
+  the where clause conditions.
+- Implement a generic method to insert, modify or delete operation
+  against a database. This method will have a string parameter to
+  indicate the table name, an array with the where clause conditions
+  and, in the case, a dictionary parameter indicating the new value of
+  the columns.
