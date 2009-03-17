@@ -1,13 +1,20 @@
 Instalar GESTAS
 ===============
-Actualmente GESTAS sólo se puede instalar desde el código fuente (no
-hay paquete para ninguna distribución), con lo que los pasos a seguir
-para instalar GESTAS son las siguientes:
+En la actualidad GESTAS sólo se puede instalar desde el código fuente,
+ya que el estado del proyecto es muy inicial como para que merezca la
+pena dedicar esfuerzo en el desarrollo de paquetes para las distintas
+distribuciones de GNU/Linux. Los pasos a seguir para instalar GESTAS
+desde el código fuente son los siguientes:
 
-1.- Descargar el código fuente: El código fuente del programa está
-disponible en un repositorio alojado en http://opentia.net/GESTAS, por
-lo que para descargarlo tendrás que tener instalado subversion y
-ejecutar el siguiente comando:
+1.- Descargar el programa: Hay dos maneras de descargarse el código
+fuente de GESTAS, a traves de la página web oficial del proyecto
+(http://gestas.opentia.org), en la que se pueden encontrar las
+versiones estables que se van publicando del proyecto, o a través del
+repositorio donde está alojado el proyecto
+(https://forja.rediris.es/projects/cusl3-gestas/). El repositorio del
+proyecto está gestionado por subversion, con lo que para descargar el
+código fuente de este hay que tener instalado subversion y ejecutar el
+siguiente comando:
 
 	 $ svn co https://forja.rediris.es/svn/cusl3-gestas/trunk/software gestas
 
@@ -19,9 +26,8 @@ instalarselo a partir de un gestor de paquetes.
 2.- Instalar dependencias: Actualmente GESTAS depende de los
 siguientes paquetes Debian: mysql-server-5.0, mysql-client-5.0, apache2,
 libapache2-mod-php5, php5, php5-mysql y php-gettext. Estos paquetes
-son de uso común (aunque pueden tener otro nombre), con lo que la
-mayoría de las distribuciones tienen un paquete binario para su fácil
-instalación.
+son de uso común, con lo que la mayoría de las distribuciones tienen
+un paquete binario para su fácil instalación.
 
 3.- Crear la base de datos: GESTAS trabaja con una base de datos, con
 lo que tendremos que crear una y dar permisos a un usuario para acceder
@@ -54,7 +60,7 @@ verás un fichero, mysql-configs.sql.default, con los parámetros que hay que
 configurar, con lo que lo puedes copiar a mysql-configs.sql y configurar los 
 parámetros convenientemente. Actualmente el parámetro que debes de modificar es
 dir_base, que indica el directorio base donde se encuentra la
-aplicación (se representarÃ¡ a partir de ahora como <GESTAS>).
+aplicación (se representará a partir de ahora como <GESTAS>).
 
 5.- Cargar el esquema: Despues de haber configurado los parámetros que
 se van a insertar en la base de datos deberás cargar el esquema de
@@ -90,12 +96,14 @@ aplicación de manera local basta con poner en un directorio o
 subdirectorio que este ya configurado con Apache para poder acceder
 desde local.
 
-8.- Reiniciar apache con /etc/init.d/apache2 restart
+8.- Reiniciar apache ejecutando:
+
+    $ /etc/init.d/apache2 restart
 
 Con estos sencillos pasos tendrás ya instalada una versión de GESTAS,
 así que diviértete y ¡a hackear!
 
-NOTA IMPORTANTE: actualmente existe una limitación por la cual GESTAS
+NOTA IMPORTANTE: Actualmente existe una limitación por la cual GESTAS
 no funciona con la versión oldestable de Debian (etch). En Debian
 stable (lenny) sí funciona perfectamente. Parece ser un problema con
 el php5 de dicha versión.
