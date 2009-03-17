@@ -1,7 +1,59 @@
 2009-03-11  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
 
-	* Changelog: First alpha version of GESTAS with a kernel with the
-	main functionalities, a member manager with some basic operations
-	(membership request, un/registration of members, change own
-	membership data, change password) and an association manager with
-	the association request operation.
+	* Changelog: First alpha version of GESTAS with the next
+	functionalities:
+	- kernel with the main functionalities
+	- member manager with some basic operations (membership
+	request, un/registration of members, change own	membership data,
+	change password) 
+	- Association manager with the association request operation.
+
+2008-10-04  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* general.php: .
+
+2008-10-03  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* general.php: New call to the function that load the configurations.
+
+	* system.php: Creation of a function to load the configurations.
+
+	* database.php: Corrected some bugs related to the database connection.
+
+	* mysql.php: Corrected some bugs related to the database connection.
+
+2008-10-02  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* mysql.sql: Added a table for the configurations of the system.
+
+	* association.php: Adaptation of the Association class from php4
+	to php5.
+
+	* database.php: Creation of the Database class to connect to a
+	generic database.
+
+	* mysql_db.php: Creation of the Mysql_db class, which inherit from
+	the Database class, to connect to a MySQL database.
+
+	* const.php: Created file to store the essential constants of the
+	application.
+
+	* general.php: Creation of an initial script which loads the
+	initial configurations.
+
+	* system.php: Creation of a file for the system functions.
+
+	* index.php: Loaded the general.php script at the beginning of the
+	application.
+
+2008-09-28  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* association.php: Creation of the Association class.
+	
+	* mysql.sql: Widenings and corrections of the database schema.
+
+2008-09-27  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* index.php: Beginning of the coding.
+	
+	* mysql.sql: First version of the database schema.
