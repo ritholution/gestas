@@ -186,7 +186,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `configuration` WRITE;
 /*!40000 ALTER TABLE `configuration` DISABLE KEYS */;
-INSERT INTO `configuration` VALUES (1,'TITLE','Gestas'),(1,'AUTHOR','OPENTIA S.L.'),(1,'KEYWORDS','GESTAS Gestion Asociaciones'),(1,'STYLE','general.css'),(1,'DESCRIPTION','El Gestor de Asociaciones Libre'),(1,'SITENAME','GESTAS'),(1,'language','es_ES'),(1,'lang_domain','messages'),(1,'class_base','clases'),(1,'template_base','templates'),(1,'dir_locales','locales'),(1,'def_template','template1.html'),(1,'debug_mode','1'),(2,'INDEX_DIR','member_mgmt.mod'),(3,'INDEX_DIR','association_mgmt.mod'),(4,'INDEX_DIR','action_mgmt.mod'),(5,'INDEX_DIR','object_mgmt.mod');
+INSERT INTO `configuration` VALUES (1,'TITLE','Gestas'),(1,'AUTHOR','OPENTIA S.L.'),(1,'KEYWORDS','GESTAS Gestion Asociaciones'),(1,'STYLE','general.css'),(1,'DESCRIPTION','El Gestor de Asociaciones Libre'),(1,'SITENAME','GESTAS'),(1,'language','es_ES'),(1,'lang_domain','messages'),(1,'class_base','clases'),(1,'template_base','templates'),(1,'dir_locales','locales'),(1,'def_template','template1.html'),(1,'debug_mode','0'),(2,'INDEX_DIR','member_mgmt.mod'),(3,'INDEX_DIR','association_mgmt.mod'),(4,'INDEX_DIR','action_mgmt.mod'),(5,'INDEX_DIR','object_mgmt.mod');
 /*!40000 ALTER TABLE `configuration` ENABLE KEYS */;
 UNLOCK TABLES;
 
