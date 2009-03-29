@@ -1,8 +1,8 @@
 <!--
-  member_entry.html
+  association_validate.html
 
   Description
-  Template to show the data of a member in a table.
+  Template to validate association requests.
 
   copyright (c) 2008-2009 Opentia S.L.
 
@@ -22,16 +22,23 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<tr>
-<td>$user</td>
-<td>$name</td>
-<td>$sname1</td>
-<td>$sname2</td>
-<td>$dni</td>
-<td>$address</td>
-<td>$telephone</td>
-<td>$mail</td>
-<td>$web</td>
-<td>$isFounder</td>
-<td>$active</td>
-</tr>
+<form action="index.php" method="post">
+  <input type="hidden" name="action" value="$action">
+  <table class="listado">
+    <tr>
+      <th>Aprobar</th>
+      <th>Nombre</th>
+      <th>NIF</th>
+      <th>Sede</th>
+      <th>Año de fundación</th>
+    </tr>
+    $list
+    <tr>
+      <td align="center" colspan=9>
+	<input name="param[reqAction]" type="submit" value="Aprobar">
+	<input name="param[reqAction]" type="submit" value="Denegar">
+      </td>
+    </tr>
+    <tr><td class="center" colspan="9"><br/><br/><input type="button" value="Volver" onclick='document.location.href="index.php"'></input></td></tr>
+</table>
+</form>
