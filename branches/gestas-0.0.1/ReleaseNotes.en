@@ -1,0 +1,27 @@
+ Release Notes of Gestas
+=========================
+
+ Version 0.0.1
+===============
+ This version has the following functionalities implemented:
+
+ * Kernel: The kernel actually supports the following characteristics:
+   - MySQL database.
+   - Inclusion of plugins.
+   - Using of templates.
+   - Basic supporting of logs.
+   - Basic supporting of language translation.
+   - Dinamic permission assignment.
+   - Creation of new type of users.
+   - Basic user management (user registration, change password, ...).
+
+ * Member manager: This module implement the following actions:
+   - Request of membership.
+   - List of requests.
+   - Validation of membership.
+   - List of members.
+   - Deletion of members.
+   - Change of member data.
+
+ * Association manager: Actually this module only implement the
+   request of new associations.

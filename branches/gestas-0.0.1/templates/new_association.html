@@ -1,0 +1,68 @@
+<!--
+  new_association.html
+
+  Description
+  Template to create a new Association.
+
+  copyright (c) 2008-2009 Opentia S.L.
+
+  This file is part of GESTAS (http://gestas.opentia.org)
+
+  GESTAS is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+ 
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+ 
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<script>
+function check(){
+var form=document.new_assoc;
+if(form.name.value==""){
+alert('Debes especificar un nombre.');
+form.name.focus();
+return false;
+}
+if(form.nif.value==""){
+alert('Debes especificar un nif.');
+form.nif.focus();
+return false;
+}
+if(form.year.value==""){
+alert('Debes especificar el momento de la fundacion');
+form.year.focus();
+return false;
+}
+if(form.hq.value==""){
+alert('Debes especificar una sede.');
+form.hq.focus();
+return false;
+}
+form.submit(); 
+}
+</script>
+  <table align="left" width="100%">
+  <form name="new_assoc" id="new_assoc" action="index.php" method="post">
+    <tr><td><input type="hidden" name="action" value="$action"></td></tr>
+    <tr>
+      <td>Nombre Asociacion: </td>
+    <td><input type="text" name="param[name]" id="name" value="" ></td></tr>
+    <tr>
+      <td>NIF: </td><td><input type="text" name="param[nif]" id="nif"></td></tr>
+    <tr>
+      <td>A&ntilde;o de Fundaci&oacute;n: </td><td><input type="text" name="param[year]" id="year"></td></tr>
+    <tr>
+      <td>Sede: </td><td><input type="text" name="param[hq]" id="hq" value=""></td></tr>
+      </form>
+    <tr><td align="center" colspan=2>
+    <input type="submit" onclick="check()" value="Enviar Peticion"></input>
+    <input type="button" value="Cancelar" onclick='document.location.href="index.php"'></input>
+    </td></tr>
+</table>
+

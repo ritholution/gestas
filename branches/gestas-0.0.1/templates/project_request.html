@@ -1,0 +1,33 @@
+<!--
+  project_request.html
+
+  Description
+  Template to request a new project.
+
+  copyright (c) 2008-2009 Opentia S.L.
+
+  This file is part of GESTAS (http://gestas.opentia.org)
+
+  GESTAS is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+ 
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+ 
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<form action="index.php" method="post">
+<table align="left" width="100%">
+	<tr><td><input type="hidden" name="action" value="$action"></td></tr>
+	<tr><td>Nombre del proyecto: </td><td><input type="text" name="param[projectName]"></td></tr>
+	<tr><td>Fecha de comienzo: </td><td><input type="password" name="param[dateBegin]"></td></tr>
+	<tr><td>Fecha de finalización: </td><td><input type="password" name="param[dateEnd]"></td></tr>
+	<tr><td align="center" colspan=2><input type="submit" value="Enviar"></td></tr>
+</table>
+</form>
