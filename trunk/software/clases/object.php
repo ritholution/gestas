@@ -9,12 +9,13 @@
  *
  * This file is part of GESTAS (http://gestas.opentia.org)
  * 
- * GESTAS is free software: you can redistribute it and/or modify
+ * GESTAS will be free software as soon as it is released under a minimally
+ * stable version: at that time will be able to redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
  * published by the Free Software Foundation, either version 3 of the
  * License, or (at your option) any later version.
  *
- * This program is distributed in the hope that it will be useful,
+ * This program is provided in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
@@ -417,8 +418,14 @@ class Obj{
     if($newUser === null || !User::is_user($newUser))
       throw new GException(GException::$VAR_TYPE);
 
+    $member = new Member();
+    $member->load_member_by_user($newUser->idUser);
+    $newUser->load_user_types();
+
     if($permType >= 0 && $permType < 3) {
       if($this->acl[$permType]->user_has_permission($newUser))
+	return true;
+      else if($this->acl[$permType]->member_has_permission($member))
 	return true;
       else if($newUser->typeUsers !== null && is_array($newUser->typeUsers)) {
 	foreach($newUser->typeUsers as $value)

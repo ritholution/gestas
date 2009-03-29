@@ -10,12 +10,13 @@
  *
  * This file is part of GESTAS (http://gestas.opentia.org)
  * 
- * GESTAS is free software: you can redistribute it and/or modify
+ * GESTAS will be free software as soon as it is released under a minimally
+ * stable version: at that time will be able to redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
  * published by the Free Software Foundation, either version 3 of the
  * License, or (at your option) any later version.
  *
- * This program is distributed in the hope that it will be useful,
+ * This program is provided in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
@@ -34,17 +35,12 @@ require_once("database.php");
 class acl{
   private $idACL=-1;
 
-  // Object which referes the permission
-  private $obj = null;
-
-  // $user will be an array of User objects.
-  private $users = null;
-
-  // $userTypes will be an array of TypeUser objects.
-  private $userTypes = null;
-
-  // Read (0), write (1) or execute (2) permission type.
-  private $type = 0;
+  private $obj = null; // Object which referes the permission
+  private $users = null; // Array of Users who have permission.
+  private $userTypes = null; // Array of TypeUsers who have permission.
+  private $members = null; // Array of Members who have permission.
+  private $type = 0; // Read (0), write (1) or execute (2) permission type.
+  private $idEnv = 0; // Environment in which the acl is valid.
 
   // Types of permission
   static $READ=0;
@@ -53,7 +49,7 @@ class acl{
 
   // Constructor of the class
   public function __construct($newObj=null, $newUser=null, $newUserTypes=null,
-			      $newType=0, $db=null) {
+			      $newType=0, $newIdEnv=0, $db=null) {
     if($newObj !== null) {
       if(Obj::is_obj($newObj))
 	$this->obj = $newObj;
@@ -77,6 +73,9 @@ class acl{
     if($newType !== null && is_int($newType) && $newType >=0 && $newType < 3)
       $this->type = $newType;
 
+    if($newIdEnv !== null && is_int($newIdEnv) && $newIdEnv > 0)
+      $this->idEnv = $newIdEnv;
+
     if($this->obj !== null)
       $this->load_acl($db);
   }
@@ -90,6 +89,7 @@ class acl{
     case "userTypes":
     case "type":
     case "obj":
+    case "idEnv":
       return $this->$var;
     default:
       throw new GException(GException::$VAR_UNKNOWN);
@@ -128,27 +128,47 @@ class acl{
 	throw new GException(GException::$VAR_TYPE);
       $this->$var = $value;
       break;
+    case "idEnv":
+      if($newIdEnv === null || !is_int($newIdEnv) || $newIdEnv < 0)
+	throw new GException(GException::$VAR_TYPE);
+      $this->$var = $value;
+      break;
     default:
       throw new GException(GException::$VAR_UNKNOWN);
     }
   }
 
-  // This method checks if a determinated user (the current or another passed
-  // by parameter) has permission to access to the object passed by parameter.
+  // This method checks if a user (the current or another passed
+  // by parameter) has this acl permission.
   public function user_has_permission($checkUser){
     if($checkUser === null || !User::is_user($checkUser))
       throw new GException(GException::$VAR_TYPE);
 
     if($this->users != null && is_array($this->users))
-      foreach($this->users as $value)
+      foreach($this->users as $value) {
 	if($value->idUser === $checkUser->idUser)
+	  return true;
+      }
+
+    return false;
+  }
+
+  // This method checks if a member (the current or another passed
+  // by parameter) has this acl permission.
+  public function member_has_permission($checkMember){
+    if($checkMember === null || !Member::is_member($checkMember))
+      throw new GException(GException::$VAR_TYPE);
+
+    if($this->members != null && is_array($this->members))
+      foreach($this->members as $value)
+	if($value->idMember === $checkMember->idMember)
 	  return true;
 
     return false;
   }
 
-  // This method checks if a determinated user (the current or another passed
-  // by parameter) has permission to access to the object passed by parameter.
+  // This method checks if a type of user (the current or another passed
+  // by parameter) has this acl permission.
   public function user_type_has_permission($checkUserType){
     if($checkUserType == null || !TypeUser::is_type_user($checkUserType))
       throw new GException(GException::$VAR_TYPE);
@@ -335,16 +355,7 @@ class acl{
     // we update it.
     $db->connect();
 
-    $update = false;
-    if($this->idACL > -1){ // TODO: Create an exists method
-      $db->consult("select idACL from acl where idACL=".$this->idACL);
-      if($db->numRows() === 1)
-	$update = true;
-      else if($db->numRows() > 1)
-	throw new GDatabaseException(GDatabaseException::$DB_INTEGRITY);
-    }
-
-    if(!$update) {
+    if(!$this->exists_acl()) {
       $db->execute("insert into acl(idObj,permType) values(".$this->obj->idObject.",".$objOwner->type.")");
       $this->idACL = $db->id;
 
@@ -377,9 +388,8 @@ class acl{
       $db = $_SESSION['db'];
     }
 
-    $db->connect();
-    $db->consult("select idObj from acl where idACL=".$this->idACL);
-    if($db->numRows() === 1) {
+    if($this->exists_acl()) {
+      $db->connect();
       $db->execute("update acl set idObj=".$this->obj->idObject.", permType=".$this->type.
 		   " where idACL=".$this->idACL);
 
@@ -436,8 +446,8 @@ class acl{
 	if($drop)
 	  $this->drop_type_user($value['idUser'], $db);
       }
-    } else if($db->numRows() > 1)
-      throw new GDatabaseException(GDatabaseException::$DB_INTEGRITY);
+    } else
+      $this->insert_acl($db);
   }
 
   // Drop the acl permission from the database
@@ -449,13 +459,15 @@ class acl{
       $db = $_SESSION['db'];
     }
 
-    $db->connect();
-    $db->execute("delete from aclUserType where idACL=".$this->idACL);
-    $db->execute("delete from aclUser where idACL=".$this->idACL);
-    $db->execute("delete from acl where idACL=".$this->idACL);
+    if($this->exists_acl()) {
+      $db->connect();
+      $db->execute("delete from aclUserType where idACL=".$this->idACL);
+      $db->execute("delete from aclUser where idACL=".$this->idACL);
+      $db->execute("delete from acl where idACL=".$this->idACL);
+    }
   }
 
-  // This method loads the acl associated to the object and the type of permission.
+  // This method load the acl associated to the object and the type of permission.
   public function load_acl($db=null) {
     if($db == null || !Database::is_database($db)) {
       if(!isset($_SESSION['db']))
@@ -465,19 +477,21 @@ class acl{
       throw new GException(GException::$VAR_TYPE);
 
     $db->connect();
-    $db->consult("select idACL from acl where idObj=".$this->obj->idObject." and permType=".
+    $db->consult("select * from acl where idObj=".$this->obj->idObject." and permType=".
 		 $this->type);
     if($db->numRows() > 1)
-      throw new GDatabaseException(GDatabaseException::$DB_INTEGRITY);
+      throw new GDatabaseException(GDatabaseException::$DATABASE_INTEGRITY);
     else if($db->numRows() === 1) {
       $row = $db->getRow();
       $this->idACL = intval($row['idACL']);
+      $this->idEnv = intval($row['idEnv']);
       $this->load_users($db);
-      $this->load_user_types(0,$db);
+      $this->load_members(0,$db);
+      $this->load_user_types($db);
     }
   }
 
-  // This method loads the users associated to the acl.
+  // This method load the users associated to the acl.
   private function load_users($db=null) {
     if($db == null || !Database::is_database($db)) {
       if(!isset($_SESSION['db']))
@@ -485,6 +499,7 @@ class acl{
       $db = $_SESSION['db'];
     }
 
+    $this->users = array();
     $db->connect();
     $db->consult("select idUser from aclUser where idACL=".$this->idACL);
     $newUsers = $db->rows;
@@ -495,34 +510,90 @@ class acl{
     }
   }
 
-  // This method loads the user types associated to the acl.
-  private function load_user_types($assoc=0, $db=null) {
+  // This method load the members associated to the acl.
+  private function load_members($association=0, $db=null) {
     if($db == null || !Database::is_database($db)) {
       if(!isset($_SESSION['db']))
 	throw new GException(GException::$VAR_TYPE);
       $db = $_SESSION['db'];
     }
 
-    if($assoc !== null) {
-      if(!is_int($assoc))
+    // We obtain the idAssociation in which the acl is apply
+    if(isset($_SESSION['association']) && Association::is_association($_SESSION['association']))
+      $assoc = $_SESSION['association']->idAssociation;
+
+    if($association !== null && is_int($association) && $association > 0 &&
+       Association::exists($association,$db))
+      $assoc = $association;
+
+    if($assoc === null || !is_int($assoc) || $assoc < 1 || !Association::exists($assoc,$db))
+      throw new GException(GException::$VAR_TYPE);
+
+    // We load the members from the database
+    $this->members = array();
+    $db->connect();
+    $db->consult("select idMember from aclMemberAssoc where idACL=".$this->idACL." and idAssociation=".$assoc);
+    $newMembers = $db->rows;
+    for($i=0;$i < count($newMembers);$i++) {
+      $memer = new Member();
+      $member->load_member(intval($newMembers[$i]['idMember']),$db);
+      $this->members[] = $member;
+    }
+  }
+
+  // This method load the user types associated to the acl.
+  private function load_user_types($db=null) {
+    if($db == null || !Database::is_database($db)) {
+      if(!isset($_SESSION['db']))
 	throw new GException(GException::$VAR_TYPE);
-      else if($assoc < 0 || ($assoc !== 0 && !Association::exists($assoc,$db)))
-	throw new GException(GException::$ASSOCIATION_UNKNOWN);
-      else if($assoc === 0) {
-	if(!isset($_SESSION['association']) || !Association::is_association($_SESSION['association']))
-	  throw new GException(GException::$VAR_TYPE);
-	$assoc = $_SESSION['association']->idAssociation;
-      }
+      $db = $_SESSION['db'];
     }
 
+    $this->userTypes = array();
     $db->connect();
-    $db->consult("select idType from aclUserType where idACL=".$this->idACL." and (idAssociation=0 or idAssociation=".$assoc.")");
+    $db->consult("select idType from aclUserType where idACL=".$this->idACL);
     $newTypes = $db->rows;
     for($i=0;$i < count($newTypes);$i++) {
       $type = new TypeUser();
       $type->load_type(intval($newTypes[$i]['idType']),$db);
       $this->userTypes[] = $type;
     }
+  }
+
+  // This method check if an acl exists in the database
+  public  function exists_acl($newIdACL=0, $db=null) {
+    if($db === null || !Database::is_database($db)) {
+      if(!isset($_SESSION['db']))
+	throw new GException(GException::$VAR_TYPE);
+      $db = $_SESSION['db'];
+    }
+
+    $check = $this->idACL;
+    if(is_int($newIdACL) && $newIdACL > 0)
+      $check = $newIdACL;
+
+    if($check === null || !is_int($check))
+      throw new GException(GException::$VAR_TYPE);
+
+    return ACL::exists($check,$db);
+  }
+
+  // This method check if an acl exists in the database
+  public static function exists($newIdACL, $db=null) {
+    if($db === null || !Database::is_database($db)) {
+      if(!isset($_SESSION['db']))
+	throw new GException(GException::$VAR_TYPE);
+      $db = $_SESSION['db'];
+    }
+
+    if($newIdACL === null || !is_int($newIdACL))
+      throw new GException(GException::$VAR_TYPE);
+
+    $db->connect();
+    $db->consult("select idACL from acl where idACL=".$newIdACL);
+    if($db->numRows() > 1)
+      throw new GDatabaseException(GDatabaseException::$DB_INTEGRITY);
+    return ($db->numRows() === 1);
   }
 
   // This static method check if the parameter passed is an object of the type acl

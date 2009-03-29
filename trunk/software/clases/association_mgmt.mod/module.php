@@ -9,12 +9,13 @@
  *
  * This file is part of GESTAS (http://gestas.opentia.org)
  * 
- * GESTAS is free software: you can redistribute it and/or modify
+ * GESTAS will be free software as soon as it is released under a minimally
+ * stable version: at that time will be able to redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
  * published by the Free Software Foundation, either version 3 of the
  * License, or (at your option) any later version.
  *
- * This program is distributed in the hope that it will be useful,
+ * This program is provided in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
@@ -22,7 +23,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
 require_once("request.php");
 require_once($_SESSION['class_base']."/gexception.php");
 require_once($_SESSION['class_base']."/association.php");
@@ -88,7 +88,7 @@ class AssociationManagement{
       return $this->$var;
     default:
       throw new GException(GException::$VAR_UNKNOWN);
-	}
+    }
   }
 
   // This method set the value of the accesible class variables when it's not
@@ -96,10 +96,9 @@ class AssociationManagement{
   public function __set($var,$value) {
     switch($var){
     case "association":
-      if($value !== null && Association::is_association($newAssoc))
-	$this->load_association($value);
-      else
+      if($value === null || !Association::is_association($newAssoc))
 	throw new GException(GException::$VAR_TYPE);
+      $this->load_association($value);
       break;
     case "assocs":
     case "members":
@@ -112,12 +111,9 @@ class AssociationManagement{
     }
   }
 
-
-
-
   // This method creates an association and saves it to DB.
   public function new_association($params){
-  if($params === null) {
+    if($params === null) {
       // Generate the html output.
       $_SESSION['out']->content = RequestAssoc::html_request();
     } else {
@@ -129,29 +125,28 @@ class AssociationManagement{
       if(!isset($_SESSION['filter']))
 	$_SESSION['filter'] = new TemplateFilter();
       $filter = $_SESSION['filter'];
-	// Insert the requests and catch possible exceptions(From User or from RequestAssoc).
+      // Insert the requests and catch possible exceptions(From User or from RequestAssoc).
       try {
-	 if($params["extended"]!="extended"){
-		$user_id=$_SESSION['user']->idUser;
+	if($params["extended"]!="extended"){
+	  $user_id=$_SESSION['user']->idUser;
 	}else{
-		$newUser= new User();
-		$newUser->new_user($params);
-		  if($newUser->exists_login($params["login"])){
-			$newUser->load_user_by_login($params["login"]);
-			$user_id=$newUser->idUser;
-		  }else{
-			$user_id=NULL;
-		}
+	  $newUser= new User();
+	  $newUser->new_user($params);
+	  if($newUser->exists_login($params["login"])){
+	    $newUser->load_user_by_login($params["login"]);
+	    $user_id=$newUser->idUser;
+	  } else
+	    $user_id=NULL;
 	}
-    $request = new RequestAssoc($params['name'], $params['nif'],
-			       $params['year'], $params['hq'],null/*$params['webs']*/,$user_id);
+	$request = new RequestAssoc($params['name'], $params['nif'],
+				    $params['year'], $params['hq'],null/*$params['webs']*/,$user_id);
 	if(isset($user_id) && $user_id>=0 && !$request->exists_request()) {
 	  $request->insert_db();
-		$filter->register_var('success',gettext("Petición enviada correctamente"));
-	    $_SESSION['out']->content = $filter->filter_file('success.html');
-	} else { 
+	  $filter->register_var('success',gettext("Petición enviada correctamente"));
+	  $_SESSION['out']->content = $filter->filter_file('success.html');
+	} else {
 	  if(!isset($user_id) || $user_id <= 0){ $filter->register_var('success',gettext("UserID sin valor, error de autenticacion o registro."));}else{
-	  $filter->register_var('success',gettext("Petición ya existente"));}
+	    $filter->register_var('success',gettext("Petición ya existente"));}
 	  $_SESSION['out']->content = $filter->filter_file('success.html');
 	}
       } catch(GException $e) {
@@ -161,11 +156,7 @@ class AssociationManagement{
       }
     }
   }
-  
-  
-  
-  
-  
+
   public function load_association($params) {
     // Check the database connection
     if(!isset($_SESSION['db']) || !Database::is_database($_SESSION['db']))
@@ -182,7 +173,7 @@ class AssociationManagement{
       $newAssoc = clone $params;
     else
       throw new GException(GException::$VAR_TYPE);
-      
+    
     // We load the association
     if($newAssoc === null || !Association::is_association($newAssoc)) {
       if(!isset($_SESSION['association'])) {
@@ -343,7 +334,7 @@ class AssociationManagement{
     if($this->association !== null && Association::is_association($this->association)) {
       if(!$this->association->exists(-1,$db))
 	$this->association->insertdb($db);
-
+      
       if(!$newMember->exists(-1,$db))
 	$newMember->insert_member($db);
 
@@ -395,15 +386,42 @@ class AssociationManagement{
   }
 
   // This method update all the data related with an association to the database.
-  public function modify_assoc($db=null) {
-    // Check the database connection
-    if(!Database::is_database($db)) {
-      if(!isset($_SESSION['db']) || !Database::is_database($_SESSION['db']))
- 	throw new GException(GException::$VAR_TYPE);
-      $db = $_SESSION['db'];
+  public function modify_association($params=null) {
+    if (!isset($_SESSION['AssociationManagement']))
+      throw new GException(GException::$MODULE_DEP,"AssociationManagement");
+
+    if(!isset($_SESSION['user']) || !User::is_user($_SESSION['user']) ||
+       !$_SESSION['user']->isAuthenticated)
+      throw new GUserException(GUserException::$USER_PERM);
+    if(!isset($_SESSION['association']) || !Association::is_association($_SESSION['association']))
+      throw new GException(GException::$ASSOCIATION_UNKNOWN);
+    if(!isset($_SESSION['filter']))
+      $_SESSION['filter'] = new TemplateFilter();
+    $filter = $_SESSION['filter'];
+
+    if ($params === null) {
+      $nextAction = new Action();
+      if (($action = $nextAction->get_id_action_class_method('AssociationManagement', 'modify_association')) !== false) {
+	$newAssoc = new Association();
+	$newAssoc->load_association($_SESSION['association']->idAssociation);
+	$filter->register_var('action',$action);
+	$filter->register_var('idAssociation',$newAssoc->idAssociation);
+	$filter->register_var('name',$newAssoc->name);
+	$filter->register_var('nif',$newAssoc->nif);
+	$filter->register_var('year',$newAssoc->fundationYear);
+	$filter->register_var('hq',$newAssoc->headquarters);
+
+	$_SESSION['out']->content = $filter->filter_file('modify_association_data.html');
+      }
+    } else {
+      $newAssoc = new Association();
+      $newAssoc->load_association(intval($params['idAssociation']));
+      $newAssoc->name = $params['name'];
+      $newAssoc->nif = $params['nif'];
+      $newAssoc->fundationYear = intval($params['year']);
+      $newAssoc->headquarters = $params['hq'];
+      $newAssoc->update_db();
     }
-	
-    // --- TODO ---
   }
 
   // This method drop all the data related with an association to the database.
@@ -415,10 +433,10 @@ class AssociationManagement{
       $db = $_SESSION['db'];
     }
 
-// Drop of the database.
-//       $db->execute("delete from memberAssociation WHERE idAssociation=".$this->idAssociation);
-//       // Question: Check if there is some member with no association?
-//       $db->execute("delete from pluginAssociation WHERE idAssociation=".$this->idAssociation);
+    // Drop of the database.
+    //       $db->execute("delete from memberAssociation WHERE idAssociation=".$this->idAssociation);
+    //       // Question: Check if there is some member with no association?
+    //       $db->execute("delete from pluginAssociation WHERE idAssociation=".$this->idAssociation);
 
     // --- TODO ---
   }
@@ -433,12 +451,12 @@ class AssociationManagement{
     }
 
     // We load the active modules and plugins
-//     if($this->modules === null || ModuleManagement::is_module_management($this->modules))
-//       $this->modules = new ModuleManagement($this);
-//     else {
-//       $this->modules->load_active_modules($db);
-//       $this->modules->load_inactive_modules($db);
-//     }
+    //     if($this->modules === null || ModuleManagement::is_module_management($this->modules))
+    //       $this->modules = new ModuleManagement($this);
+    //     else {
+    //       $this->modules->load_active_modules($db);
+    //       $this->modules->load_inactive_modules($db);
+    //     }
 
     // --- TODO ---
   }
@@ -533,5 +551,97 @@ class AssociationManagement{
       return true;
     return false;
   }
+
+  public function association_validate($params=null) {
+    if(!isset($_SESSION['filter']))
+      $_SESSION['filter'] = new TemplateFilter();
+    $filter = $_SESSION['filter'];
+
+    if ($params === null) {
+      $nextAction = new Action();
+      if (($action = $nextAction->get_id_action_class_method('AssociationManagement', 'association_validate')) !== false) 																																																																				 	{
+	$request_list = $this->signup_list();
+
+	$out = '';
+	if(is_array($request_list) && count($request_list) > 0)
+	  foreach ($request_list as $rq) {
+	    $filter->register_var('idPetition',$rq->idPetition);
+	    $filter->register_var('name',$rq->name);
+	    $filter->register_var('nif',$rq->nif);
+	    $filter->register_var('hq',$rq->headquarters);
+	    $filter->register_var('year',$rq->fundationYear);
+	    $out .= $filter->filter_file('association_validate_entry.html');
+	  }
+
+	$filter->register_var('action',$action);
+	$filter->register_var('list',$out);
+	$_SESSION['out']->content = $filter->filter_file('association_validate.html');
+      }
+    } else {
+      if (!is_array($params))
+	throw new GException(GException::$VAR_TYPE);
+
+      if($params['idPetition'] != null && is_array($params['idPetition']))
+	foreach ($params['idPetition'] as $value) {
+	  $request = new RequestAssoc();
+	  $request->load_db($value);
+
+	  if($params['reqAction'] === "Aprobar") {
+	    $assoc = new Association();
+	    $assoc->name = $request->name;
+	    $assoc->nif = $request->nif;
+	    $assoc->fundationYear = intval($request->fundationYear);
+	    $assoc->webs = $request->webs;
+	    $assoc->headquarters = $request->headquarters;
+
+	    $assoc->insert_db();
+		$id_user=intval($request->userId);
+		$assoc->set_admin($id_user);
+	  }
+
+	  $request->delete_db();
+    }
+  }
+}
+
+public function signup_list() {
+  if(!isset($_SESSION['db']) || !Database::is_database($_SESSION['db']))
+    throw new GException(GException::$VAR_TYPE);
+  $db = $_SESSION['db'];
+
+  /*if(!isset($_SESSION['filter']))
+    $_SESSION['filter'] = new TemplateFilter();
+    $filter = $_SESSION['filter'];*/
+
+  $out = '';
+  $list = null;
+
+  $db->connect();
+  $db->consult("select id from associationRequest");
+  if($db->numRows() > 0) {
+    $result = $db->rows;
+
+    foreach($result as $row) {
+      $request = new RequestAssoc();
+      $request->load_db($row['id']); // Implementar load_db(id) pendiente
+      $list[] = $request;
+
+      /*$filter->register_var('user',$request->login);
+	$filter->register_var('name',$request->name);
+	$filter->register_var('sname1',$request->sname1);
+	$filter->register_var('sname2',$request->sname2);
+	$filter->register_var('dni',$request->dni->dni);
+	$filter->register_var('address',$request->address);
+
+	$out .= $filter->filter_file('request_entry.html');*/
+    }
+  }
+
+  /*if($out !== null)
+    $filter->register_var('entrys',$out);
+    $_SESSION['out']->content = $filter->filter_file('request_list.html');*/
+
+  return $list;
+}  
 }
 ?>

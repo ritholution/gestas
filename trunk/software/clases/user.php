@@ -9,12 +9,13 @@
  *
  * This file is part of GESTAS (http://gestas.opentia.org)
  * 
- * GESTAS is free software: you can redistribute it and/or modify
+ * GESTAS will be free software as soon as it is released under a minimally
+ * stable version: at that time will be able to redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
  * published by the Free Software Foundation, either version 3 of the
  * License, or (at your option) any later version.
  *
- * This program is distributed in the hope that it will be useful,
+ * This program is provided in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
@@ -264,14 +265,7 @@ class User{
       $this->password = new Password($row['password']);
       $this->password->isCodificated = true;
 
-      $db->consult("select idType from userUserType where idUser=".$usr);
-      $rows = $db->rows;
-      $this->typeUsers = null;
-      for($i=0; $i < count($rows); $i++) {
-	$usrType = new TypeUser();
-	$usrType->load_type(intval($rows[$i]['idType']));
-	$this->typeUsers[] = $usrType;
-      }
+      $this->load_user_types($db);
 
       return true;
     }
@@ -293,27 +287,36 @@ class User{
 
     if($this->exists_login($usr)) {
       $db->connect();
-      $db->consult("select * from appUser where login='".$usr."'");
-      $this->login = $usr;
+      $db->consult("select idUser from appUser where login='".$usr."'");
       $row = $db->getRow();
-      $this->idUser = intval($row['idUser']);
-      // Same as load_user
-      $this->password = new Password($row['password']);
-      $this->password->isCodificated = true;
-
-      $db->consult("select idType from userUserType where idUser=".$this->idUser);
-      $rows = $db->rows;
-      $this->typeUsers = null;
-      for($i = 0; $i < count($rows); $i++) {
-	$usrType = new TypeUser();
-	$usrType->load_type(intval($rows[$i]['idType']));
-	$this->typeUsers[] = $usrType;
-      }
-
-      return true;
+      return $this->load_user(intval($row['idUser']),$db);
     }
     
     return false;
+  }
+
+  public function load_user_types($db=null) {
+    if($db == null || !Database::is_database($db)) {
+      if(!isset($_SESSION['db']))
+	throw new GException(GException::$VAR_TYPE);
+      $db = $_SESSION['db'];
+    }
+
+    $consult = "select idType from userUserType where idUser=".$this->idUser." and (idAssociation=0";
+    if(isset($_SESSION['association']) && Association::is_association($_SESSION['association'])
+       && $_SESSION['association']->exists_association())
+      $consult .= " or idAssociation=".$_SESSION['association']->idAssociation;
+    $consult .= ")";
+
+    $db->connect();
+    $db->consult($consult);
+    $rows = $db->rows;
+    $this->typeUsers = null;
+    for($i=0; $i < count($rows); $i++) {
+      $usrType = new TypeUser();
+      $usrType->load_type(intval($rows[$i]['idType']));
+      $this->typeUsers[] = $usrType;
+    }
   }
 
   // This method insert an user in the database.
@@ -344,7 +347,7 @@ class User{
 
       if($this->typeUsers !== null && is_array($this->typeUsers)) {
 	foreach($this->typeUsers as $value)
-	  $db->execute("insert into userUserType values(".$this->idUser.",".$value->idType.")");
+	  $db->execute("insert into userUserType(idUser,idType) values(".$this->idUser.",".$value->idType.")");
       }
     }
   }
@@ -596,17 +599,17 @@ class User{
 
       $entry = $nextAction->get_id_action_class_method('User','new_user');
       $filter->register_var('action',$entry);
-            $filter->register_var('entryName','Alta de Usuario');
+            $filter->register_var('entryName','Alta de nuevo usuario');
       $newUser = $filter->filter_file("login_action.html");
 
       $entry = $nextAction->get_id_action_class_method('MemberManagement','signup_request');
       $filter->register_var('action',$entry);
-      $filter->register_var('entryName','Alta de Socio');
+      $filter->register_var('entryName','Alta de nuevo socio');
       $newMember = $filter->filter_file("login_action.html");
 
       $entry = $nextAction->get_id_action_class_method('AssociationManagement','new_association');
       $filter->register_var('action',$entry);
-      $filter->register_var('entryName',htmlentities('Alta de Asociación'));
+      $filter->register_var('entryName',htmlentities('Alta de nueva asociación'));
       $newAssoc = $filter->filter_file("login_action.html");
 
       $filter->register_var('action',$action);

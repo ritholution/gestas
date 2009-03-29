@@ -12,12 +12,13 @@
  *
  * This file is part of GESTAS (http://gestas.opentia.org)
  * 
- * GESTAS is free software: you can redistribute it and/or modify
+ * GESTAS will be free software as soon as it is released under a minimally
+ * stable version: at that time will be able to redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
  * published by the Free Software Foundation, either version 3 of the
  * License, or (at your option) any later version.
  *
- * This program is distributed in the hope that it will be useful,
+ * This program is provided in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
@@ -122,7 +123,7 @@ class Gestas{
     else
       $this->db=$_SESSION['db'];
 
-    // We load the language settings
+    // We load the log manager.
 /*     if(!isset($_SESSION['log'])) { */
 /*       $this->log = new LogManagement(); */
 /*       $_SESSION['log'] = $this->log; */

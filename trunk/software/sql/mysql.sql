@@ -1,26 +1,19 @@
-/**
- * mysql.sql
- *
- * Description
- * This file contains the local configurations of the application
- * 
- * copyright (c) 2008-2009 OPENTIA s.l. (http://www.opentia.com)
- *
- * This file is part of GESTAS (http://gestas.opentia.org)
- * 
- * GESTAS is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+-- MySQL dump 10.11
+--
+-- Host: hercules93.opentia.net    Database: gestas_taller
+-- ------------------------------------------------------
+-- Server version	5.0.51a-24
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
 -- Table structure for table `accountBook`
@@ -49,8 +42,9 @@ CREATE TABLE `acl` (
   `idACL` int(11) NOT NULL auto_increment,
   `idObj` int(11) NOT NULL,
   `permType` int(11) NOT NULL,
+  `idEnv` int(11) NOT NULL default '0',
   PRIMARY KEY  (`idACL`)
-) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=43 DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
 
 --
@@ -106,14 +100,9 @@ SET character_set_client = utf8;
 CREATE TABLE `aclUserType` (
   `idType` int(11) NOT NULL default '0',
   `idACL` int(11) NOT NULL default '0',
-  `idAssociation` int(11) NOT NULL default '0',
   PRIMARY KEY  (`idType`,`idACL`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
-
---
--- Table structure for table `aclMemberAssoc`
---
 
 --
 -- Table structure for table `appUser`
@@ -127,7 +116,7 @@ CREATE TABLE `appUser` (
   `login` varchar(30) NOT NULL,
   `password` varchar(50) NOT NULL,
   PRIMARY KEY  (`idUser`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
 
 --
@@ -144,7 +133,7 @@ CREATE TABLE `association` (
   `fundationYear` int(11) default NULL,
   `headquarters` varchar(100) default NULL,
   PRIMARY KEY  (`idAssociation`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
 
 --
@@ -155,15 +144,15 @@ DROP TABLE IF EXISTS `associationRequest`;
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
 CREATE TABLE `associationRequest` (
-`id` int( 11 ) NOT NULL AUTO_INCREMENT ,
-`nif` varchar( 10 ) NOT NULL ,
-`assocName` varchar( 100 ) NOT NULL ,
-`fundationYear` int( 11 ) default NULL ,
-`headquarters` varchar( 100 ) default NULL ,
-`idUser` int(11) NOT NULL,
-PRIMARY KEY ( `id` )
-) ENGINE = MYISAM AUTO_INCREMENT =3 DEFAULT CHARSET = utf8;
-
+  `id` int(11) NOT NULL auto_increment,
+  `nif` varchar(10) NOT NULL,
+  `assocName` varchar(100) NOT NULL,
+  `fundationYear` int(11) default NULL,
+  `headquarters` varchar(100) default NULL,
+  `idUser` int(11) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+SET character_set_client = @saved_cs_client;
 
 --
 -- Table structure for table `board`
@@ -301,15 +290,16 @@ DROP TABLE IF EXISTS `member`;
 SET @saved_cs_client     = @@character_set_client;
 SET character_set_client = utf8;
 CREATE TABLE `member` (
-  `idMember` int(11) NOT NULL AUTO_INCREMENT,
+  `idMember` int(11) NOT NULL auto_increment,
   `memberName` varchar(30) NOT NULL,
   `firstSurname` varchar(30) NOT NULL,
   `lastSurname` varchar(30) default NULL,
   `dni` varchar(10) default '',
   `address` varchar(50) default NULL,
-  `idUser` int(11) UNIQUE REFERENCES appUser.idUser,
-  PRIMARY KEY  (`idMember`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+  `idUser` int(11) default NULL,
+  PRIMARY KEY  (`idMember`),
+  UNIQUE KEY `idUser` (`idUser`)
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
 
 --
@@ -355,7 +345,7 @@ CREATE TABLE `menuEntry` (
   `idAction` int(11) default NULL,
   `idMenu` int(11) default NULL,
   PRIMARY KEY  (`idEntry`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
 
 --
@@ -390,7 +380,7 @@ CREATE TABLE `objAction` (
   `methodAction` varchar(50) NOT NULL,
   `idPlugin` int(11) NOT NULL,
   PRIMARY KEY  (`idObjAction`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
 
 --
@@ -499,7 +489,7 @@ CREATE TABLE `registrationRequest` (
   `login` varchar(30) NOT NULL,
   `idAssociation` int(11) default NULL,
   PRIMARY KEY  (`idPetition`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
 
 --
@@ -577,7 +567,7 @@ CREATE TABLE `userType` (
   `usrType` varchar(50) default NULL,
   `idAssociation` int(11) default NULL,
   PRIMARY KEY  (`idType`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
 
 --
@@ -590,7 +580,8 @@ SET character_set_client = utf8;
 CREATE TABLE `userUserType` (
   `idUser` int(11) NOT NULL default '0',
   `idType` int(11) NOT NULL default '0',
-  PRIMARY KEY  (`idUser`,`idType`)
+  `idAssociation` int(11) NOT NULL default '0',
+  PRIMARY KEY  (`idUser`,`idType`,`idAssociation`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
 
@@ -668,6 +659,17 @@ CREATE TABLE `webRequest` (
   PRIMARY KEY  (`url`,`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2009-03-23 12:29:20
+/*Ahora Cargamos la bd de datos y la bd de confirguraciones especificas del programador*/
 source mysql-data.sql
 source mysql-configs.sql

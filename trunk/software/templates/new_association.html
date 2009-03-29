@@ -8,20 +8,21 @@
 
   This file is part of GESTAS (http://gestas.opentia.org)
 
-  GESTAS is free software: you can redistribute it and/or modify
+  GESTAS will be free software as soon as it is released under a minimally
+  stable version: at that time will be able to redistribute it and/or modify
   it under the terms of the GNU Affero General Public License as
   published by the Free Software Foundation, either version 3 of the
   License, or (at your option) any later version.
- 
-  This program is distributed in the hope that it will be useful,
+
+  This program is provided in the hope that it will be useful,
   but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
   GNU General Public License for more details.
- 
+
   You should have received a copy of the GNU General Public License
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
-<script>
+<script type="text/javascript">
 function check(){
 var form=document.new_assoc;
 if(form.name.value==""){
@@ -47,22 +48,24 @@ return false;
 form.submit(); 
 }
 </script>
-  <table align="left" width="100%">
-  <form name="new_assoc" id="new_assoc" action="index.php" method="post">
-    <tr><td><input type="hidden" name="action" value="$action"></td></tr>
+<form name="new_assoc" id="new_assoc" action="index.php" method="post" onsubmit="return check()">
+  <table class="formulario">
+    <tr><td><input class="center" type="hidden" name="action" value="$action"/></td></tr>
     <tr>
       <td>Nombre Asociacion: </td>
-    <td><input type="text" name="param[name]" id="name" value="" ></td></tr>
+      <td class="center"><input type="text" name="param[name]" id="name" value=""/></td></tr>
     <tr>
-      <td>NIF: </td><td><input type="text" name="param[nif]" id="nif"></td></tr>
+      <td>NIF: </td>
+      <td class="center"><input type="text" name="param[nif]" id="nif"/></td></tr>
     <tr>
-      <td>A&ntilde;o de Fundaci&oacute;n: </td><td><input type="text" name="param[year]" id="year"></td></tr>
+      <td>A&ntilde;o de Fundaci&oacute;n: </td>
+      <td class="center"><input type="text" name="param[year]" id="year"/></td></tr>
     <tr>
-      <td>Sede: </td><td><input type="text" name="param[hq]" id="hq" value=""></td></tr>
-      </form>
+      <td>Sede: </td>
+      <td class="center"><input type="text" name="param[hq]" id="hq" value=""/></td></tr>
     <tr><td align="center" colspan=2>
-    <input type="submit" onclick="check()" value="Enviar Peticion"></input>
-    <input type="button" value="Cancelar" onclick='document.location.href="index.php"'></input>
+	<input type="submit" value="Enviar Petición"/>
+	<input type="button" value="Cancelar" onclick='document.location.href="index.php"'/>
     </td></tr>
-</table>
-
+  </table>
+</form>

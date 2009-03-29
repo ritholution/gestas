@@ -4,18 +4,19 @@
  * Description
  * This file contains the style sheet of the web application
  *
- * copyright (c) 2008-2009 OPENTIA s.l. (http://www.opentia.com)
+ * copyright (c) 2008-2009 Opentia S.L.
  *
  * This file is part of GESTAS (http://gestas.opentia.org)
- * 
- * GESTAS is free software: you can redistribute it and/or modify
+ *
+ * GESTAS will be free software as soon as it is released under a minimally
+ * stable version: at that time will be able to redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
  * published by the Free Software Foundation, either version 3 of the
  * License, or (at your option) any later version.
  *
- * This program is distributed in the hope that it will be useful,
+ * This program is provided in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
@@ -27,23 +28,22 @@
 /***********************************************/
 
 body{
-    font: 12px/1.2 Verdana, Arial, Helvetica, sans-serif;
-    background: #c1b830;
+    font-family: arial,sans-serif;
     padding: 0;
     margin: 10px 10px 10px 10px;
 }
 
 p{
-    text-align: justify;
+/*     text-align: justify; */
 }
 
 a{
-    text-decoration:none;
-    color:#333;
+    text-decoration:underline;
+    color:#0000ee;
 }
 
 a:hover{
-    color:#FFFFFF;
+    text-decoration: none;
 }
 
 h1 a {
@@ -64,6 +64,7 @@ h4 a {
 
 img {
     border-style: none;
+ 		border-spacing:0;
 }
 
 h2 { 
@@ -107,7 +108,7 @@ label{
 }
 
 li {
-    margin-bottom: 0.9ex;
+/*     margin-bottom: 0.9ex; */
 }
 
 form {
@@ -120,7 +121,8 @@ form {
 /***********************************************/
 
 .header{
-    background-color:#000000;
+    background-color:#fff;
+    background-image: url("imagenes/fondo_gris.png");
     clear: both;
     margin: 0;
     padding: 0;
@@ -130,29 +132,17 @@ form {
 .header .left {
     display: block;
     width: 12%;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 3px;
     margin: 0;
     float: left;
 }
 
-.header .center {
-    display: block;
-    text-align: center;
-    width: 72%;
-    padding: 0;
-    padding-bottom: 10px;
-    margin: 0;
-    float: left;
-    color: #DDD;
-}
-
-.header .center h1 {
-    font-size: 40px;
-    margin-top:4px;
-    margin-bottom: 0px;
-    border-bottom-color: #c1b830;
+.header .text_header h1 {
+    text-indent: -5000px; 
+    font-family: 'Times New Roman', Times, serif;
+    margin-top:0px;
 }
 
 .header .right {
@@ -171,50 +161,129 @@ form {
 /***********************************************/
 
 .header .menu_horizontal {
+    padding-top:1px;
+    padding-bottom:1px; 
     text-align: center; 
-    color: #ffffff;
+    color: #000;
     font-weight: bold;
-    background-color: #343137;
+    background-color: #c3d9ff;
+    background-color:#6694e3;
     clear: both;
     width: 100%;
 }
+
+/***********************************************/
+/* Login                                       */
+/***********************************************/
+
+.login{
+    border: #C3D9FF 1px solid;
+ 		padding-top: 2px;
+  	padding-left: 3px;
+  	padding-bottom: 0px;
+  	padding-right:3px;
+ 		margin-bottom:20px;
+  	margin-top: 20px;
+  	position: relative;
+/*     right: 13%; */
+    width: 34%;
+    min-width: 350px;
+}
+
+.login form table{
+    font-size:75%;
+    background: #E8EEFA;
+ 		text-align:center;
+ 		width:100%;
+}
+
+.login_td_left{
+	text-align: left;
+	padding-left:20px; 
+	width:10px;
+	}
+
+.login_td_right{
+	text-align: left;
+	width:10px;
+	}
+
+
+.underlogin {
+    font-size: x-small; 
+    font-weight:bold;
+}
+
+/***********************************************/
+/* Content       												       */
+/***********************************************/
+
+.content {
+/*     border: #C3D9FF 1px solid; */
+    margin-bottom:10px;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.content td{
+    vertical-align:top;
+    padding:0px; 
+    margin:0px;
+}
+
+.content .izq{
+  min-width:250px;
+  width: 25%
+}
+
+.content .cent{
+ width: 50%;
+}
+
+.content .der{
+	width:25%;
+}
+
+.content .out{
+/* 		border: #C3D9FF 1px solid; */
+}
+
 
 /***********************************************/
 /* Lateral Menu                             */
 /***********************************************/
 
 
-.sys_menu {
-    background-color:#336666;
-    color:#ffffff;
+.content .sys_menu table {
+    background-color: #c3d9ff;
+    color:#2d60b2;
     float: left;
     font-size: 12px;
-    margin-bottom: 10%;
+    margin-bottom: 0px;
 }
 
-.sys_menu li{
+.content .sys_menu table li{
     margin: 1%;
     margin-right: 5%;
+ 		margin-top: 6px;
 }
 
-.sys_menu a {
-    color: #91caca;
+.content .sys_menu table a {
+    color: #2d60b2;
     text-decoration: underline;
 }
 
-.sys_menu a:hover{
+.sys_menu table a:hover{
     text-decoration: none;
 }
 
-
-.sys_menu th{
+.sys_menu table th{
     font-size: 13px;
     text-align: left;
-    color: #ffffff;
+    color: #2d60b2;
     font: 16px/1.2 Verdana, Arial, Helvetica, sans-serif;
     border-bottom: 1px solid #fff;
-    padding-left: 1%;
-    padding-bottom: 1%;
 }
 
 /***********************************************/
@@ -225,28 +294,21 @@ form {
  text-align:center;
  }
 
+.left {
+ text-align:left;
+ }
 
-
-
-/***********************************************/
-/* Content       			       */
-/***********************************************/
-
-.content {
-    float: left;
-    text-align: center;
-    margin-bottom:10px;
-    width: 74%;
-    padding-left: 10px;
-}
+.right {
+ text-align:right;
+ }
 
 
 /***********************************************/
 /* Listados       			       */
 /***********************************************/
-.listado{
+.listado {
     font: 10px/1.2 Verdana, Arial, Helvetica, sans-serif;
-    width: 100%;
+     width:72%;
     text-align:left;
 }
 
@@ -255,27 +317,16 @@ form {
 }
 
 .listado td{
-	 font-size:9;
+	 font-size:9px;
 	 border-top: 1px solid #336666;
 }
 
 /***********************************************/
-/* Login                                       */
+/* Formularios       			       */
 /***********************************************/
-
-.login{
-    margin-left: 50%;
-    width: 27%;
+.formulario{
+ width:80%;		
 }
-
-.login form table{
-    text-align: right;
-}
-
-.underlogin {
-    font-size: xx-small;
-}
-
 
 /***********************************************/
 /* Ocultacion de objetos			    			       */
@@ -284,17 +335,16 @@ form {
  	display: none;
  }
 
+
 /***********************************************/
 /* Footer       			       */
 /***********************************************/
 
-.footer { 
-    background-color: #336666;
+.footer {
+    border-top: #cccccc 1px solid;
     clear: both;
-    width: 100%;
+    width: 60%;
     height: 110px;
-    margin: 0;
-    padding: 0;
 }
 
 .footer a{
@@ -302,36 +352,32 @@ form {
 }
 
 .footer a:hover{
-	color:#c1b830;
+	text-decoration:none;
 }
-
-/***********************************************/
-/* Footer			       */
-/***********************************************/
-
 
 
 .footer .logo_opentia {
-    background-color: #336666;
-    font: normal normal normal 11px "Courier New", Courier, mono;
+    font-size:11px;
     text-align: center;
     width: 25%;
  		vertical-align: middle;
 }
 
 .footer .powered{
-    background-color: #336666;
     text-align: center;
     border: 0;
-    width: 50%;
+    width: 10%;
 }
 
-.footer .logo {
-	font: normal normal normal 11px "Courier New", Courier, mono;
-	background-color: #336666;
+.footer .powered img{
+	 margin-top:5px;
+}
+
+.footer .logo_junta {
+		font-size: 11px;
     text-align: center;
     width: 25%;
-    margin: 0;
+    padding-top: 10px;
     padding: 1%;
     padding-left: 0;
 		}
@@ -341,5 +387,12 @@ form {
 /***********************************************/
 
 .copyright{
+    clear:both;
+     width:100%;
+    background-color: #C3D9FF; 
+    margin-bottom:5px;
+    color: #7d828c;
     text-align: center;
+    font-family: arial,sans-serif;
+    font-size:12px;
 }

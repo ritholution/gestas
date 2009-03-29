@@ -9,12 +9,13 @@
  *
  * This file is part of GESTAS (http://gestas.opentia.org)
  * 
- * GESTAS is free software: you can redistribute it and/or modify
+ * GESTAS will be free software as soon as it is released under a minimally
+ * stable version: at that time will be able to redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
  * published by the Free Software Foundation, either version 3 of the
  * License, or (at your option) any later version.
  *
- * This program is distributed in the hope that it will be useful,
+ * This program is provided in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
@@ -597,6 +598,8 @@ class Request extends User {
 	if($member->webs !== null && is_array($member->webs))
 	  foreach($member->webs as $value)
 	    $webs .= $value->url;
+	if($webs === '')
+	  $webs = 'http://';
 	$filter->register_var('web',$webs);
       } else {
 	$filter->register_var('login','');
@@ -607,7 +610,7 @@ class Request extends User {
 	$filter->register_var('address','');
 	$filter->register_var('mail','');
 	$filter->register_var('phone','');
-	$filter->register_var('web','');
+	$filter->register_var('web','http://');
       }
       $out = $filter->filter_file('signup_request.html');
     }

@@ -9,12 +9,13 @@
  *
  * This file is part of GESTAS (http://gestas.opentia.org)
  * 
- * GESTAS is free software: you can redistribute it and/or modify
+ * GESTAS will be free software as soon as it is released under a minimally
+ * stable version: at that time will be able to redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
  * published by the Free Software Foundation, either version 3 of the
  * License, or (at your option) any later version.
  *
- * This program is distributed in the hope that it will be useful,
+ * This program is provided in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
@@ -66,87 +67,43 @@ class RequestAssoc extends Association {
     }
   }
 
-
   public function __get($var) {
     switch ($var) {
+    case "idPetition":
     case "name":
     case "nif":
     case "fundationYear":
     case "headquarters":
-    	return parent::__get($var);
-	case "userId":
-	case "isAuthenticated":
-    case "idPetition":
+    case "webs":
+    case "userId":
       return $this->$var;
-    case "password":
-      throw new GException(GException::$VAR_ACCESS);
     default:
       // Unknown variable
       throw new GException(GException::$VAR_UNKNOWN);
     }
   }
 
-
   public function __set($var, $value) {
     switch ($var) {
     case "idPetition":
       // This variable cannot be set from the outside.
       throw new GException(GException::$VAR_ACCESS);
-    case "name":
     case "nif":
+/*       if($value != null && is_string($value)) */
+/* 	$this->$var = new DNI($value); */
+/*       else if($value != null && DNI::is_dni($value)) */
+/* 	$this->$var = clone $value; */
+/*       else if($value === null) */
+/* 	$this->$var = $value; */
+/*       else */
+/* 	throw new GException(GException::$VAR_TYPE); */
+/*       break;   */
+    case "name":
     case "fundationYear":
     case "headquarters":
-    case "isAuthenticated":
-	case "userId":
+    case "webs":
+    case "userId":
       if($value == null || is_string($value))
-	$this->$var = $value;
-      else
-	throw new GException(GException::$VAR_TYPE);
-      break;
-    case "dni":
-      if($value != null && is_string($value))
-	$this->$var = new DNI($value);
-      else if($value != null && DNI::is_dni($value))
-	$this->$var = clone $value;
-      else if($value === null)
-	$this->$var = $value;
-      else
-	throw new GException(GException::$VAR_TYPE);
-      break;
-  
-    case "association":
-      if ($value != null && !Association::is_association($value))
-	throw new GException(GException::$VAR_TYPE);
-      $this->$var = $value;
-      break;
-    case "mail":
-      if($value != null && is_string($value))
-	$this->$var = array(new Email($value));
-      else if($value === null || Email::is_email($value))
-	$this->$var = array($value);
-      else if($value != null && is_array($value)) {
-	$this->$value = null;
-	foreach($value as $newMail) {
-	  if(is_string($newMail))
-	    array_push($this->$value,new Email($newMail));
-	  else if(Email::is_email($newMail))
-	    array_push($this->$value,clone $newMail);
-	}
-      } else
-	throw new GException(GException::$VAR_TYPE);
-      break;
-    case "landPhone":
-      if($value != null && is_int($value))
-	$this->$var = new Telephone($value,Telephone::$LAND);
-      else if($value === null || Telephone::is_telephone($value))
-	$this->$var = $value;
-      else
-	throw new GException(GException::$VAR_TYPE);
-      break;
-    case "cellPhone":
-      if($value != null && is_int($value))
-	$this->$var = new Telephone($value,Telephone::$CELLULAR);
-      else if($value != null && Telephone::is_telephone($value))
 	$this->$var = $value;
       else
 	throw new GException(GException::$VAR_TYPE);
@@ -165,7 +122,7 @@ class RequestAssoc extends Association {
     }
 
     $check = $this->idPetition;
-    if (is_int($newIdPetition) && $newIdPetition > 0)
+    if(is_int($newIdPetition) && $newIdPetition > 0)
       $check = $newIdPetition;
 
     return RequestAssoc::exists($check,$this->name,$this->nif,$this->fundationYear,$this->headquarters,$db);
@@ -192,8 +149,7 @@ class RequestAssoc extends Association {
 
     if($nif !== null /*&& DNI::is_dni($dni) && $dni->dni != null*/) { //Clase NIF por implementar//
       $db->consult("select id from associationRequest where nif='".$nif."'");
-      if($db->numRows() === 1)
-	return true;
+      return ($db->numRows() === 1);
     }
 
     return false;
@@ -207,23 +163,16 @@ class RequestAssoc extends Association {
     }
 
     if($this->exists_request())
-      throw new GException(GException::$REQUEST_EXISTS);
+      $this->modify_db($db);
     else {
-      // If this request doesn't exist, no more checking needed
-      //if($insertRequest) {
-	// Insert request
-
-	$db->execute("insert into associationRequest(nif,assocName,fundationYear,headquarters,idUser) values ('".
-		     $this->nif."','".$this->name."','".$this->fundationYear."','".$this->headquarters."','".$this->userId."')");
-
-	$this->idPetition = $db->id;
-
-	// TODO: Insert webs
-      //}
+      $db->execute("insert into associationRequest(nif,assocName,fundationYear,headquarters,idUser) values ('".
+		   $this->nif."','".$this->name."','".$this->fundationYear."','".$this->headquarters."','".$this->userId."')");
+      $this->idPetition = $db->id;
+      // TODO: Insert webs
     }
   }
 
-  /*public function modify_db($db=null) {
+  public function modify_db($db=null) {
     if($db == null || !Database::is_database($db)) {
       if(!isset($_SESSION['db']))
 	throw new GException(GException::$VAR_TYPE);
@@ -232,17 +181,15 @@ class RequestAssoc extends Association {
 
     if($this->exists_request()) {
       $db->connect();
-      $db->execute("modify registrationRequest set name='".$this->name."', firstSurname='".
-		   $this->sname1."', lastSurname='".$this->sname2."', dni='".$this->dni->dni
-		   ."', address='".$this->address."', login='".$this->login."', idAssociation".
-		   $this->association->idAssociation." where idPetition=".$this->idPetition);
+      $db->execute("update associationRequest set assocName='".$this->name."', nif='".$this->nif.
+		   "', fundationYear='".$this->fundationYear."', headquarters='".$this->headquarters.
+		   "', idUser='".$this->userId);
 
-      // TODO: Update mails
-      // TODO: Update telephones
+      // TODO: Update webs
     }
-  }*/
+  }
 
- /* public function delete_db($db=null) {
+  public function delete_db($db=null) {
     if($db == null || !Database::is_database($db)) {
       if(!isset($_SESSION['db']))
 	throw new GException(GException::$VAR_TYPE);
@@ -251,21 +198,11 @@ class RequestAssoc extends Association {
 
     if($this->exists_request()) {
       $db->connect();
-      $db->execute("delete from associationRequest where idPetition=".$this->idPetition);
+      $db->execute("delete from associationRequest where id=".$this->idPetition);
     }
-  }*/
+  }
 
- /* public function load_db($id=null, $db=null) {
-    if ($association === null || !Association::is_association($association)) {
-      if ($this->association === null || !Association::is_association($this->association)) {
-	if (!isset($_SESSION['association']) || !Association::is_association($_SESSION['association']))
-	  throw new GException(GException::$VAR_TYPE);
-	$this->association = $_SESSION['association'];
-      }
-
-      $association = $this->association;
-    }
-
+  public function load_db($id=null, $db=null) {
     if ($db === null || !Database::is_database($db)) {
       if (!isset($_SESSION['db']) || !Database::is_database($_SESSION['db']))
 	throw new GException(GException::$VAR_TYPE);
@@ -273,27 +210,21 @@ class RequestAssoc extends Association {
     }
 
     $db->connect();
-    $db->consult("select * from registrationRequest where idPetition=".$id);
+    $db->consult("select * from associationRequest where id=".$id);
 
-    if ($db->numRows() === 0)
-      throw new GDatabaseException(GDatabaseException::$DB_SEL);
-    if ($db->numRows() !== 1)
+    if($db->numRows() > 1)
       throw new GDatabaseException(GDatabaseException::$DB_INTEGRITY);
-
-    $row = $db->getRow();
-    $this->idPetition = intval($row['idPetition']);
-    $this->name = $row['name'];
-    $this->sname1 = $row['firstSurname'];
-    $this->sname2 = $row['lastSurname'];
-    $this->dni = new DNI($row['dni']);
-    // $this->mail = new Email($row['email']);
-    $this->address = $row['address'];
-    // $this->landPhone = new Telephone(intval($row['landPhone']), Telephone::$LAND);
-    // $this->cellPhone = new Telephone(intval($row['cellPhone']), Telephone::$CELLULAR);
-
-    parent::load_user_by_login($row['login'], $db);
+    if($db->numRows() === 1) {
+      $row = $db->getRow();
+      $this->idPetition = intval($row['id']);
+      $this->name = $row['assocName'];
+      $this->nif = $row['nif'];
+      $this->fundationYear = $row['fundationYear'];
+      $this->headquarters = $row['headquarters'];
+      $this->userId = $row['idUser'];
+    }
   }
-*/
+
   // This method returns the html form to request a membership into an association
   public static function html_request() {
     if(!isset($_SESSION['filter']))
@@ -304,13 +235,13 @@ class RequestAssoc extends Association {
     $nextAction = new Action();
     if(($action = $nextAction->get_id_action_class_method('AssociationManagement','new_association')) !== false) {
       $filter->register_var('action',$action);
-    if(isset($_SESSION['user']) && User::is_user($_SESSION['user']) && $_SESSION['user']->isAuthenticated) {
-      $out = $filter->filter_file('new_association.html');
-    }else{
-      $out = $filter->filter_file('new_association_extended.html');
-	  }
-	}
-
+      if(isset($_SESSION['user']) && User::is_user($_SESSION['user']) && $_SESSION['user']->isAuthenticated) {
+	$out = $filter->filter_file('new_association.html');
+      } else {
+	$out = $filter->filter_file('new_association_extended.html');
+      }
+    }
+    
     return $out;
   }
 
