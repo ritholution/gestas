@@ -7,27 +7,27 @@ distribuciones de GNU/Linux. Los pasos a seguir para instalar GESTAS
 desde el código fuente son los siguientes:
 
 1.- Descargar el programa: Hay dos maneras de descargarse el código
-fuente de GESTAS, a traves de la página web oficial del proyecto
+fuente de GESTAS, a través de la página web oficial del proyecto
 (http://gestas.opentia.org), en la que se pueden encontrar las
 versiones estables que se van publicando del proyecto, o a través del
 repositorio donde está alojado el proyecto
 (https://forja.rediris.es/projects/cusl3-gestas/). El repositorio del
-proyecto está gestionado por subversion, con lo que para descargar el
-código fuente de este hay que tener instalado subversion y ejecutar el
-siguiente comando:
+proyecto está gestionado con subversion, con lo que para descargar el
+código fuente de dicho repositorio hay que tener instalado subversion
+y ejecutar el siguiente comando:
 
 	 $ svn co https://forja.rediris.es/svn/cusl3-gestas/trunk/software gestas
 
-    Subversion (http://subversion.tigris.org) es un sistema de gestión de
-versiones que esta disponible en la mayoría de las distribuciones
+    Subversion (http://subversion.tigris.org) es un sistema de control de
+versiones que está disponible en la mayoría de las distribuciones
 GNU/Linux como paquete binario, con lo que resulta sencillo
-instalarselo a partir de un gestor de paquetes.
+instalarlo a partir de un gestor de paquetes.
 
 2.- Instalar dependencias: Actualmente GESTAS depende de los
 siguientes paquetes Debian: mysql-server-5.0, mysql-client-5.0, apache2,
 libapache2-mod-php5, php5, php5-mysql y php-gettext. Estos paquetes
-son de uso común, con lo que la mayoría de las distribuciones tienen
-un paquete binario para su fácil instalación.
+son de uso común en GNU/Linux, con lo que la mayoría de las
+distribuciones tienen un paquete binario para su fácil instalación.
 
 3.- Crear la base de datos: GESTAS trabaja con una base de datos, con
 lo que tendremos que crear una y dar permisos a un usuario para acceder
@@ -62,7 +62,7 @@ parámetros convenientemente. Actualmente el parámetro que debes de modificar es
 dir_base, que indica el directorio base donde se encuentra la
 aplicación (se representará a partir de ahora como <GESTAS>).
 
-5.- Cargar el esquema: Despues de haber configurado los parámetros que
+5.- Cargar el esquema: Después de haber configurado los parámetros que
 se van a insertar en la base de datos deberás cargar el esquema de
 tablas y los datos en la base de datos, para lo cual deberás de
 ejecutar las siguientes instrucciones:

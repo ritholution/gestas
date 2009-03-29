@@ -1,16 +1,620 @@
-2009-03-11  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+2008-11-23  Pedro José Ruiz López <pruiz@opentia.net>
 
-	* Changelog: First alpha version of GESTAS with the next
-	functionalities:
-	- kernel with the main functionalities
-	- member manager with some basic operations (membership
-	request, un/registration of members, change own	membership data,
-	change password) 
-	- Association manager with the association request operation.
+	* 
+
+2008-11-20  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* mysql.sql: Resized the confValue attribute in the configuration
+	table and added some default data.
+
+	* member.php: Created the methods exists() and is_member_of().
+
+	* association.php: Created the method add_members(). Fully
+	implemented the exists() method. Implemented the insert_db() method.
+
+	* web.php: Implemented the exists() method and used in the
+	load_web() method to check if the web exists before load it.
+
+	* gestas.php: Assigned a default value to the class_base and
+	dir_base config parameters.
+
+	* module_management.php: Solved a bug, checking if the active
+	array has elements before a foreach loop.
+
+	* association_mgmt.mod/module.php: Put the paths of the
+	require_once relatives to the class_base config parameter.
+
+2008-11-20  Pedro José Ruiz López <pruiz@opentia.net>
+
+	* mysql.sql: Renamed field 'applicatnName' to 'name' in table
+	registrationRequest.
+
+	* member_mgmt.mod/module.php: New methods to get a list of members
+	and insert a registration request.
+
+2008-11-19  Pedro José Ruiz López <pruiz@opentia.net>
+
+	* association.php: Partially implemented the methods insert_db(),
+	modify_db() and delete_db().
+
+	* member_mgmt.mod/module.php: Created a module to manage the
+	members.
+
+2008-11-19  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* mail.php: Deleted the Mail class (implemented in the Email class).
+
+	* member.php: Implemented a method to check if an object is of the
+	type member.
+
+	* action_management.php: Enhaced the run_next_action() method.
+
+	* content.php: Create the insert, update and delete_db() methods.
+
+	* association.php: Selected an association by default in the
+	load_association() method.
+
+	* association_mgmt.mod: New plugin to manage the associations. The
+	class AssociationManagement is move into this directory.
+
+	* module_management.php: Fully implementation of
+	load_inactive_modules() method.
+
+	* menu_entry.php: Enhaced the constructor of the class.
+
+	* project.php: Implemented the constructor(), __get(), __set(),
+	exists(), load_project(), insert_project(), modify_project(),
+	drop_project() and is_project() methods.
+
+	* type_user.php: Fully implemented and renamed the method
+	check_userType_db() into exists(). Implemented the methods
+	insert_type, modify_type() and drop_type(). Fully implemented the
+	load_type() method.
+	
+2008-11-18  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* mysql.sql: New attribute of the action table to indicate the
+	name of the class that implements the method to execute.
+
+	* acl.php: Implemented the method user_has_permission(). Enhaced
+	the modify_db() method.
+
+	* gexception.php: New error messages.
+
+	* action_management.php: Basic implementation of the action execution.
+
+	* output.php: Implemented the method generate_default_output().
+
+	* object_management.php: Implemented the loading of objects
+	related to de user.
+
+	* object.php: Implemented the method has_permission(). Solved some
+	bugs related to the obtaining of integer values from the database.
+
+	* action.php: Added the private variables class and
+	numParams. Enhaced the load_action() method.
+
+2008-11-15  Pedro José Ruiz López <pruiz@opentia.net>
+
+	* foo.mod: Renamed the module directory.
+
+2008-11-13  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* mysql.sql: New attribute, isActive, added to the relationship
+	between member and association. New attribute added to the object
+	table to indicate the object value (in some cases is the id and in
+	others is the name of the object). Added a new attribute to the
+	association table, the headquarters.
+
+	* action_management.php: New class to manage the actions of the
+	application.
+
+	* association.php: Renamed the web variable to webs, which is
+	going to store a list of webs. Fully implemented the
+	load_association method.
+
+	* web.php: Implemented a method lo load a web from the database by
+	its url.
+
+	* file.php: Implemented the methods to insert, modify and drop file
+	entrys from the database. Implemented a method to load the file
+	data by its id or its path from the database. Implemented a method
+	to check the existence of a file in the database.
+
+	* module.php: Implemented a method to check the existence of a
+	plugin in the database.
+
+	* gestas.php: Loaded the language only once and the object and
+	action managers. Defined a default value to def_plantilla
+	variable, that indicate the default html template to use.
+
+	* output.php: Deleted the generate_output() method and implemented
+	a metod to clear the output and another one to show the output.
+
+	* object.php: Modified the insert and update database methods to
+	include th objectValue attribute. Implemented the method exists to
+	check the existence of the object in the database. Corrected the
+	assignation of the object variable, that depends of the type of
+	object assigned. Created three methods, one per type of object, to
+	obtain the id of the object.
+
+	* web_management.php: New class to manage urls.
+
+	* action.php: Implemented the method exists to check the existence
+	of the action in the database.
+
+2008-11-12  Pedro José Ruiz López <pruiz@opentia.net>
+
+	* foo_mod: New module example.
+
+2008-11-10  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* mysql.sql: New relationship between the web and the association
+	tables.
+
+	* member.php: Created a new method to load a member by its id.
+
+	* association.php: Implemented the load_plugin()
+	method. Implemented the loading of members or the association,
+
+	* module_management.php: Solved a bug in load_active_modules and
+	load_inactive_modules methods, emptying the plugin vectors before
+	loading them again.
+
+2008-11-09  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* mysql.sql: Inserted some rows with default contents in some
+	tables.
+
+	* password.php: Corrected some calls to the methods that encode
+	the password.
+
+	* object.php: Drop the method execute_obj() not used.
+
+	* project.php: New class to represent a project of an association.
+
+	* association.php: Included new internal variable, modules, to
+	maintain the plugin manager of the association. Checked the
+	parameters in the methods insert_db(), update_db() and
+	drop_db(). Created the method select_association to select an
+	association when no one is active. Created a method to load tne
+	active and inactive plugins of the association. Created the method
+	load_association() to load all the data related to na association
+	by its id. Replaced the require by require_once.
+
+	* action.php: Included the private variable idPlugin. Modified the
+	load_action method to load an action based in its idAction or in
+	the idAction passed as parameter.
+
+	* web.php: Included the private variables relative to its field in
+	the database and implemented the insert, modification and deletion
+	of a web from the database.
+
+	* user.php: Call to the authentication in the constructor. Implemented
+	the methods to insert, modify and drop an user from the
+	database. Created a method to load and unload the actions that can
+	make the user.
+
+	* type_user.php: Created the methods to insert, modify and drop an
+	user from the database.
+
+	* module_management.php: New class to manage the plugins related
+	to an association. This class can active and deactive plugins,
+	load the active plugins and its configurations, include all the
+	files related with the active modules, ...
+
+	* mail.php: New class to represent the emails of the members and
+	the contacts.
+
+	* telephone.php: Cortrected a bug in the sintax.
+
+	* module.php: Now this class represent a single plugin, so we
+	define the database fields as private variable and we update the
+	constructor, the __get() and the __set() methods ti assign and
+	obtain correctly this variables. We implement the method to
+	insert, modify and drop of a plugin from the database. We
+	implement a method to load a module from the database by its name
+	or by its id.
+
+	* gestas.php: Included a private variable to load the
+	association. Renamed the method load_configurations() to
+	load_system_configurations(). Deleted the module loading (do in
+	the association class). Loaded the association. Replaced the
+	require by require_once.
+
+2008-11-07  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* mysql.sql: Changed the relationship between the plugin table and
+	the acl, the association and the action tables.
+
+	* SESSION_STORE: New file to document the variables stored in the
+	$_SESSION variable.
+
+	* TODO: Droped the tasksfinished and added some new.
+
+	* object.php: We check the entry parameters in the construct and
+	in the __get() method.
+
+	* module.php: Implemented a method to obtain an id of a plugin
+	based on its name. Implemented a method to load the active
+	plugins.
+
+	* gestas.php: Loaded the active plugins in the run() method.
+
+2008-10-27  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* mysql.sql: New row in the menu table to create the Sections menu.
+
+	* output.php: This class use now the methods load_menu() and
+	generate_html_output from Menu class to generate dinamically the
+	system menu.
+
+	* menu.php: Renamed (and implemented) the method load_system_menu
+	to load_menu. New private variable to store the html
+	output. Created new method to generate the html output using the
+	template_filter class.
+
+	* menu_entry.php: New method named has_permission() to check if
+	the user has permission to run the action related with this
+	menu entry. New private variable to store the idEntry and renamed
+	the entry variable to entryName. Modified the constructor to
+	accept a database row and to load the action associated from the
+	database.
+
+	* gexception.php: Added new exception message.
+
+2008-10-26  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* mysql.sql: Added a new field in the acl table to know the
+	permission type (read, write, execute). Deleted the owner and
+	group fields from the object table and changed the name field,
+	adding the UNIQUE restriction.
+
+	* acl.php: Included a new private variable, type, to store the
+		 permission type.
+		Enhaced the parameter checking in the constructor, get()
+		 and set() methods.
+		Enhaced the insert_acl(), modify_acl() and drop_acl()
+		 methods.
+		Included three static variables to represent te read,
+		 write and execution permissions.
+		Added a new private variable to store the object that
+		 refers the permission.
+		We implement the methods load_acl(), to load the data from
+		 the acl table, load_users(), to load the users who have
+		 this permission, and load_user_types(), to load the
+		 userTypes who have this permission.
+		We load in the constructor all the data related to the
+		 permission (object, users and userTypes).
+
+	* user.php: Implemented the method check_user_db(). Enhaced the
+	modification and deletion of users from the database, using the
+	check_user_db() method.
+
+	* type_user.php: Implemented the method check_userType_db(). 
+	Enhaced the modification and deletion of user types from the
+	database, using the check_userType_db() method.
+
+	* object.php: Creation of the acl permissions of each object
+	correctly, using the READ, WRITE and EXECUTE static variables of
+	the ACL class. Implemented methods to load (from name and from
+	id), insert, modify and drop an	object from the database.
+
+
+2008-10-25  Pedro José Ruiz López <pruiz@opentia.net>
+
+	* acl.php: Implemented the methods acl_modify() and acl_drop().
+
+	* mysql.sql: Deleted the aclObject table.
+
+2008-10-19  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* AUTHORS: Added the mail to the authors info.
+
+	* mysql.sql: Changed the acl table to store the idACL and the
+	idObject of the object associated.
+
+	* acl.php: Enabled the hability to apply one permission to multiple
+	users. Added some methods to implement (add_user, drop_user,
+	ad_user_type, drop_user_type, ...). Implemented the acl insertion
+	in the database.
+
+	* database.php: Included an abstract method to obtain the AUTO_INCREMENT value
+	generated by the database server in the insertions.
+
+	* gexception.php: Added a new database error message.
+
+	* mysql.php: Added a method to obtain the AUTO_INCREMENT value
+	generated by mysql in the insertions.
+
+	* object.php: The permission check is done in ACL class, so we
+	drop the owner, group and others variables and we include a
+	variable to store the acls (read, write and execute acl) of the
+	object. Included a private variable to store the object name.
+
+	* gestas.php: New method to load the acl.
+
+2008-10-19  Pedro José Ruiz López <pruiz@opentia.net>
+
+	* date.php: Added some parameter checking.
+	
+	* log.php: Added some database consults.
+
+2008-10-18  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* mysql.sql: Separated the menu from the menu_entry table.
+	Included an owner and a group column in the object table.
+	
+	* acl.php: Implemented the basis of the ACL class. Partialy
+	implemented the load_permission method.
+
+	* output.php: Adapted the output generation to separate the menu
+	and the menu_entry.
+
+	* menu.php: Adaptation of the class to include all the menu_entrys
+	of the menu.
+
+	* gexception.php: New exception messages.
+
+	* object.php: Included the owner and group of the object
+	represented.
+
+	* menu_entry.php: New class to represent an entry of a menu, which
+	is related to an action (each menu_entry execute an action).
+
+	* gestas.php: Included the user and the permissions loading.
+
+2008-10-17  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* mysql.sql: Added an attribute to the plugin table to indicate
+	the name of the plugin.
+
+	* acl.php: New class ACL to manage the permissions of each user.
+
+	* output.php: New class to generate the html output of the
+	application.
+
+	* menu.php: New class to load dinamicaly the menus of the
+	application and generate the html output of this menus.
+
+	* object.php: New class which represent an object to apply the acl
+	permissions.
+
+	* content.php: New class to generate the dinamic html content of
+	the application, ie, the action selected by the user.
+
+	* file.php: New class to represent a File uploaded to the
+	application.
+
+	* language.php: New class to manage the translations and the
+	language selection.
+
+	* module.php: New class to manage the plugins of the system.
+
+	* gestas.php: Improve the run method to include in the main
+	execution the managers created.
+
+	* type_user.php: Renamed the method __constructor() to
+	__construct().
+
+	* user.php: Implemented the authentication method.
+
+	* password.php: Improved the method to compare passwords. We make
+	more restrictive the access to the password from outside of the
+	class.
+
+2008-10-16  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* funciones: This directory is deleted because the application is
+	Object-Oriented and surely it won't have system functions (for
+	this is implemented the Gestas class).
+
+	* COPYING: Changed the license to Afferro General Public License
+	(AGPL).
+
+	* gestas.php: We call to the run() method from the constructor, so
+	we get off from index.php.
+
+	* type_user.php: Renamed the file from tipo_usuario.php. We throw
+	new GException errors.
+
+	* gexception.php: Added some error messages.
+
+	* TODO: Added some new tasks and deleted the tasks done.
+
+	* mysql.sql: Created a new table with the relationship between ACL
+	and Object tables.
+
+	* All: Added the copyright header and translated into english.
+
+2008-10-15  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* gexception.php: Added some error messages.
+
+	* cabecera.php: Deleted because it's no longer used.
+
+	* pie.php: Deleted because it's no longer used.
+
+	* gestas.php: Now the config variable, which store all the config
+	parameters of the plugins, begins at 1 instead of 0. Added some
+	exception throws. Implemented the loading of plugins checking if
+	the active attribute of the plugin table is set to 1 and loading
+	the configs of the plugin and the file module.php of the plugin,
+	which must be the main file of the plugin.
+
+	* tipo_usuario.php: Renamed the class from TipoSocio to TypeUser.
+
+	* database.php: Improved the method to check the object type.
+
+	* mysql.php: Improved the method to check the object type. Created
+	a new method to check if the connection is still alive.
+
+	* socio.php: Improved the method to check the object type.
+
+	* mysql.sql: Included an attribute to the plugin table for the
+	activation of plugins. Droped the authentication table. Created an
+	user table. Created a relationship between the ACL and the User
+	tables that replace the relation between ACL and member tables.
+
+2008-10-14  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* template1.html: Included the dinamic menu.
+
+	* session.php: Renamed the class from sesion to session.
+
+	* gestas.php: Renamed the class from MotorGestas to Gestas and
+	changed the beginning of the application. Now, instead of include
+	the general.php file we create an object of Gestas and we call to
+	the run() method.
+
+	* general.php: Deleted because it's no longer used.
+
+	* mysql.php: Solved a bug related with the result of a consult.
+	Now we check if this result is boolean to see if we have to launch
+	an exception before return the number of rows.
+
+2008-10-13  Pedro José Ruiz López <pruiz@opentia.net>
+
+	* telefono.php: Created a method to check if an object is of the
+	type Telefono.
+
+	* socio.php: Implemented the __set() and __get()
+	methods. Implemented a method to modify the password of the
+	member. Implemented a method to add a web, another to add a
+	telephone and another one to add an email to the member
+	data. Implemented an authentication method.
+
+	* date.php: Implemented a method to check if an object is of the
+	type Date.
+
+	* web.php: Implemented a method to check if an object is of the
+	type Web.
+
+	* passwoed.php: Implemented a method to compare two passwords.
+
+	* email.php: Implemented a method to check if an object is of the
+	type Email.
+	
+2008-10-13  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* locales: Beginning of the internationalization.
+
+	* gexception.php: New error messages.
+
+	* password.php: Launch of GException in the errors.
+
+	* database.php: Launch of GException in the errors.
+
+	* AUTHORS: Creation of the GESTAS developers file.
+
+	* README.es: Creation of the readme file in spanish. It explain
+	the aim of the software.
+
+	* INSTALL.es: Installation instructions in spanish.
+
+	* INSTALL.en: Installation instructions in english.
+
+	* COPYING: GESTAS License.
+
+	* TRANSLATORS: List of translators of the application.
+
+	* dependencias.txt: List of dependencies in spanish of the
+	software for it installation.
+
+	* README_TRANSLATION: Some basic indications to do the
+	translations.
+
+	* header.txt: File with the header copyright to insert at the top
+	of each file.
+
+	* TODO: List of things to do in the project.
+
+	* motor.php: New class MotorGestas responsible of the execution of
+	the program. All the system functions, stored in system.php, are
+	now part of this class.
+
+	* template_filter.php: New class, TemplateFilter, which implement
+	a mechanism to show the html output based on templates and
+	variable substitution.
+
+	* template1.html: Created a new html template.
+
+2008-10-11  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* mysql.sql: Included a new table, plugin, to store the plugins in
+	the system. Changed the configuration table to link the configurations with
+	any plugin. Added some values in the configuration table. Added a
+	relation between ACL and UserType tables. Modified the
+	relationship between ACL and Member table.
+
+	* socio.php: Added some private variables to the Socio class.
+
+	* system.php: Updated the configuration load & save to use the new
+	database schema.
+
+2008-10-11  Pedro José Ruiz López <pruiz@opentia.net>
+
+	* password.php: Added the checking of the member variables and
+	implemented the __get() method.
+
+	* const.php: Deleted because it's an user configuration file and
+	it must be created by the user.
+
+	* date.php: New class Date to manage the dates in the application.
+
+	* log.php: New class Log to represent a log entry.
+
+	* asociacion.php: Checking the member variable names in the
+	__get() method.
+
+2008-10-09  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* telefono.php: New class to represent the different types of
+	telephone (fax, cell and land phone).
+
+	* socio.php: New class to represent an association  member.
+
+	* web.php: New class to represent a web url.
+
+	* email.php: New class to represent an email.
+
+2008-10-08  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* password.php: New class Password with diferent encoding methods,
+
+	* database.php: Using the Password class in the database password.
+
+	* mysql.php: Using the Password class in the database password.
+
+2008-10-07  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
+
+	* cabecera.php: Created a file with the header of the web page.
+
+	* pie.php: Created a file with the footer of the web page.
+
+	* general.css: Created a file with the style sheet of the
+	application.
+
+	* gexception.php: Created a new class to launch the application
+	exceptions with custom messages.
+
+	* tipo_socio.php: Created a new class to represent a type of
+	member.
+
+	* mysql.php: Solved some bugs of the Mysql class.
+
+	* system.php: Created a function to generate a dinamic menu with
+	the application sections. Created a function to generate the
+	dinamic content.
 
 2008-10-04  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
 
-	* general.php: .
+	* system.php: Modified the load_configuration function to use the
+	session class.
+
+	* session.php: New class to manage the session stored in the database.
+
+	* mysql.sql: Included a table to store the session.
 
 2008-10-03  Pablo Álvarez de Sotomayor Posadillo  <palvarez@opentia.org>
 
