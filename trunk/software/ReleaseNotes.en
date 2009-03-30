@@ -1,27 +1,91 @@
  Release Notes of Gestas
 =========================
 
- Version 0.0.1
-===============
+ Version 0.0.2 (30/03/2009)
+============================
+ This version include the following updates:
+
+ * Kernel
+   - Improved the permission management: In this version we have
+     implemented a new method to check the permissions of each user,
+     reducing a lot the number of entries in the database to assign
+     permissions in the different associations in which is member the
+     user.
+   - New stylesheet: We have modified the default style of the page by
+     one more sofisticated and modern.
+   - New exception types and messages: We have created two new types
+     of exception, GDatabaseException (for the database exceptions)
+     and GUserException (for the user exceptions), and we have added
+     new exception messages and improved the old ones.
+   - Debug mode: We have created a debug mode to show or hide the
+     execution stack in the error messages. This stack shows all the
+     functions that are in execution in the moment of the exception,
+     becoming very useful during the debugging, but it's a bit awesome
+     to the regular user.
+   - Improvements on the password management: We have implemented a
+     method exclusively to check the password and we have optimized the
+     action to modify the password.
+
+ * Member manager
+   - New Javascript checkings: We have created some Javascript
+     warnings in all the module's forms to permit the correction of
+     some fields before send the data.
+   - Solving of bugs: We have solved some bugs on the module, so now
+     the actions developed are very stable.
+
+ * Association manager
+   - Validation request: We have developed a new action to validate
+     the requests of new associations on the application.
+   - Association modification: We have developed a new action to
+     modify the association data.
+   - Improved the Association request: We have improved the
+     association request by enabling to the registered users the
+     possibility to make a new petition without being logged in. For
+     this they have to put their password in the petition form as the
+     unregistered users have to do.
+
+
+ Version 0.0.1 (29/03/2009)
+============================
  This version has the following functionalities implemented:
 
  * Kernel: The kernel actually supports the following characteristics:
-   - MySQL database.
-   - Inclusion of plugins.
-   - Using of templates.
-   - Basic supporting of logs.
-   - Basic supporting of language translation.
-   - Dinamic permission assignment.
-   - Creation of new type of users.
-   - Basic user management (user registration, change password, ...).
+   - MySQL database: Actually we only support the MySQL database, but
+     in the future we are going to implement the support of other
+     database engines.
+   - Inclusion of plugins: The kernel support the inclusion of new
+     plugins to make easier the adaptation of the software to any
+     association.
+   - Using of templates: The application use templates to generate the
+     html output, replacing the variables of the template by its
+     value.
+   - Basic supporting of logs: We have included a basic support of
+     log messages, althout it's not fully implemented, so it's not
+     enabled.
+   - Basic supporting of language translation: We have included a
+     basic support of translations using gettext, but it's not fully
+     implemented/probed, so it's not enabled.
+   - Dinamic permission assignment: We have design a dinamic
+     assignment of permissions to an user over an association or the
+     application.
+   - Creation of new type of users: We allow the dinamically creation
+     of user types, so each association can have its own types of user
+     with a dinamically assigned permissions.
+   - Basic user management: We have developed a basic user management,
+     including the creation of users and the change of his password.
 
  * Member manager: This module implement the following actions:
-   - Request of membership.
-   - List of requests.
-   - Validation of membership.
-   - List of members.
-   - Deletion of members.
-   - Change of member data.
+   - Request of membership: This action implements the petition of
+     membership into an association.
+   - List of requests: This action implements the list of petitions of
+     membership into an association.
+   - Validation of membership: This action implements the validation
+     of membership petitions into an association.
+   - List of members: This action shows a list of the members of an
+     association.
+   - Deletion of members: This action deletes a member of an association.
+   - Change of member data: This action changes the data related to
+     the member logged in.
 
- * Association manager: Actually this module only implement the
-   request of new associations.
+ * Association manager: Actually this module only implement the request of
+   new associations.

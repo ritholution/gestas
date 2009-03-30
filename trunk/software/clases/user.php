@@ -137,7 +137,8 @@ class User{
 	  $_SESSION['out']->content = null;
 	} else
 	  throw new GUserException(GUserException::$LOGIN_FAIL);
-      }
+      } else
+	throw new GUserException(GUserException::$LOGIN_FAIL);
     }
 
     return $this->isAuthenticated;
@@ -346,7 +347,7 @@ class User{
 
       if($this->typeUsers !== null && is_array($this->typeUsers)) {
 	foreach($this->typeUsers as $value)
-	  $db->execute("insert into userUserType(idUser,idType) values(".$this->idUser.",".$value->idType.")");
+	  $db->execute("insert into userUserType values(".$this->idUser.",".$value->idType.",0)");
       }
     }
   }
@@ -382,10 +383,18 @@ class User{
       if($this->typeUsers != null && is_array($this->typeUsers))
 	foreach($this->typeUsers as $value) {
 	  $value->modify_type($db);
-	  $db->consult("select idUser from userUserType where idType=".$value->idType.
-		       " and idUser=".$this->idUser);
+
+	  $consult = "select idUser from userUserType where idType=".$this->idType." and idUser=".
+	    $this->idUser." and (idAssociation=0";
+	  if(isset($_SESSION['association']) && Association::is_association($_SESSION['association'])
+	     && $_SESSION['association']->exists_association())
+	    $consult .= " or idAssociation=".$_SESSION['association']->idAssociation;
+	  $consult .= ")";
+	  $db->consult($consult);
+
 	  if($db->numRows() === 0)
-	    $db->execute("insert into userUserType values(".$this->idUser.",".$value->idType.")");
+	    $db->execute("insert into userUserType values(".$this->idUser.",".$value->idType.",".
+			 $_SESSION['association']->idAssociation.")");
 	  else if($db->numRows() > 1)
 	    throw new GDatabaseException(GDatabaseException::$DB_INTEGRITY);
 	}
@@ -442,8 +451,10 @@ class User{
       throw new GException(GException::$VAR_TYPE);
 
     $this->typeUsers[] = $type;
+    if($newIdAssoc < 0)
+      $newIdAssoc = 0;
     $db->connect();
-    $db->execute("insert into userUserType values(".$this->idUser.",".$type->idType.")");
+    $db->execute("insert into userUserType values(".$this->idUser.",".$type->idType.",".$newIdAssoc.")");
   }
 
   // This method checks if the user is an user type
@@ -485,18 +496,17 @@ class User{
     $type = null;
     if(is_int($newType) && $newType > -1) {
       $type = new TypeUser();
-      if($type->exists_type($newType,-1,$db))
-	$type->load_type($newType);
-      else
+      if(!$type->exists_type($newType,-1,$db))
 	throw new GException(GException::$VAR_TYPE);
+      $type->load_type($newType);
     } else if(is_string($newType)) {
       $type = new TypeUser();
-      if($type->exists_type($newType,$newIdAssoc,$db))
-	$type->load_type_assoc($newType.$newIdAssoc);
-      else
+      if(!$type->exists_type($newType,$newAssoc,$db))
 	throw new GException(GException::$VAR_TYPE);
+      $type->load_type_assoc($newType,$newAssoc);
     } else if(TypeUser::is_type_user($newType) &&
-	      $newType->exists_type($newType->idType,$newType->idAssociation,$db))
+	      $newType->exists_type($newType->idType,$newType->idAssociation,$db) &&
+	      $newType->idAssociation === $newAssoc)
       $type = clone $newType;
     else
       throw new GException(GException::$VAR_TYPE);
@@ -504,8 +514,11 @@ class User{
     for($i=0;$i < count($this->typeUsers);$i++) {
       if($this->typeUsers[$i]->idType === $type->idType) {
 	$this->typeUsers[$i] = null;
+	if($type->idAssociation < 0)
+	  $type->idAssociation = 0;
 	$db->connect();
-	$db->execute("delete from userUserType where idUser=".$this->idUser." and idType=".$value->idType);
+	$db->execute("delete from userUserType where idUser=".$this->idUser." and idType=".$value->idType.
+		     " and (idAssociation=0 or idAssociation=".$type->idAssociation.")");
       }
     }
   }
@@ -534,16 +547,7 @@ class User{
 	throw new GException(GException::$VAR_TYPE);
 
       $this->load_user_by_login($_SESSION['user']->login);
-
-      if(!$this->password->compare($params['password'],$this->login))
-	throw new GUserException(GUserException::$USER_UNKNOWN);
-
-      if($params['newPassword'] !== $params['repeatPassword'])
-	throw new GUserException(GUserException::$PASS_EQ_FAIL);
-
-      $this->password->pass = $params['newPassword'];
-      $this->password->isCodificated = false;
-      $this->modify_user($db);
+      $this->update_password($this->password, $params['password'], $params['repeatPassword']);
 
       $filter->register_var('success','Contrase&ntilde;a cambiada');
       $_SESSION['out']->content = $filter->filter_file('success.html');
@@ -620,6 +624,13 @@ class User{
     }
     
     return $block;
+  }
+
+  public function check_password($cPass) {
+    if($cPass === null || (!is_string($cPass) && !Password::is_password($cPass)))
+      throw new GException(GException::$VAR_TYPE);
+
+    return $this->password->compare($cPass);
   }
 
   // This method returns all the valid user types of an array.

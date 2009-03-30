@@ -251,7 +251,6 @@ class ModuleManagement{
       }
     }
 
-
     // We load the configurations of the active plugins
     for($i=0;$i < count($this->active);$i++) {
       $db->consult("select * from configuration where idPlugin=".$this->active[$i]->idPlugin);

@@ -79,6 +79,10 @@ function check(){
       form.web.focus();
       return false;
     }
+  } if(form.passwd.value!=form.rpasswd.value) {
+    alert('Las contraseñas deben de ser iguales.');
+    form.web.focus();
+    return false;
   }
   form.submit();
 }

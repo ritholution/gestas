@@ -21,20 +21,82 @@
   You should have received a copy of the GNU General Public License
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
+<script type="text/javascript">
+function check(){
+  var form=document.data;
+  if(form.login.value==''){
+    alert('Debes especificar un login.');
+    form.login.focus();
+    return false;
+  } if(form.name.value==''){
+    alert('Debes especificar un nombre.');
+    form.name.focus();
+    return false;
+  } if(form.sname1.value==''){
+    alert('Debes especificar un primer apellido.');
+    form.sname1.focus();
+    return false;
+  } if(form.dni.value!=''){
+    if(form.dni.value.length != 9) {
+      alert('Debes especificar un dni correcto.');
+      form.dni.focus();
+      return false;
+    } else if(!form.dni.value.substring(0,8).match(/[0-9]{8}/) ||
+       !form.dni.value.substring(8,9).match(/[a-zA-Z]/)) {
+      alert('Debes especificar un dni correcto.');
+      form.dni.focus();
+      return false;
+    } else {
+      var ControlValue = 0;
+      var DNICharIndex = 0;
+      var DNIChars = new Array('T','R','W','A','G','M','Y','F','P','D','X','B','N','J','Z','S','Q','V','H','L','C','K','E');
+      var DNINumber = form.dni.value.substring(0,8)*1;
+      var DNIChar = form.dni.value.substring(8,9);
+      DNIChar = DNIChar.toUpperCase();
+      ControlValue = DNINumber/DNIChars.length;
+      ControlValue = Math.floor(ControlValue);
+      ControlValue = ControlValue*DNIChars.length;
+      DNICharIndex = DNINumber-ControlValue;
+      if(DNIChar != DNIChars[DNICharIndex]) {
+        alert('Debes especificar un dni correcto.');
+        form.dni.focus();
+        return false;
+      }
+    }
+  } if(form.email.value!='' &&
+       !form.email.value.substring(0).match(/[a-z][a-z-_0-9.]+@[a-z-_=>0-9\.]+\.[a-z]{2,3}/)) {
+      alert('Debes especificar un email válido.');
+      form.email.focus();
+      return false;
+  } if(form.phone.value!='' &&
+       !form.phone.value.substring(0).match(/(6|9)[0-9]{8}/)) {
+      alert('Debes especificar un teléfono válido.');
+      form.phone.focus();
+      return false;
+  } if(form.web.value!='') {
+    if(!form.web.value.substring(0).match(/http:\/\/[a-z-_0-9\.]+\.[a-z]{2,3}/)) {
+      alert('Debes especificar una url válida.');
+      form.web.focus();
+      return false;
+    }
+  }
+  form.submit();
+}
+</script>
 
-<form action="index.php" method="post">
+<form name="data" action="index.php" method="post" onsubmit="return check()">
   <table class="formulario">
     <tr><td><input type="hidden" name="action" value="$action"></td></tr>
     <tr><td><input type="hidden" name="param[member]" value="$idMember"></td></tr>
-    <tr><td>Usuario: </td><td><input type="text" name="param[login]" value="$login"></td></tr>
-    <tr><td>Nombre: </td><td><input type="text" name="param[name]" value="$name"></td></tr>
-    <tr><td>Primer Apellido: </td><td><input type="text" name="param[sname1]" value="$sname1"></td></tr>
+    <tr><td>Usuario: </td><td><input type="text" id="login" name="param[login]" value="$login"></td></tr>
+    <tr><td>Nombre: </td><td><input type="text" id="name" name="param[name]" value="$name"></td></tr>
+    <tr><td>Primer Apellido: </td><td><input type="text" id="sname1" name="param[sname1]" value="$sname1"></td></tr>
     <tr><td>Segundo Apellido: </td><td><input type="text" name="param[sname2]" value="$sname2"></td></tr>
-    <tr><td>DNI: </td><td><input type="text" name="param[dni]"  value="$dni"></td></tr>
+    <tr><td>DNI: </td><td><input type="text" name="param[dni]" id="dni" value="$dni"></td></tr>
     <tr><td>Direcci&oacute;n: </td><td><input type="text" name="param[address]" value="$address"></td></tr>
-    <tr><td>Correo Electr&oacute;nico: </td><td><input type="text" name="param[email][]" value="$mail"></td></tr>
-    <tr><td>Tel&eacute;fono: </td><td><input type="text" name="param[telephone][]" value="$telephone"></td></tr>
-    <tr><td>Web: </td><td><input type="text" name="param[web][]" value="$web"></td></tr>
+    <tr><td>Correo Electr&oacute;nico: </td><td><input type="text" id="email" name="param[email][]" value="$mail"></td></tr>
+    <tr><td>Tel&eacute;fono: </td><td><input type="text" id="phone" name="param[telephone][]" value="$telephone"></td></tr>
+    <tr><td>Web: </td><td><input type="text" id="web" name="param[web][]" value="$web"></td></tr>
     <tr><td align="center" colspan=2>
     				<input type="submit" value="Aceptar">
     				<input type="button" value="Cancelar" onclick='document.location.href="index.php"'></input>
