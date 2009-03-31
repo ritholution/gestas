@@ -106,8 +106,8 @@ ul.post-meta span.post-meta-key {
 
 #content {
     width: 100%;
-    padding-right: 0;
-    padding-left: 50px;
+    padding-left: 3em;
+    padding-right: 3em;
     margin-top: 0;
     margin-bottom: 1em;
     text-align: justify;
@@ -158,10 +158,11 @@ ul.post-meta span.post-meta-key {
 }
 
 .header .logo img{
-    margin: 0;
     padding: 0;
-    height: 150px;
     background-image: url("images/fondo_gris.png");
+    margin-top: -100px;
+    margin-right: 4em;
+    float: right;
 }
 
 .header h1 {
@@ -214,7 +215,6 @@ ul.post-meta span.post-meta-key {
 }
 
 #menu #powered{
-    margin-top: 5px;
     padding: 3px;
     text-align: center;
     clear: both;
@@ -226,9 +226,13 @@ ul.post-meta span.post-meta-key {
     color: #fff;
     font-size: 11px;
     margin: 10px 0 0 0;
-    padding: 3px;
+    padding: 0.5em;
     text-align: center;
     clear: both;
+}
+
+#footer img {
+    padding: 0.5em;
 }
 
 #footer a:link, .credit a:hover {
