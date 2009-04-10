@@ -137,8 +137,11 @@ class Password{
   public function compare($passwd=null, $user=null) {
     if((is_string($passwd) && $this->pass === $passwd) ||
        (is_string($passwd) && $this->pass === $this->codificate($user,$passwd)) ||
+       (is_string($passwd) && $this->codificate($user,$this->pass) === $passwd) ||
        (Password::is_password($passwd) && $this->codType === $passwd->codType && 
-	$passwd->compare($this->pass)))
+	$this->pass === $this->codificate($user,$passwd)) ||
+	(Password::is_password($passwd) && $this->codType === $passwd->codType && 
+	 $this->codificate($user,$this->pass) === $passwd))
       return true;
     return false;
   }

@@ -49,7 +49,7 @@ class Member extends User{
   public function __construct($newName=null, $newFirstSurname=null, 
 			      $newSecondSurname=null, $newAddress=null,
 			      $newDNI = null, $newLogin=null,
-			      $newPassword=null, $newUserType=null,
+			      $newPassord=null, $newUserType=null,
 			      $newMails=null, $newWebs=null,
 			      $newTelephones=null) {
     parent::__construct($newLogin, $newPassword, $newUserType);
@@ -373,7 +373,6 @@ class Member extends User{
 		   "','".$this->secondSurname."','".$this->address."','".$this->dni->dni.
 		   "',".$this->idUser.")");
       $this->idMember = $db->id;
-      echo $db->id;
 
       if($this->webs !== null && is_array($this->webs))
 	foreach($this->webs as $value) {
@@ -590,7 +589,7 @@ class Member extends User{
       parent::load_user_by_login($load);
       $db->consult("select idMember from member where idUser=".$this->idUser);
       $id = $db->getRow();
-      $this->load_member($id['idMember'],$db);
+      $this->load_member(intval($id['idMember']),$db);
     }
   }
 

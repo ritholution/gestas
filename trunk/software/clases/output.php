@@ -128,7 +128,7 @@ class Output{
   // This method generate the system menu
   public function generate_system_menu() {
       $out_menu = new Menu();
-      $out_menu->load_menu(1);
+      $out_menu->load_menu($_SESSION['system_menu']);
       $out_menu->generate_html_output();
       $_SESSION['sys_menu'] = $out_menu->out;
   }

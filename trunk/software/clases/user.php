@@ -146,10 +146,10 @@ class User{
 
   // This method unauthenticate the user
   public function unauthentication() {
-    $this->load_user_by_login('anonymous');
-    $this->isAuthenticated = false;
-    $_SESSION['user'] = $this;
+    $_SESSION['user']->load_user_by_login('anonymous');
+    $_SESSION['user']->isAuthenticated = false;
     $_SESSION['out']->content = $this->get_login();
+    $_SESSION['system_menu'] = 1;
   }
 
   // This function updates the password if $oldPassword is the actual password and $newPassword is the
@@ -210,11 +210,17 @@ class User{
       $db=$_SESSION['db'];
     }
 
-    if(!is_int($newIdUser))
+    if(!is_int($newIdUser) && (!is_string($newIdUser) || $newIdUser === null))
       throw new GException(GException::$VAR_TYPE);
     
+    $consult = "select idUser from appUser where ";
+    if(is_int($newIdUser))
+      $consult .= "idUser=".$newIdUser;
+    else if(is_string($newIdUser))
+      $consult .= "login='".$newIdUser."'";
+
     $db->connect();
-    $db->consult("select idUser from appUser where idUser=".$newIdUser);
+    $db->consult($consult);
     if($db->numRows() > 1)
       throw new GDatabaseException(GDatabaseException::$DB_INTEGRITY);
 
@@ -336,9 +342,9 @@ class User{
     else if($this->exists_login($this->login, $db))
       $this->modify_user($db);
     else {
-      $pass = $this->password->codificate();
-      if($this->password->isCodificated)
-	$pass = $this->password->pass;
+      $pass = $this->password->pass;
+      if(!$this->password->isCodificated)
+	$pass = $this->password->codificate();
 
       $db->connect();
       $db->execute("insert into appUser(login,password) values('".$this->login."','".
@@ -384,7 +390,7 @@ class User{
 	foreach($this->typeUsers as $value) {
 	  $value->modify_type($db);
 
-	  $consult = "select idUser from userUserType where idType=".$this->idType." and idUser=".
+	  $consult = "select idUser from userUserType where idType=".$value->idType." and idUser=".
 	    $this->idUser." and (idAssociation=0";
 	  if(isset($_SESSION['association']) && Association::is_association($_SESSION['association'])
 	     && $_SESSION['association']->exists_association())
@@ -630,7 +636,7 @@ class User{
     if($cPass === null || (!is_string($cPass) && !Password::is_password($cPass)))
       throw new GException(GException::$VAR_TYPE);
 
-    return $this->password->compare($cPass);
+    return $this->password->compare($cPass,$this->login);
   }
 
   // This method returns all the valid user types of an array.

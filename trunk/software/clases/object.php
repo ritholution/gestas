@@ -42,6 +42,7 @@ class Obj{
   static $TYPE_PLUGIN = 3;
   static $TYPE_TABLE = 4;
   static $TYPE_FILE = 5;
+  static $TYPE_MENU = 6;
 
   // Constructor of the class
   public function __construct($newName=null, $newObject=null, $newDescription=null,
@@ -79,6 +80,10 @@ class Obj{
     case Obj::$TYPE_FILE:
       // We store the file id
       $this->object = $this->get_id_file($newObject);
+      break;
+    case Obj::$TYPE_MENU:
+      // We store the menu id
+      $this->object = $this->get_id_menu($newObject);
       break;
     default:
       throw new GException(GException::$VAR_TYPE);
@@ -149,6 +154,13 @@ class Obj{
 	// We store the file id
 	if($value !== null && $value > -1)
 	  $this->object = $this->get_id_file($value);
+	else
+	  throw new GException(GException::$VAR_TYPE);
+	break;
+      case Obj::$TYPE_MENU:
+	// We store the file id
+	if($value !== null && $value > -1)
+	  $this->object = $this->get_id_menu($value);
 	else
 	  throw new GException(GException::$VAR_TYPE);
 	break;
@@ -304,6 +316,13 @@ class Obj{
       else
 	throw new GException(GException::$VAR_TYPE);
       break;
+    case Obj::$TYPE_MENU:
+      // We store the file id
+      if($row['objectValue'] !== null && $row['objectValue'] > -1)
+	$this->object = $this->get_id_menu(intval($row['objectValue']));
+      else
+	throw new GException(GException::$VAR_TYPE);
+      break;
     default:
       throw new GException(GException::$VAR_TYPE);
     }    
@@ -376,6 +395,13 @@ class Obj{
 	// We store the file id
 	if($row['objectValue'] !== null && $row['objectValue'] > -1)
 	  $this->object = $this->get_id_file(intval($row['objectValue']));
+	else
+	  throw new GException(GException::$VAR_TYPE);
+	break;
+      case Obj::$TYPE_MENU:
+	// We store the file id
+	if($row['objectValue'] !== null && $row['objectValue'] > -1)
+	  $this->object = $this->get_id_menu(intval($row['objectValue']));
 	else
 	  throw new GException(GException::$VAR_TYPE);
 	break;
@@ -484,6 +510,25 @@ class Obj{
 	    return $pFile;
 	} else if(File::is_file($pFile))
 	  return $pFile->idFile;
+      }
+  }
+
+  // This method obtain the id of a Menu from a parameter in various formats
+  private function get_id_menu($pMenu=null) {
+      require_once("menu.php");
+      if($pMenu !== null) {
+	if(is_string($pMenu)) {
+	  $tmp_menu = new Menu();
+/* 	  if($tmp_menu->exists($pMenu)) { */
+/* 	    $tmp_menu->loadMenu($pMenu); */
+/* 	    return  $tmp_menu->idMenu; */
+/* 	  } */
+	} else if(is_int($pMenu)) {
+	  $tmp_menu = new Menu();
+	  if($tmp_menu->exists($pMenu))
+	    return $pMenu;
+	} else if(Menu::is_menu($pMenu))
+	  return $pMenu->idMenu;
       }
   }
 

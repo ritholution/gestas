@@ -1,8 +1,8 @@
 <!--
-  signup_request.html
+  member_registration.html
 
   Description
-  Template to sent a form with a new request of membership.
+  Template to sent a form to register a new member.
 
   copyright (c) 2008-2009 Opentia S.L.
 
@@ -24,7 +24,7 @@
 
 <script type="text/javascript">
 function check(){
-  var form=document.request;
+  var form=document.registration;
   if(form.login.value==''){
     alert('Debes especificar un login.');
     form.login.focus();
@@ -88,20 +88,20 @@ function check(){
   form.submit();
 }
 </script>
-<form name="request" action="index.php" method="post" onsubmit="return check()">
+<form name="registration" action="index.php" method="post" onsubmit="return check()">
   <table class="formulario">
     <tr><td><input type="hidden" name="action" value="$action"/></td></tr>
-    <tr class="$oculto"><td>Usuario*: </td><td><input type="text" id="login" name="param[login]" value="$login"/></td></tr>
-    <tr class="$oculto"><td>Contrase&ntilde;a*: </td><td><input type="password" id="passwd" name="param[password]"/></td></tr>
-    <tr class="$oculto"><td>Repetir Contrase&ntilde;a*: </td><td><input type="password" id="rpasswd" name="param[repeat_password]"/></td></tr>
-    <tr><td>Nombre*: </td><td><input type="text" id="name" name="param[name]" value="$name"/></td></tr>
-    <tr><td>Primer Apellido*: </td><td><input type="text" id="sname1" name="param[sname1]" value="$sname1"/></td></tr>
-    <tr><td>Segundo Apellido: </td><td><input type="text" name="param[sname2]" value="$sname2"/></td></tr>
-    <tr><td>DNI: </td><td><input type="text" id="dni" name="param[dni]" value="$dni"/></td></tr>
-    <tr><td>Direcci&oacute;n: </td><td><input type="text" name="param[address]" value="$address"/></td></tr>
-    <tr><td>Correo Electr&oacute;nico: </td><td><input type="text" id="email" name="param[mail][]" value="$mail"/></td></tr>
-    <tr><td>Tel&eacute;fono: </td><td><input type="text" id="phone" name="param[phone][]" value="$phone"/></td></tr>
-    <tr><td>Web: </td><td><input type="text" id="web" name="param[web][]" value="$web"/></td></tr>
+    <tr><td>Usuario*: </td><td><input type="text" id="login" name="param[1][login]"/></td></tr>
+    <tr><td>Contrase&ntilde;a*: </td><td><input type="password" id="passwd" name="param[1][password]"/></td></tr>
+    <tr><td>Repetir Contrase&ntilde;a*: </td><td><input type="password" id="rpasswd" name="param[1][repeat_password]"/></td></tr>
+    <tr><td>Nombre*: </td><td><input type="text" id="name" name="param[1][name]"/></td></tr>
+    <tr><td>Primer Apellido*: </td><td><input type="text" id="sname1" name="param[1][sname1]"/></td></tr>
+    <tr><td>Segundo Apellido: </td><td><input type="text" name="param[1][sname2]"/></td></tr>
+    <tr><td>DNI: </td><td><input type="text" id="dni" name="param[1][dni]"/></td></tr>
+    <tr><td>Direcci&oacute;n: </td><td><input type="text" name="param[1][address]"/></td></tr>
+    <tr><td>Correo Electr&oacute;nico: </td><td><input type="text" id="email" name="param[1][mail][]"/></td></tr>
+    <tr><td>Tel&eacute;fono: </td><td><input type="text" id="phone" name="param[1][phone][]"/></td></tr>
+    <tr><td>Web: </td><td><input type="text" id="web" name="param[1][web][]"/></td></tr>
     <tr class="center">
       <td colspan="2">
 	<input type="submit" value="Enviar Petición"/></input>

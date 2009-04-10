@@ -35,6 +35,7 @@ class GUserException extends GException{
   static $LOGIN_FAIL=4;
   static $REQUEST_EXISTS=5;
   static $USER_EXISTS=6;
+  static $USER_MISMATCH=7;
 
   // Construct of the class.
   public function __construct($newErrorType=-1,$addMsg=null){
@@ -59,6 +60,9 @@ class GUserException extends GException{
       break;
     case 6:
       $this->message = gettext("El usuario ya existe.");
+      break;
+    case 7:
+      $this->message = gettext("El usuario no se corresponde con el socio.");
       break;
     default:
       // Unknown error

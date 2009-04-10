@@ -145,7 +145,6 @@ class MemberManagement {
     $_SESSION['out']->content = $filter->filter_file('member_list.html');
   }
 
-
   // 'Send' a new registration request
   public function signup_request($params) {
     if(!isset($_SESSION['AssociationManagement']))
@@ -157,9 +156,8 @@ class MemberManagement {
     } else {
       // Check the params.
       if(!is_array($params) || $params['login'] == null || $params['name'] == null ||
-	 $params['sname1'] == null || $params['address'] == null || 
-	 !isset($_SESSION['association']) || $_SESSION['association'] === null || 
-	 !Association::is_association($_SESSION['association']))
+	 $params['sname1'] == null || !isset($_SESSION['association']) ||
+	 $_SESSION['association'] === null || !Association::is_association($_SESSION['association']))
 	throw new GException(GException::$VAR_TYPE);
 
       if(!isset($_SESSION['user']) || !User::is_user($_SESSION['user']) || !$_SESSION['user']->isAuthenticated) {
@@ -189,7 +187,7 @@ class MemberManagement {
 	}
       } catch(GException $e) {
 	// Insert log
-	$this->filter->register_var('msg',$e->getOutMessage());
+	$filter->register_var('msg',$e->getOutMessage());
 	$_SESSION['out']->content = $filter->filter_file('recover_exception.html');
       }
     }
@@ -364,6 +362,94 @@ class MemberManagement {
     $_SESSION['out']->content = $filter->filter_file('request_list.html');
 
     return $list;
+  }
+
+  public function member_registration($params) {
+    if(!isset($_SESSION['AssociationManagement']))
+      throw new GException(GException::$MODULE_DEP,"AssociationManagement");
+
+    if(!isset($_SESSION['filter']))
+      $_SESSION['filter'] = new TemplateFilter();
+    $filter = $_SESSION['filter'];
+
+    if($params === null) {
+      // Generate the html output.
+      $nextAction = new Action();
+      if(($action = $nextAction->get_id_action_class_method('MemberManagement','member_registration')) !== false) {
+	$filter->register_var('action',$action);
+	$_SESSION['out']->content = $filter->filter_file('member_registration.html');
+      }
+    } else {
+      // Check the params.
+      if(!is_array($params) || count($params) == 0)
+	throw new GException(GException::$VAR_TYPE);
+
+      if(!isset($_SESSION['db']))
+	throw new GException(GException::$VAR_TYPE);
+      $db = $_SESSION['db'];
+
+      foreach($params as $entry) {
+	if(!is_array($entry) || $entry['login'] == null || $entry['name'] == null ||
+	   $entry['sname1'] == null || !isset($_SESSION['association']) ||
+	   $_SESSION['association'] === null || !Association::is_association($_SESSION['association']))
+	  throw new GException(GException::$VAR_TYPE);
+
+	if(!isset($_SESSION['user']) || !User::is_user($_SESSION['user']) || !$_SESSION['user']->isAuthenticated)
+	  throw new GUserException(GUserException::$USER_PERM);
+
+	// Insert the member.
+	try {
+	  if($entry['password'] !== $entry['repeat_password'])
+	    throw new GException(GException::$PASS_EQ_FAIL);
+
+	  $newMember = new Member();
+	  if($newMember->exists_dni($entry['dni'],$db))
+	    $newMember->load_member_by_dni($entry['dni'],$db);
+	  else if($newMember->exists_login($entry['login'],$db))
+	    $newMember->load_member_by_login($entry['login'],$db);
+
+	  // Check if the new member exists in the association.
+	  if($newMember->exists_member() && $this->is_member_of($newMember,$_SESSION['association']))
+	    throw new GUserException(GUserException::$IS_MEMBER);
+	  else if($newMember->exists_member() && $newMember->login !== $entry['login'])
+	    throw new GUserException(GUserException::$USER_MISMATCH);
+	  else if($newMember->exists_member() && !$newMember->check_password($entry['password']))
+	    throw new GUserException(GUserException::$LOGIN_FAIL);
+	  else if($entry['login'] !== 'anonymous') {
+	    if(!User::exists($entry['login'])) {
+	      $usr = new User($entry['login'],$entry['password'],'user');
+	      $usr->insert_user($db);
+	      $usr->add_type('member',$_SESSION['association']->idAssociation);
+	      $newMember->load_user($usr->idUser,$db);
+	    }
+
+	    $newMember->name = $entry['name'];
+	    $newMember->firstSurname = $entry['sname1'];
+	    $newMember->secondSurname = $entry['sname2'];
+	    $newMember->dni = $entry['dni'];
+	    $newMember->address = $entry['address'];
+	    $newMember->mails = $entry['mail'];
+	    $newMember->telephones = $entry['phone'];
+	    $newMember->webs = $entry['web'];
+
+	    if(!$newMember->exists_member())
+	      $newMember->insert_member($db);
+	    else
+	      $newMember->modify_member($db);
+
+	    $this->db->execute("insert into memberAssociation(idMember,idAssociation,isActive) values(".
+			       $newMember->idMember.",".$_SESSION['association']->idAssociation.",1)");
+
+	    $filter->register_var('success',gettext("Socio dado de alta"));
+	    $_SESSION['out']->content = $filter->filter_file('success.html');
+	  }
+	} catch(GException $e) {
+	  // Insert log
+	  $filter->register_var('msg',$e->getOutMessage());
+	  $_SESSION['out']->content = $filter->filter_file('recover_exception.html');
+	}
+      }
+    }
   }
 
   // This method return the list of members of an association
@@ -573,7 +659,7 @@ class MemberManagement {
     } else if(is_int($assoc) && !Association::exists($assoc))
       throw new GException(GEsception::$VAR_TYPE);
 
-    $consult = "select * from memberAssociation where idMember=".$newMember->idMember." and idAssociation=";
+    $consult = "select idMember from memberAssociation where idMember=".$newMember->idMember." and idAssociation=";
     if(is_int($assoc))
       $consult .= $assoc;
     else

@@ -1,24 +1,32 @@
---   mysql-data.sql
 --
---   Description
---   Default data of the application.
+-- mysql-data.sql
+-- 
+-- Description
+-- Data to insert in the sql database.
+-- 
+-- copyright (c) 2008-2009 OPENTIA s.l. (http://www.opentia.com)
+-- 
+-- This file is part of GESTAS (http://gestas.opentia.org)
+-- 
+-- GESTAS is free software: you can redistribute it and/or modify
+-- it under the terms of the GNU Affero General Public License as
+-- published by the Free Software Foundation, either version 3 of the
+-- License, or (at your option) any later version.
+-- 
+-- This program is distributed in the hope that it will be useful,
+-- but WITHOUT ANY WARRANTY; without even the implied warranty of
+-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+-- GNU General Public License for more details.
+-- 
+-- You should have received a copy of the GNU General Public License
+-- along with this program.  If not, see <http://www.gnu.org/licenses/>.
 --
---   copyright (c) 2008-2009 Opentia S.L.
+
+-- MySQL dump 10.11
 --
---   This file is part of GESTAS (http://gestas.opentia.org)
---
---   GESTAS is free software: you can redistribute it and/or modify
---   it under the terms of the GNU Affero General Public License as
---   published by the Free Software Foundation, either version 3 of the
---   License, or (at your option) any later version.
---
---   This program is distributed in the hope that it will be useful,
---   but WITHOUT ANY WARRANTY; without even the implied warranty of
---   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
---   GNU General Public License for more details.
---
---   You should have received a copy of the GNU General Public License
---   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-- Host: hercules93.opentia.net    Database: gestas_taller
+-- ------------------------------------------------------
+-- Server version	5.0.51a-24
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -46,7 +54,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `acl` WRITE;
 /*!40000 ALTER TABLE `acl` DISABLE KEYS */;
-INSERT INTO `acl` VALUES (1,1,0,0),(2,1,1,0),(3,1,2,0),(4,2,0,0),(5,2,1,0),(6,2,2,0),(7,3,0,0),(8,3,1,0),(9,3,2,0),(10,4,0,1),(11,4,1,1),(12,4,2,1),(13,5,0,1),(14,5,1,1),(15,5,2,1),(16,6,0,1),(17,6,1,1),(18,6,2,1),(19,7,0,1),(20,7,1,1),(21,7,2,1),(22,8,0,0),(23,8,1,0),(24,8,2,0),(25,9,0,0),(26,9,1,0),(27,9,2,0),(28,10,0,0),(29,10,1,0),(30,10,2,0),(31,11,0,1),(32,11,1,1),(33,11,2,1),(34,12,0,0),(35,12,1,0),(36,12,2,0),(37,13,0,0),(38,13,1,0),(39,13,2,0),(40,14,0,0),(41,14,1,0),(42,14,2,0);
+INSERT INTO `acl` VALUES (1,1,0,0),(2,1,1,0),(3,1,2,0),(4,2,0,0),(5,2,1,0),(6,2,2,0),(7,3,0,0),(8,3,1,0),(9,3,2,0),(10,4,0,1),(11,4,1,1),(12,4,2,1),(13,5,0,1),(14,5,1,1),(15,5,2,1),(16,6,0,1),(17,6,1,1),(18,6,2,1),(19,7,0,1),(20,7,1,1),(21,7,2,1),(22,8,0,0),(23,8,1,0),(24,8,2,0),(25,9,0,0),(26,9,1,0),(27,9,2,0),(28,10,0,0),(29,10,1,0),(30,10,2,0),(31,11,0,1),(32,11,1,1),(33,11,2,1),(34,12,0,0),(35,12,1,0),(36,12,2,0),(37,13,0,0),(38,13,1,0),(39,13,2,0),(40,14,0,0),(41,14,1,0),(42,14,2,0),(43,15,0,0),(44,15,1,0),(45,15,2,0),(46,16,0,0),(47,16,1,0),(48,16,2,0);
 /*!40000 ALTER TABLE `acl` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -84,7 +92,11 @@ UNLOCK TABLES;
 
 LOCK TABLES `aclUserType` WRITE;
 /*!40000 ALTER TABLE `aclUserType` DISABLE KEYS */;
-INSERT INTO `aclUserType` VALUES (1,1),(1,2),(1,3),(1,7),(1,8),(1,9),(1,28),(1,29),(1,30),(1,31),(1,32),(1,33),(1,34),(1,35),(1,36),(2,4),(2,5),(2,6),(2,7),(2,8),(2,9),(2,25),(2,26),(2,27),(2,28),(2,29),(2,30),(2,34),(2,35),(2,36),(3,4),(3,5),(3,6),(3,7),(3,8),(3,9),(3,22),(3,23),(3,24),(3,25),(3,26),(3,27),(3,28),(3,29),(3,30),(3,34),(3,35),(3,36),(4,4),(4,5),(4,6),(4,7),(4,8),(4,9),(4,10),(4,11),(4,12),(4,13),(4,14),(4,15),(4,16),(4,17),(4,18),(4,19),(4,20),(4,21),(4,22),(4,23),(4,24),(4,25),(4,26),(4,27),(4,28),(4,29),(4,30),(4,31),(4,32),(4,33),(4,34),(4,35),(4,36),(5,4),(5,5),(5,6),(5,7),(5,8),(5,9),(5,10),(5,11),(5,12),(5,13),(5,14),(5,15),(5,16),(5,17),(5,18),(5,19),(5,20),(5,21),(5,22),(5,23),(5,24),(5,25),(5,26),(5,27),(5,28),(5,29),(5,30),(5,31),(5,32),(5,33),(5,34),(5,35),(5,36),(5,37),(5,38),(5,39),(5,40),(5,41),(5,42);
+INSERT INTO `aclUserType` VALUES (1,1),(1,2),(1,3),(1,7),(1,8),(1,9),(1,28),(1,29),(1,30),(1,31),(1,32),(1,33),(1,34),(1,35),(1,36),
+(2,4),(2,5),(2,6),(2,7),(2,8),(2,9),(2,25),(2,26),(2,27),(2,28),(2,29),(2,30),(2,34),(2,35),(2,36),
+(3,4),(3,5),(3,6),(3,7),(3,8),(3,9),(3,22),(3,23),(3,24),(3,25),(3,26),(3,27),(3,28),(3,29),(3,30),(3,34),(3,35),(3,36),
+(4,4),(4,5),(4,6),(4,7),(4,8),(4,9),(4,10),(4,11),(4,12),(4,13),(4,14),(4,15),(4,16),(4,17),(4,18),(4,19),(4,20),(4,21),(4,22),(4,23),(4,24),(4,25),(4,26),(4,27),(4,28),(4,29),(4,30),(4,31),(4,32),(4,33),(4,34),(4,35),(4,36),(4,43),(4,44),(4,45),(4,46),(4,47),(4,48),
+(5,4),(5,5),(5,6),(5,7),(5,8),(5,9),(5,10),(5,11),(5,12),(5,13),(5,14),(5,15),(5,16),(5,17),(5,18),(5,19),(5,20),(5,21),(5,22),(5,23),(5,24),(5,25),(5,26),(5,27),(5,28),(5,29),(5,30),(5,31),(5,32),(5,33),(5,34),(5,35),(5,36),(5,37),(5,38),(5,39),(5,40),(5,41),(5,42),(5,43),(5,44),(5,45),(5,46),(5,47),(5,48);
 /*!40000 ALTER TABLE `aclUserType` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -217,7 +229,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `menu` WRITE;
 /*!40000 ALTER TABLE `menu` DISABLE KEYS */;
-INSERT INTO `menu` VALUES (1,'Secciones');
+INSERT INTO `menu` VALUES (1,'Secciones'),(2,'Gestión de socios'),(3,'Gestión de asociaciones');
 /*!40000 ALTER TABLE `menu` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -227,7 +239,9 @@ UNLOCK TABLES;
 
 LOCK TABLES `menuEntry` WRITE;
 /*!40000 ALTER TABLE `menuEntry` DISABLE KEYS */;
-INSERT INTO `menuEntry` VALUES (1,'Solicitar Alta de Socio',3,1),(2,'Listado de peticiones',4,1),(3,'Gestión de socios',7,1),(4,'Modificación de datos',8,1),(5,'Modificación de la contraseña',9,1),(6,'Solicitar alta de asociacion',12,1),(7,'Validación de nueva asociación',13,1),(8,'Modificación de Asociación',14,1),(9,'Salir',2,1);
+INSERT INTO `menuEntry` VALUES (1,'Solicitar Alta de Socio',3,'',1),(2,'Solicitar alta de asociación',12,'',1),(3,'Gestión de socios',15,'2',1),(4,'Gestión de datos de la asociación',14,'',1),(5,'Gestión de asociaciones',15,'3',1),(6,'Modificación de datos personales',8,'',1),(7,'Modificación de la contraseña',9,'',1),(8,'Salir',2,'3',1);
+INSERT INTO `menuEntry` VALUES (9,'Secciones',15,'1',2),(10,'Solicitudes de Alta',4,'',2),(11,'Dar de alta socio',16,'',2),(12,'Listado de socios',7,'',2),(13,'Salir',2,'',2);
+INSERT INTO `menuEntry` VALUES (14,'Secciones',15,'1',3),(15,'Solicitudes de Alta',13,'',3),(16,'Salir',2,'',3);
 /*!40000 ALTER TABLE `menuEntry` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -237,7 +251,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `obj` WRITE;
 /*!40000 ALTER TABLE `obj` DISABLE KEYS */;
-INSERT INTO `obj` VALUES (1,'User Auth','Autenticación de usuario',2,'1'),(2,'User Unauth','Salida del usuario',2,'2'),(3,'Member request','Petición de Alta',2,'3'),(4,'Member Validation','Validación de Alta',2,'4'),(5,'Request List','Listado de peticiones',2,'5'),(6,'Member List','Listado de socios',2,'6'),(7,'Member Cancel','Baja de socios',2,'7'),(8,'Modify Member','Modificación de datos del socios',2,'8'),(9,'Modify Password','Modificación de contraseña',2,'9'),(10,'Association Selection','Selección de asociación',2,'10'),(11,'New User','Creación de un nuevo usuario',2,'11'),(12,'New Association','Creación de una nueva asociación',2,'12'),(13,'Association Validation','Validación de nueva asociación',2,'13'),(14,'Association Modification','Modificación de Asociación',2,'14');
+INSERT INTO `obj` VALUES (1,'User Auth','Autenticación de usuario',2,'1'),(2,'User Unauth','Salida del usuario',2,'2'),(3,'Member request','Petición de Alta',2,'3'),(4,'Member Validation','Validación de Alta',2,'4'),(5,'Request List','Listado de peticiones',2,'5'),(6,'Member List','Listado de socios',2,'6'),(7,'Member Cancel','Baja de socios',2,'7'),(8,'Modify Member','Modificación de datos del socios',2,'8'),(9,'Modify Password','Modificación de contraseña',2,'9'),(10,'Association Selection','Selección de asociación',2,'10'),(11,'New User','Creación de un nuevo usuario',2,'11'),(12,'New Association','Creación de una nueva asociación',2,'12'),(13,'Association Validation','Validación de nueva asociación',2,'13'),(14,'Association Modification','Modificación de Asociación',2,'14'),(15,'Change Menu','Cambiar menú del sistema',2,'15'),(16,'Member Registration','Alta de socio',2,'16');
 /*!40000 ALTER TABLE `obj` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -247,7 +261,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `objAction` WRITE;
 /*!40000 ALTER TABLE `objAction` DISABLE KEYS */;
-INSERT INTO `objAction` VALUES (1,1,'User','authentication',1),(2,2,'User','unauthentication',1),(3,3,'MemberManagement','signup_request',3),(4,4,'MemberManagement','signup_validate',3),(5,5,'MemberManagement','signup_list',3),(6,6,'MemberManagement','list_members',3),(7,7,'MemberManagement','cancel_member',3),(8,8,'MemberManagement','modify_member',3),(9,9,'User','modify_password',3),(10,10,'AssociationManagement','load_association',4),(11,11,'User','new_user',1),(12,12,'AssociationManagement','new_association',4),(13,13,'AssociationManagement','association_validate',4),(14,14,'AssociationManagement','modify_association',4);
+INSERT INTO `objAction` VALUES (1,1,'User','authentication',1),(2,2,'User','unauthentication',1),(3,3,'MemberManagement','signup_request',2),(4,4,'MemberManagement','signup_validate',2),(5,5,'MemberManagement','signup_list',2),(6,6,'MemberManagement','list_members',2),(7,7,'MemberManagement','cancel_member',2),(8,8,'MemberManagement','modify_member',2),(9,9,'User','modify_password',1),(10,10,'AssociationManagement','load_association',3),(11,11,'User','new_user',1),(12,12,'AssociationManagement','new_association',3),(13,13,'AssociationManagement','association_validate',3),(14,14,'AssociationManagement','modify_association',3),(15,15,'Menu','change_system_menu',1),(16,16,'MemberManagement','member_registration',2);
 /*!40000 ALTER TABLE `objAction` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -369,7 +383,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `userUserType` WRITE;
 /*!40000 ALTER TABLE `userUserType` DISABLE KEYS */;
-INSERT INTO `userUserType` VALUES (1,1,0),(2,2,0),(2,3,0),(2,4,0),(2,5,0),(3,2,0),(3,3,1),(3,3,3),(3,3,4),(3,4,1),(3,4,3),(3,4,4),(4,2,0),(5,2,0),(5,3,1),(5,3,2),(5,3,4),(5,4,2),(6,2,0),(7,2,0),(8,2,0),(9,2,0),(10,2,0),(11,2,0),(12,2,0),(12,4,10),(13,2,0),(13,4,13),(14,2,0),(14,4,11),(15,2,0),(15,4,12),(16,2,0),(16,4,14),(17,2,0),(17,4,15),(18,2,0),(18,4,16),(19,2,0),(19,4,5),(20,2,0),(20,4,9),(21,2,0),(21,4,5),(22,2,0),(22,4,8),(23,2,0),(23,4,7),(24,2,0),(24,4,17);
+INSERT INTO `userUserType` VALUES (1,1,0),(2,2,0),(2,3,0),(2,4,0),(2,5,0),(3,2,0),(3,3,0),(3,4,0),(3,5,0),(4,2,0),(5,2,0),(5,3,1),(5,3,2),(5,3,4),(5,4,2),(6,2,0),(7,2,0),(8,2,0),(9,2,0),(10,2,0),(11,2,0),(12,2,0),(12,4,10),(13,2,0),(13,4,13),(14,2,0),(14,4,11),(15,2,0),(15,4,12),(16,2,0),(16,4,14),(17,2,0),(17,4,15),(18,2,0),(18,4,16),(19,2,0),(19,4,5),(20,2,0),(20,4,9),(21,2,0),(21,4,5),(22,2,0),(22,4,8),(23,2,0),(23,4,7),(24,2,0),(24,4,17);
 /*!40000 ALTER TABLE `userUserType` ENABLE KEYS */;
 UNLOCK TABLES;
 

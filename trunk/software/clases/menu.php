@@ -129,18 +129,6 @@ class Menu{
     }
   }
 
-  private function check_entrys($var){
-    if(!is_array($var))
-      throw new GException(GException::$VAR_TYPE);
-    
-    $valids = null;
-    for($i=0;$i < count($var);$i++)
-      if(MenuEntry::is_menu_entry($var[$i]) && $_SESSION['acl']->has_permission($var[$i]->action))
- 	$valids[] = $var[$i];
-
-    return $valids;
-  }
-
   // This method returns the html output that correspond to this menu.
   public function generate_html_output() {
     if(!isset($_SESSION['filter']))
@@ -156,6 +144,26 @@ class Menu{
     $filter->register_var('entrys',$entrys_out);
 
     $this->out = $filter->filter_file('menu.html');
+  }
+
+  // Action to change the system menu
+  public function change_system_menu($params=null) {
+    if($params === null || !is_array($params) || count($params) !== 1)
+      throw new GException(GException::$VAR_TYPE);
+
+    $_SESSION['system_menu'] = intval($params[0]);
+  }
+
+  private function check_entrys($var){
+    if(!is_array($var))
+      throw new GException(GException::$VAR_TYPE);
+    
+    $valids = null;
+    for($i=0;$i < count($var);$i++)
+      if(MenuEntry::is_menu_entry($var[$i]) && $_SESSION['acl']->has_permission($var[$i]->action))
+ 	$valids[] = $var[$i];
+
+    return $valids;
   }
 
   // This function checks if the parameter passed is of the class File

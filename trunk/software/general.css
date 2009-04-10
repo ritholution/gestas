@@ -33,7 +33,6 @@ body{
 }
 
 p{
-/*     text-align: justify; */
 }
 
 a{
@@ -177,15 +176,14 @@ form {
 
 .login{
     border: #C3D9FF 1px solid;
- 		padding-top: 2px;
-  	padding-left: 3px;
-  	padding-bottom: 0px;
-  	padding-right:3px;
- 		margin-bottom:20px;
-  	margin-top: 20px;
-  	position: relative;
-/*     right: 13%; */
-    width: 34%;
+    padding-top: 2px;
+    padding-left: 3px;
+    padding-bottom: 0px;
+    padding-right:3px;
+    margin-bottom:20px;
+    margin-top: 20px;
+    position: relative;
+    width: 65%;
     min-width: 350px;
 }
 

@@ -51,7 +51,7 @@ class Web{
       $this->idAssociation = $newURL->idAssociation;
       $this->idPetition = $newURL->idPetition;
       $this->description = $newURL->description;
-    } else if($newURL !== null && is_string($newURL))
+    } else if($newURL !== null && is_string($newURL) && $this->check_url($newURL))
       $this->url = $newURL;
 
     if(is_int($newIdMember) && $newIdMember > -1 && Member::exists($newIdMember))
@@ -96,7 +96,7 @@ class Web{
   public function __set($var, $value) {
     switch($var){
     case "url":
-      if($value !== null && is_string($value))
+      if($value !== null && is_string($value) && $this->check_url($value))
 	$this->$var = $value;
       else if(Web::is_web($value))
 	$this->$var = $value->$var;
@@ -213,10 +213,10 @@ class Web{
       $db = $_SESSION['db'];
     }
 
-    if($newURL != null && is_string($newURL))
+    if($newURL != null && is_string($newURL) && $this->ckeck_url($newURL))
       $this->url = $newURL;
 
-    if($this->url === null || !is_string($this->url))
+    if($this->url === null || !is_string($this->url) || !$this->ckeck_url($this->url))
       throw new GException(GException::$PARAM_MISSING);
 
     $id = $this->getId($idType);
@@ -262,7 +262,7 @@ class Web{
     }
 
     $check = $this->url;
-    if($newURL != null && is_string($newURL))
+    if($newURL != null && is_string($newURL) && $this->check_url($newURL))
       $check = $newURL;
 
     $checkId = $this->getId($idType);
@@ -385,6 +385,30 @@ class Web{
       }
     
     return $result;
+  }
+
+  // This method checks if the url passed has a valid format
+  public function check_url($chUrl) {
+    if($chUrl == null || !is_string($chUrl) || $chUrl === "http://" ||
+       (is_int(strpos($chUrl,"://")) && strpos($chUrl,"://") !== 4) ||
+       (strpos($chUrl,"://") === false && strpos($chUrl,"//") !== false))
+      return false;
+
+    if(strpos($chUrl,"://") === 4) {
+      $protocol = substr($chUrl,0,4);
+      $chUrl = substr($chUrl,4);
+      switch($protocol) {
+      case "http://":
+	break;
+      default:
+	return false;
+      }
+    }
+
+    if(strpos($chUrl,".") === false && $chUrl !== "localhost")
+      return false;
+
+    return true;
   }
 
   // This method return the id of the relation

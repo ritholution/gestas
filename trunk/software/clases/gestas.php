@@ -224,6 +224,7 @@ class Gestas{
     $_SESSION['dir_base'] = $_SESSION['config'][1]['dir_base'];
     $_SESSION['class_base'] = $_SESSION['dir_base'].'/'.$_SESSION['config'][1]['class_base'];
     $_SESSION['template_base'] = $_SESSION['dir_base'].'/'.$_SESSION['config'][1]['template_base'];
+    $_SESSION['system_menu'] = 1;
   }
 
   // This method saves the system configurations.

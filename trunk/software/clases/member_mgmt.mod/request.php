@@ -40,6 +40,7 @@ class Request extends User {
   private $phone=null; // Land phone of the applicant
   private $association=null;
   private $web=null;
+  private $password=null;
 
   public function __construct($newAssociation=null, $newLogin=null, $newPassword=null,
 			      $newName=null, $newSname1=null, $newSname2=null, $newDNI=null,
@@ -52,6 +53,9 @@ class Request extends User {
       $newAssociation = $_SESSION['association'];
     }
     $this->association = $newAssociation;
+
+    if($newPassword !== null && is_string($newPassword))
+      $this->password = $newPassword;
 
     if($newName != null && is_string($newName))
       $this->name = $newName;
@@ -73,7 +77,7 @@ class Request extends User {
       $this->mail[] = clone $newMail;
     else if($newMail !== null && is_array($newMail)) {
       foreach($newMail as $value) {
-	if(is_string($value))
+	if(is_string($value) && $value != null)
 	  $this->mail[] = new Email($value);
 	else if(Email::is_email($value))
 	  $this->mail[] = clone $value;
@@ -89,7 +93,7 @@ class Request extends User {
       $this->phone[] = $newPhone;
     else if($newPhone !== null && is_array($newPhone)) {
       foreach($newPhone as $value) {
-	if(is_string($value))
+	if(is_string($value) && $value != null)
 	  $this->phone[] = new Telephone(intval($value));
 	else if(Telephone::is_telephone($value))
 	  $this->phone[] = clone $value;
@@ -102,7 +106,7 @@ class Request extends User {
       $this->web[] = clone $newWeb;
     else if($newWeb !== null && is_array($newWeb)) {
       foreach($newWeb as $value) {
-	if(is_string($value))
+	if(is_string($value) && $value != null)
 	  $this->web[] = new Web($value);
 	else if(Web::is_web($value))
 	  $this->web[] = clone $value;
@@ -143,6 +147,7 @@ class Request extends User {
     case "idType":
     case "idUser":
     case "idPetition":
+    case "password":
       // This variable cannot be set from the outside.
       throw new GException(GException::$VAR_ACCESS);
     case "typeUser":
@@ -296,6 +301,7 @@ class Request extends User {
     }
   }
 
+  // This method checks if a petition is already requested
   public function exists_request($newIdPetition=-1, $db=null) {
     if($db == null || !Database::is_database($db)) {
       if(!isset($_SESSION['db']))
@@ -303,13 +309,12 @@ class Request extends User {
       $db = $_SESSION['db'];
     }
 
-    $check = $this->idPetition;
     if (is_int($newIdPetition) && $newIdPetition > 0)
-      $check = $newIdPetition;
-
-    return Request::exists($check,$this->login,$this->dni,$this->association,$db);
+      return Request::exists($check);
+    return Request::exists($this->idPetition,$this->login,$this->dni,$this->association,$db);
   }
 
+  // This method checks if a petition is already requested
   public static function exists($newIdPetition=-1, $login=null, $dni=null, $association=null, $db=null) {
     if($db == null || !Database::is_database($db)) {
       if(!isset($_SESSION['db']))
@@ -336,7 +341,8 @@ class Request extends User {
       return true;
 
     if($dni !== null && DNI::is_dni($dni) && $dni->dni != null) {
-      $db->consult("select idPetition from registrationRequest where dni='".$dni->dni."'");
+      $db->consult("select idPetition from registrationRequest where dni='".$dni->dni.
+		   "' and idAssociation=".$association->idAssociation);
       if($db->numRows() === 1)
 	return true;
     }
@@ -410,8 +416,11 @@ class Request extends User {
 
       // If this request is ok, then submit it.
       if($insertRequest) {
-	if(parent::exists_login($this->login))
+	if(parent::exists_login($this->login)) {
 	  parent::load_user_by_login($this->login);
+	  if(!parent::check_password($this->password))
+	    throw new GUserException(GUserException::$USER_EXISTS);
+	}
 	parent::insert_user();
 
 	if($newMember->exists_member()) {
@@ -572,7 +581,6 @@ class Request extends User {
 	$member = new Member();
 	$member->load_member_by_user($_SESSION['user']->idUser);
 
-	$filter->register_var('read','readonly');
 	$filter->register_var('oculto','oculto');
 	$filter->register_var('login',$member->login);
 	$filter->register_var('name',$member->name);
@@ -597,10 +605,9 @@ class Request extends User {
 	if($member->webs !== null && is_array($member->webs))
 	  foreach($member->webs as $value)
 	    $webs .= $value->url;
-	if($webs === '')
-	  $webs = 'http://';
 	$filter->register_var('web',$webs);
       } else {
+	$filter->register_var('oculto','');
 	$filter->register_var('login','');
 	$filter->register_var('name','');
 	$filter->register_var('sname1','');
@@ -609,7 +616,7 @@ class Request extends User {
 	$filter->register_var('address','');
 	$filter->register_var('mail','');
 	$filter->register_var('phone','');
-	$filter->register_var('web','http://');
+	$filter->register_var('web','');
       }
       $out = $filter->filter_file('signup_request.html');
     }

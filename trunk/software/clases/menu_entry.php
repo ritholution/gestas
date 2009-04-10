@@ -30,13 +30,16 @@ class MenuEntry{
   private $idEntry = -1;
   private $entryName = null;
   private $action = null;
+  private $params = null;
 
   // Constructor of the class
-  public function __construct($newEntryName=null, $newAction=null) {
+  public function __construct($newEntryName=null, $newAction=null, $newParams=null) {
     if(is_array($newEntryName) && isset($newEntryName['idEntry']) &&
        isset($newEntryName['entryName']) && isset($newEntryName['idAction'])) {
       $this->idEntry = intval($newEntryName['idEntry']);
       $this->entryName = $newEntryName['entryName'];
+      if(isset($newEntryName['params']) && $newEntryName['params'] != null)
+	$this->params = $newEntryName['params'];
 
       // Load the action from the database.
       $this->action = new Action();
@@ -57,6 +60,7 @@ class MenuEntry{
     case "idEntry":
     case "entryName":
     case "action":
+    case "params":
       return $this->$var;
       break;
     default:
@@ -71,16 +75,19 @@ class MenuEntry{
     case "idEntry":
       throw new GException(GException::$VAR_ACCESS);
     case "entryName":
-      if($value === null || is_string($value))
-	$this->$var = $value;
-      else
+      if($value !== null && !is_string($value))
 	throw new GException(GException::$VAR_TYPE);
+      $this->$var = $value;
       break;
     case "action":
-      if($value === null || Action::is_action($value))
-	$this->$var = $value;
-      else
+      if(!$value === null && !Action::is_action($value))
 	throw new GException(GException::$VAR_TYPE);
+      $this->$var = $value;
+      break;
+    case "params":
+      if($value !== null && !is_string($value))
+	throw new GException(GException::$VAR_TYPE);
+      $this->$var = $value;
       break;
     default:
       throw new GException(GException::$VAR_UNKNOWN);
@@ -93,7 +100,11 @@ class MenuEntry{
       $_SESSION['filter'] = new TemplateFilter();
     $filter = $_SESSION['filter'];
 
+    $out_params = '';
+    if($this->params != null && is_string($this->params))
+      $out_params = '&p='.$this->params;
     $filter->register_var('action',$this->action->idAction);
+    $filter->register_var('params',$out_params);
     $filter->register_var('entryName',$this->entryName);
     return $filter->filter_file('menu_entry.html');
   }

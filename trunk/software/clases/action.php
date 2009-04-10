@@ -123,7 +123,7 @@ class Action{
       throw new GException(GException::$ACTION_UNKNOWN);
 
     $db->connect();
-    $db->consult("select * from objAction where idObjAction=".$this->idAction);
+    $db->consult("select * from objAction where idAction=".$this->idAction);
     $row = $db->getRow();
     $this->object = intval($row['idObject']);
     if(class_exists($row['classAction']))
@@ -150,12 +150,12 @@ class Action{
       throw new GException(GException::$VAR_TYPE);
 
     $db->connect();
-    $db->consult("select idObjAction from objAction where classAction='".
+    $db->consult("select idAction from objAction where classAction='".
 		 $newClass."' and methodAction='".$newMethod."'");
 
     if($db->numRows() === 1) {
       $row = $db->getRow();
-      return intval($row['idObjAction']);
+      return intval($row['idAction']);
     } else
       return false;
   }
@@ -183,7 +183,7 @@ class Action{
       return false;
 
     $db->connect();
-    $db->consult("select * from objAction where idObjAction=".$action_check);
+    $db->consult("select * from objAction where idAction=".$action_check);
 
     if($db->numRows() > 1)
       throw new GDatabaseException(GDatabaseException::$DB_INTEGRITY);
