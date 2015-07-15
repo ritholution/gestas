@@ -1,6 +1,7 @@
 TOPDIR = .
 
 SUBDIRS += conf
+SUBDIRS += scripts
 SUBDIRS += www
 
 all:
