@@ -17,6 +17,7 @@ install:
 		make -C $$i install; \
 	done
 	@for i in $(SRCS); do \
+		make $$i; \
 		install $$i $(WWW_DIR)/css; \
 		perl -i -pne 's/%(\w+?)%/$$ENV{$$1}/ge' $(WWW_DIR)/css/$$i; \
 	done
