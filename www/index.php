@@ -1,15 +1,9 @@
 <?php
 /**
- * index.php
+ * copyright (c) 2008-2015 AUTHORS
  *
- * Description
- * This is the initial script of the application. It only creates a new
- * object of Gestas and run the application.
+ * This file is part of GESTAS
  *
- * copyright (c) 2008-2009 OPENTIA s.l. (http://www.opentia.com)
- *
- * This file is part of GESTAS (http://gestas.opentia.org)
- * 
  * GESTAS is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
  * published by the Free Software Foundation, either version 3 of the
@@ -24,7 +18,6 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-require_once("const.php");
-require_once("clases/gestas.php");
+require_once 'configurations.php';
+require_once 'classes/gestas.php';
 $gestas = new Gestas();
-?>
