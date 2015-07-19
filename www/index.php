@@ -19,5 +19,10 @@
  */
 
 require_once 'configurations.php';
-require_once 'classes/gestas.php';
 $gestas = new Gestas();
+
+/* URI requested. */
+$requested = empty($_SERVER['REQUEST_URI']) ? false : $_SERVER['REQUEST_URI'];
+$path = (!empty($_SERVER['QUERY_STRING'])) ?
+	substr($requested, 0, strpos($requested, $_SERVER['QUERY_STRING']) - 1) :
+	$requested;

@@ -5,6 +5,7 @@ include $(TOPDIR)/Config.mk
 SUBDIRS  = css
 SUBDIRS += classes
 SUBDIRS += img
+SUBDIRS += include
 SUBDIRS += js
 SUBDIRS += templates
 
@@ -24,4 +25,6 @@ install:
 
 clean:
 	@echo "\\033[1;35m+++ Cleaning www\\033[39;0m"
-	@for i in $(SUBDIRS) ; do $(MAKE) -C $$i clean ; done
+	@for i in $(SUBDIRS) ; do \
+		$(MAKE) -C $$i clean; \
+	done
