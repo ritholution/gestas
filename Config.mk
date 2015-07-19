@@ -42,6 +42,8 @@ MYSQL_SOCKET=/var/run/mysqld/mysqld.sock
 MYSQL_PID=/var/run/mysqld/mysqld.pid
 MYSQL_LOGDIR=/var/log/mysql
 
+DISPLAY_PHP_ERRORS=off
+
 else
 
 TOPDIR?=$(realpath .)
@@ -81,6 +83,8 @@ MYSQL_SOCKET=$(MYSQL_DATA)/my.sock
 MYSQL_PID=$(MYSQL_BASEDIR)/mysql.pid
 MYSQL_CONF=$(CONF_DIR)/my.cnf
 MYSQL_LOGDIR=$(LOG_DIR)/mysql
+
+DISPLAY_PHP_ERRORS=on
 
 endif
 

@@ -8,6 +8,7 @@ SRCS += apache2-vhosts.conf
 SRCS += apache2.conf
 SRCS += postgresql.conf
 SRCS += my.cnf
+SRCS += php.ini
 
 install:
 	@echo "\\033[1;35m+++ Installing configurations\\033[39;0m"
