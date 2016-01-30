@@ -32,4 +32,5 @@ $(SSL_KEY):
 	@openssl genrsa -out $@ 4096
 
 $(SSL_CERT): $(SSL_KEY)
+	@echo $(HOST)
 	@openssl req -new -x509 -days 365 -key $< -out $@ -config $(SSL_CONFIG) -batch -subj /C=ES/ST=Madrid/O=Ritho/localityName=Madrid/commonName=$(HOST)/emailAddress=$(SUPPORT_EMAIL)/
