@@ -9,12 +9,13 @@ services:
   - postgresql
   - redis-server
 
-env:
-  - PROD_BUILD=1
+#env:
 
 addons:
   postgresql: "9.5"
   redis-server: "3.0.6"
+  hosts:
+    - gestas.org
   apt:
     packages:
     - apache2
@@ -27,8 +28,6 @@ install: true
 before_script:
   - make clean
   - phpenv config-add conf/php.ini
-  # - sudo apt-get update
-  # - sudo apt-get install apache2 libapache2-mod-fastcgi
   # - sudo cp ~/.phpenv/versions/$(phpenv version-name)/etc/php-fpm.conf.default ~/.phpenv/versions/$(phpenv version-name)/etc/php-fpm.conf
   # - sudo a2enmod rewrite actions fastcgi alias
   # - echo "cgi.fix_pathinfo = 1" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
