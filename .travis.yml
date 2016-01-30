@@ -10,7 +10,7 @@ services:
   - redis-server
 
 env:
-  - HOST=gestas.org
+  - TRAVIS_BUILD=1
 
 addons:
   hosts:
