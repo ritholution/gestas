@@ -3,17 +3,23 @@ php:
   - '7.0'
 
 sudo: false
+
+services:
+  - apache2
+  - postgresql
+
 #env:
 
 addons:
+  postgresql: "9.5"
+  apache2: "2.4.18"
   apt:
     packages:
     - deb
 
 before_install:
 
-install:
-  - apt-get install apache2
+install: true
 
 before_script:
   - make clean
