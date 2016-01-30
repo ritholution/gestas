@@ -9,7 +9,8 @@ services:
   - postgresql
   - redis-server
 
-#env:
+env:
+  - HOST=gestas.org
 
 addons:
   hosts:
