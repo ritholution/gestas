@@ -20,7 +20,7 @@ addons:
   apt:
     packages:
     - apache2
-    - libapache2-mod-fastcgi
+    - libapache2-mod-php5
 
 before_install:
 

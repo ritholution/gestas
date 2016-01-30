@@ -10,7 +10,6 @@ SRCS += serial
 
 install: $(SRCS)
 	@echo "\\033[1;35m+++ Installing SSL\\033[39;0m"
-	@echo $(HOST)
 	@mkdir -p $(SSL_DIR)/priv/
 	@for i in $(DIRS) ; do $(MAKE) -C $$i install ; done
 	@for i in $(SRCS); do \
