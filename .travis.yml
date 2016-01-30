@@ -12,10 +12,10 @@ services:
 
 addons:
   postgresql: "9.5"
-  apache: "2.4.18"
   apt:
     packages:
-    - deb
+    - apache2
+    - libapache2-mod-fastcgi
 
 before_install:
 
