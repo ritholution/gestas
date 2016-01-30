@@ -6,9 +6,9 @@ SUBDIRS  = conf
 SUBDIRS += scripts
 SUBDIRS += www
 
-.PHONY: all clean start-environment stop-environment db-start db-stop mysql-start mysql-stop postgresql-start postgresql-stop apache-start apache-stop
+.PHONY: rall all clean start-environment stop-environment db-start db-stop mysql-start mysql-stop postgresql-start postgresql-stop apache-start apache-stop
 
-all:
+rall all:
 	@make install
 	@make start-environment
 
@@ -157,7 +157,7 @@ info:
 #phantom-stop:
 #	@$(MAKE) -C $(TOPDIR)/tests phantom-stop
 
-#tests: install start-environment
-#	@echo "\\033[1;35m+++ Running tests\\033[39;0m"
+tests: install start-environment
+	@echo "\\033[1;35m+++ Running tests\\033[39;0m"
 #	@$(MAKE) -C $(TOPDIR)/tests tests
 

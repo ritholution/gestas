@@ -4,6 +4,46 @@ genport = $(shell expr ${GENPORTOFF} + \( $(shell id -u) - \( $(shell id -u) / 1
 PROJECT=gestas
 VERSION=0.0.1
 
+TOPDIR?=$(realpath .)
+BUILD_DIR=$(TOPDIR)/dev-env
+CONF_DIR=$(BUILD_DIR)/conf
+TMP_DIR=$(BUILD_DIR)/tmp
+LOG_DIR=$(BUILD_DIR)/log
+RUN_DIR=$(BUILD_DIR)
+
+SCRIPTS_DIR=$(BUILD_DIR)/scripts
+DB_SCRIPTS_DIR=$(SCRIPTS_DIR)/db
+
+USER=$(shell id -un)
+HOST=$(shell hostname -f | head -1)
+
+HTTP_PORT=$(call genport,1)
+HTTPS_PORT=$(call genport,2)
+HTTPD_USER=$(shell id -un)
+HTTPD_GROUP=$(shell id -gn)
+
+PGSQL_HOST=$(BUILD_DIR)/data
+PGSQL_PORT=$(call genport,10)
+PGSQL_USER=$(shell id -un)
+PGSQL_PASSWD=$(shell id -un)
+
+REDIS_HOST=127.0.0.1
+REDIS_PORT=6379
+
+REGRESS=true
+
+MYSQL_HOST=127.0.0.1
+MYSQL_PORT=$(call genport,20)
+MYSQL_USER=$(shell id -un)
+MYSQL_BASEDIR=$(BUILD_DIR)
+MYSQL_DATA=$(MYSQL_BASEDIR)/mysql
+MYSQL_SOCKET=$(MYSQL_DATA)/my.sock
+MYSQL_PID=$(MYSQL_BASEDIR)/mysql.pid
+MYSQL_CONF=$(CONF_DIR)/my.cnf
+MYSQL_LOGDIR=$(LOG_DIR)/mysql
+
+DISPLAY_PHP_ERRORS=on
+
 ifdef PROD_BUILD
 
 BUILD_DIR=/var/www/$(PROJECT)
@@ -44,47 +84,9 @@ MYSQL_LOGDIR=/var/log/mysql
 
 DISPLAY_PHP_ERRORS=off
 
-else
+else ifdef TRAVIS_BUILD
 
-TOPDIR?=$(realpath .)
-BUILD_DIR=$(TOPDIR)/dev-env
-CONF_DIR=$(BUILD_DIR)/conf
-TMP_DIR=$(BUILD_DIR)/tmp
-LOG_DIR=$(BUILD_DIR)/log
-RUN_DIR=$(BUILD_DIR)
-
-SCRIPTS_DIR=$(BUILD_DIR)/scripts
-DB_SCRIPTS_DIR=$(SCRIPTS_DIR)/db
-
-USER=$(shell id -un)
-HOST=$(shell hostname -f | head -1)
-
-HTTP_PORT=$(call genport,1)
-HTTPS_PORT=$(call genport,2)
-HTTPD_USER=$(shell id -un)
-HTTPD_GROUP=$(shell id -gn)
-
-PGSQL_HOST=$(BUILD_DIR)/data
-PGSQL_PORT=$(call genport,10)
-PGSQL_USER=$(shell id -un)
-PGSQL_PASSWD=$(shell id -un)
-
-REDIS_HOST=127.0.0.1
-REDIS_PORT=6379
-
-REGRESS=true
-
-MYSQL_HOST=127.0.0.1
-MYSQL_PORT=$(call genport,20)
-MYSQL_USER=$(shell id -un)
-MYSQL_BASEDIR=$(BUILD_DIR)
-MYSQL_DATA=$(MYSQL_BASEDIR)/mysql
-MYSQL_SOCKET=$(MYSQL_DATA)/my.sock
-MYSQL_PID=$(MYSQL_BASEDIR)/mysql.pid
-MYSQL_CONF=$(CONF_DIR)/my.cnf
-MYSQL_LOGDIR=$(LOG_DIR)/mysql
-
-DISPLAY_PHP_ERRORS=on
+HOST=travis.gestas.org
 
 endif
 
