@@ -10,6 +10,7 @@ SRCS += serial
 
 install: $(SRCS)
 	@echo "\\033[1;35m+++ Installing SSL\\033[39;0m"
+	@echo $(HOST)
 	@mkdir -p $(SSL_DIR)/priv/
 	@for i in $(DIRS) ; do $(MAKE) -C $$i install ; done
 	@for i in $(SRCS); do \
@@ -32,5 +33,4 @@ $(SSL_KEY):
 	@openssl genrsa -out $@ 4096
 
 $(SSL_CERT): $(SSL_KEY)
-	@echo $(HOST)
 	@openssl req -new -x509 -days 365 -key $< -out $@ -config $(SSL_CONFIG) -batch -subj /C=ES/ST=Madrid/O=Ritho/localityName=Madrid/commonName=$(HOST)/emailAddress=$(SUPPORT_EMAIL)/
