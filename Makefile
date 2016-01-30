@@ -8,7 +8,7 @@ SUBDIRS += www
 
 .PHONY: all clean start-environment stop-environment db-start db-stop mysql-start mysql-stop postgresql-start postgresql-stop apache-start apache-stop
 
-all:
+rall all:
 	@make install
 	@make start-environment
 
@@ -140,6 +140,9 @@ info:
 	@echo "Development environment: \033[1;35mhttp://$(HOST):$(HTTP_PORT)\\033[39;0m"
 	@echo "Development environment SSL: \033[1;35mhttps://$(HOST):$(HTTPS_PORT)\\033[39;0m"
 
+deb:
+	@echo "Building the debian package."
+
 #doc:
 #	@mkdir -p $(DOC_DIR)/phpdoc/log
 #	@phpdoc
@@ -157,7 +160,7 @@ info:
 #phantom-stop:
 #	@$(MAKE) -C $(TOPDIR)/tests phantom-stop
 
-#tests: install start-environment
-#	@echo "\\033[1;35m+++ Running tests\\033[39;0m"
+tests: install start-environment
+	@echo "\\033[1;35m+++ Running tests\\033[39;0m"
 #	@$(MAKE) -C $(TOPDIR)/tests tests
 
