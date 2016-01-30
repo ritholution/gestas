@@ -12,7 +12,8 @@ addons:
 
 before_install:
 
-install: true
+install:
+  - apt-get install apache2
 
 before_script:
   - make clean
