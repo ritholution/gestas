@@ -1,0 +1,55 @@
+language: php
+php:
+  - '7.0'
+
+sudo: false
+
+services:
+  - apache
+  - postgresql
+  - redis-server
+
+env:
+  - TRAVIS_BUILD=1
+
+addons:
+  hosts:
+    - gestas.org
+  postgresql: "9.5"
+  redis-server: "3.0.6"
+  apt:
+    packages:
+    - apache2
+    - libapache2-mod-php5
+
+before_install:
+
+install: true
+
+before_script:
+  - make clean
+  - phpenv config-add conf/php.ini
+  # - sudo cp ~/.phpenv/versions/$(phpenv version-name)/etc/php-fpm.conf.default ~/.phpenv/versions/$(phpenv version-name)/etc/php-fpm.conf
+  # - sudo a2enmod rewrite actions fastcgi alias
+  # - echo "cgi.fix_pathinfo = 1" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+  # - ~/.phpenv/versions/$(phpenv version-name)/sbin/php-fpm
+  # - sudo cp -f build/travis-ci-apache /etc/apache2/sites-available/default
+  # - sudo sed -e "s?%TRAVIS_BUILD_DIR%?$(pwd)?g" --in-place /etc/apache2/sites-available/default
+  # - sudo service apache2 restart
+
+script:
+  - make tests
+
+before_deploy:
+  - make deb
+  - eval "$(ssh-agent -s)"
+
+deploy:
+  skip_cleanup: false
+  provider: script
+  script: deploy/deploy.sh
+  on:
+    branch: master
+
+notifications:
+  irc: "irc.freenode.org#gestas"

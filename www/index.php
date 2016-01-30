@@ -1,15 +1,9 @@
 <?php
 /**
- * const.php.default
+ * copyright (c) 2008-2015 AUTHORS
  *
- * Description
- * This file defines the constant values related with the database
- * connection.
+ * This file is part of GESTAS
  *
- * copyright (c) 2008-2009 OPENTIA s.l. (http://www.opentia.com)
- *
- * This file is part of GESTAS (http://gestas.opentia.org)
- * 
  * GESTAS is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
  * published by the Free Software Foundation, either version 3 of the
@@ -24,10 +18,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-define(BBDD_TYPE,"MySQL");
-define(BBDD_HOST,"localhost");
-define(BBDD_PORT,3306);
-define(BBDD_USER,"gestas_user");
-define(BBDD_PASS,"gestas_mysql_pass");
-define(BBDD_DBNAME,"gestas");
-?>
+require_once 'configurations.php';
+$gestas = new Gestas();
+
+/* URI requested. */
+$requested = empty($_SERVER['REQUEST_URI']) ? false : $_SERVER['REQUEST_URI'];
+$path = (!empty($_SERVER['QUERY_STRING'])) ?
+	substr($requested, 0, strpos($requested, $_SERVER['QUERY_STRING']) - 1) :
+	$requested;
