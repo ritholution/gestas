@@ -13,20 +13,9 @@ countryName 		= ES
 stateOrProvinceName 	= Madrid
 localityName		= Madrid
 organizationName 	= Ritho
-organizationalUnitName 	= 
+organizationalUnitName 	= Development
 commonName 		= gestas.org
 emailAddress           	= palvarez@ritho.net
-# C	               	= ES
-# ST                     	= Madrid
-# L                      	= Madrid
-# O                      	= Ritho
-# OU                     	= 
-# CN                     	= gestas.org
-
-# [req_attributes]
-# challengePassword    	= A challenge password
-# challengePassword_min  = 4
-# challengePassword_max  = 20
 
 [v3_ca]
 subjectKeyIdentifier=hash
