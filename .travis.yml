@@ -38,7 +38,7 @@ install: true
 before_script:
   - phpenv config-rm xdebug.ini
   - make clean
-  - composer install
+#  - composer install
 
 script:
   - make tests
