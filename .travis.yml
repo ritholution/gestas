@@ -1,0 +1,47 @@
+language: php
+php:
+  - '7.0'
+
+sudo: false
+
+git:
+  depth: 3
+
+os:
+  - linux
+
+services:
+  - apache
+  - postgresql
+  - redis-server
+
+env:
+  global:
+    - TRAVIS_BUILD=1
+    - CI_NODE_TOTAL=2
+  matrix:
+    - CI_NODE_INDEX=0
+    - CI_NODE_INDEX=1
+
+addons:
+  hosts:
+    - travis.gestas.org
+  postgresql: "9.5"
+  redis-server: "3.0.6"
+  apt:
+    packages:
+      - apache2
+      - libapache2-mod-php5
+
+install: true
+
+before_script:
+  - phpenv config-rm xdebug.ini
+  - make clean
+#  - composer install
+
+script:
+  - make tests
+
+notifications:
+  irc: "irc.freenode.org#gestas"

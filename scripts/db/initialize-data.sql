@@ -68,15 +68,6 @@ LOCK TABLES `aclMemberAssoc` WRITE;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `aclObject`
---
-
-LOCK TABLES `aclObject` WRITE;
-/*!40000 ALTER TABLE `aclObject` DISABLE KEYS */;
-/*!40000 ALTER TABLE `aclObject` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Dumping data for table `aclUser`
 --
 

@@ -678,8 +678,3 @@ SET character_set_client = @saved_cs_client;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- Dump completed on 2009-03-23 12:29:20
-/*Ahora Cargamos la bd de datos y la bd de confirguraciones especificas del programador*/
-source mysql-data.sql
-source mysql-configs.sql

@@ -1,0 +1,59 @@
+[req]
+default_bits           	= 4096
+default_keyfile        	= priv/server.key
+default_md 		= md5
+distinguished_name     	= req_distinguished_name
+# attributes           	= req_attributes
+x509_extensions        	= v3_ca
+
+dirstring_type = nobmp
+
+[req_distinguished_name]
+countryName 		= ES
+stateOrProvinceName 	= Madrid
+localityName		= Madrid
+organizationName 	= Ritho
+organizationalUnitName 	= 
+commonName 		= gestas.org
+emailAddress           	= palvarez@ritho.net
+# C	               	= ES
+# ST                     	= Madrid
+# L                      	= Madrid
+# O                      	= Ritho
+# OU                     	= 
+# CN                     	= gestas.org
+
+# [req_attributes]
+# challengePassword    	= A challenge password
+# challengePassword_min  = 4
+# challengePassword_max  = 20
+
+[v3_ca]
+subjectKeyIdentifier=hash
+authorityKeyIdentifier=keyid:always,issuer:always
+basicConstraints = CA:true
+
+[ca] 
+default_ca = CA_default 
+
+[CA_default] 
+dir				= .
+serial 			= $dir/serial 
+database 		= $dir/index.txt 
+certificate 	= $dir/server.crt
+private_key 	= $dir/priv/server.key
+default_days 	= 365
+default_md 		= md5
+preserve 		= no
+email_in_dn 	= no
+nameopt 		= default_ca
+certopt 		= default_ca
+policy 			= policy_match
+
+[policy_match] 
+countryName				= match
+stateOrProvinceName 	= match
+organizationName 		= match
+organizationalUnitName 	= optional
+commonName 				= supplied
+emailAddress 			= optional
