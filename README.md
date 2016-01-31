@@ -28,3 +28,5 @@ This project arise to cover an existent gap in free software, because,
 althout it's not the first association manager, none of those
 precedent are oriented to the type of associations that GESTAS is
 oriented, specially in the spanish legislation.
+
+The current status of travis is [![Build Status](https://travis-ci.org/i02sopop/gestas.svg?branch=master)](https://travis-ci.org/i02sopop/gestas).
