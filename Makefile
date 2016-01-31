@@ -160,4 +160,4 @@ info:
 tests: install start-environment
 	@echo "\\033[1;35m+++ Running tests\\033[39;0m"
 #	@$(MAKE) -C $(TOPDIR)/tests tests
-
+#	phpdbg -qrr phpunit

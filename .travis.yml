@@ -4,17 +4,28 @@ php:
 
 sudo: false
 
+git:
+  depth: 3
+
+os:
+  - linux
+
 services:
   - apache
   - postgresql
   - redis-server
 
 env:
-  - TRAVIS_BUILD=1
+  global:
+    - TRAVIS_BUILD=1
+    - CI_NODE_TOTAL=2
+  matrix:
+    - CI_NODE_INDEX=0
+    - CI_NODE_INDEX=1
 
 addons:
   hosts:
-    - gestas.org
+    - travis.gestas.org
   postgresql: "9.5"
   redis-server: "3.0.6"
   apt:
@@ -22,12 +33,12 @@ addons:
       - apache2
       - libapache2-mod-php5
 
-#before_install:
-
 install: true
 
 before_script:
+  - phpenv config-rm xdebug.ini
   - make clean
+  - composer install
 
 script:
   - make tests
