@@ -10,6 +10,7 @@ SUBDIRS += project_mgmt.mod/
 SRCS  = acl.php
 SRCS += action.php
 SRCS += association.php
+SRCS += base.php
 SRCS += contact.php
 SRCS += content.php
 SRCS += database.php
