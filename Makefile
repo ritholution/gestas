@@ -18,6 +18,9 @@ install:
 		make -C $$i install; \
 	done
 
+rw:
+	@make -C www install
+
 clean: stop-environment
 	@echo "\\033[1;35m+++ Cleaning files and directories.\\033[39;0m"
 	@for i in $(SUBDIRS) ; do $(MAKE) -C $$i clean; done
