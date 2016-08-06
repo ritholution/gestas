@@ -51,6 +51,42 @@ function __autoload($name) {
 		log_e('Couldn\'t load the class ' . $name . '.');
 }
 
+/** Function to log info messages into the logging file.
+ *
+ * @copyright Copyright (c) 2011-2015 Ritho-web team (see AUTHORS)
+ * @param string $msg  Message to log.
+ * @param string $file The log filename.
+ * @return void
+ */
+function log_i($msg = '', $file = null) {
+	// Log::instance($file)->i($msg);
+	echo $msg;
+}
+
+/** Function to log debug messages into the logging file.
+ *
+ * @copyright Copyright (c) 2011-2015 Ritho-web team (see AUTHORS)
+ * @param string $msg  Message to log.
+ * @param string $file The log filename.
+ * @return void
+ */
+function log_d($msg = '', $file = null) {
+	// Log::instance($file)->d($msg);
+	echo $msg;
+}
+
+/** Function to log error messages into the logging file.
+ *
+ * @copyright Copyright (c) 2011-2015 Ritho-web team (see AUTHORS)
+ * @param string $msg  Message to log.
+ * @param string $file The log filename.
+ * @return void
+ */
+function log_e($msg = '', $file = null) {
+	// Log::instance($file)->e($msg);
+	echo $msg;
+}
+
 /** Function to get the unix time in microseconds.
  *
  * @return int Time in microseconds.
